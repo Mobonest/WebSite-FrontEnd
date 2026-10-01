@@ -1,1 +1,0 @@
-print("not hello to world22")
