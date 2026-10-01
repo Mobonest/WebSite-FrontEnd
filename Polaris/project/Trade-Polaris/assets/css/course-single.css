@@ -1,0 +1,784 @@
+/* =============================================
+   ✦ COURSE SINGLE PAGE - نسخه کامل و بهینه ✦
+   ============================================= */
+
+.course-single-page {
+    padding: 120px 0 70px;
+    min-height: calc(100vh - 90px);
+    background: var(--bg-primary);
+}
+
+.course-single-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ========================================== */
+/* HEADER SECTION - هدر دوره */
+/* ========================================== */
+.course-header {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 35px;
+    margin-bottom: 55px;
+}
+
+/* اطلاعات دوره (سمت راست) */
+.course-info h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 14px;
+    line-height: 1.3;
+}
+
+.course-badge {
+    display: inline-block;
+    background: var(--bg-glass-strong);
+    border: 1px solid var(--border-gold);
+    padding: 5px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    color: var(--gold-primary);
+    margin-bottom: 16px;
+}
+
+.course-description {
+    color: var(--text-secondary);
+    line-height: 1.75;
+    margin-bottom: 22px;
+    font-size: 15px;
+}
+
+.course-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    background: var(--bg-glass-strong);
+    padding: 5px 14px;
+    border-radius: 30px;
+}
+
+.meta-icon {
+    font-size: 14px;
+}
+
+/* کارت خرید (سمت چپ) */
+.course-card-side {
+    background: var(--bg-card);
+    border-radius: 24px;
+    border: 1px solid var(--border-gold);
+    overflow: hidden;
+    position: sticky;
+    top: 100px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.course-card-side:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.course-card-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.course-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.course-card-side:hover .course-card-img img {
+    transform: scale(1.05);
+}
+
+.course-card-body {
+    padding: 22px;
+}
+
+.course-price {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--gold-primary);
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.course-price small {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-tertiary);
+}
+
+.btn-block {
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: center;
+    padding: 14px;
+    font-size: 14px;
+}
+
+.course-features {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-light);
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+/* ========================================== */
+/* TABS SECTION - تب‌های دوره */
+/* ========================================== */
+.course-tabs {
+    margin-top: 10px;
+}
+
+.tabs-header {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-light);
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 12px 24px;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-family: 'Peyda', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-btn:hover {
+    color: var(--gold-primary);
+}
+
+.tab-btn.active {
+    color: var(--gold-primary);
+    border-bottom-color: var(--gold-primary);
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================== */
+/* ABOUT CONTENT - محتوای درباره دوره */
+/* ========================================== */
+.about-content h3 {
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: var(--gold-primary);
+}
+
+.about-content p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.skills-box {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-light);
+}
+
+.skills-box h4 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: var(--text-primary);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.skills-grid span {
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ========================================== */
+/* SYLLABUS - سرفصل‌های دوره (آکاردئونی) */
+/* ========================================== */
+.syllabus-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.syllabus-item {
+    background: var(--bg-secondary);
+    border-radius: 16px;
+    border: 1px solid var(--border-light);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.syllabus-item:hover {
+    border-color: var(--border-gold);
+}
+
+.syllabus-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 22px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.syllabus-header:hover {
+    background: var(--bg-glass-strong);
+}
+
+.syllabus-title {
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-primary);
+}
+
+.syllabus-duration {
+    font-size: 12px;
+    color: var(--gold-primary);
+    background: var(--bg-glass-strong);
+    padding: 4px 12px;
+    border-radius: 50px;
+}
+
+.syllabus-icon {
+    transition: transform 0.3s ease;
+    margin-right: 8px;
+}
+
+.syllabus-item.open .syllabus-icon {
+    transform: rotate(180deg);
+}
+
+.syllabus-body {
+    display: none;
+    padding: 0 22px 18px 22px;
+    border-top: 1px solid var(--border-light);
+    background: var(--bg-tertiary);
+}
+
+.syllabus-item.open .syllabus-body {
+    display: block;
+}
+
+.syllabus-lesson {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 13px;
+    color: var(--text-secondary);
+    border-bottom: 1px dashed var(--border-light);
+}
+
+.syllabus-lesson:last-child {
+    border-bottom: none;
+}
+
+/* ========================================== */
+/* INSTRUCTOR - کارت مدرس */
+/* ========================================== */
+.instructor-card {
+    display: flex;
+    gap: 28px;
+    background: var(--bg-secondary);
+    border-radius: 24px;
+    padding: 28px;
+    border: 1px solid var(--border-light);
+    transition: all 0.3s ease;
+}
+
+.instructor-card:hover {
+    border-color: var(--border-gold);
+}
+
+.instructor-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 3px solid var(--gold-primary);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+.instructor-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.instructor-info {
+    flex: 1;
+}
+
+.instructor-info h3 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.instructor-title {
+    color: var(--gold-primary);
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.instructor-bio {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+
+.instructor-stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.instructor-stats span {
+    font-size: 13px;
+    color: var(--text-secondary);
+    background: var(--bg-glass-strong);
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+
+/* ========================================== */
+/* REVIEWS - نظرات و امتیازات */
+/* ========================================== */
+.reviews-summary {
+    display: flex;
+    gap: 35px;
+    background: var(--bg-secondary);
+    border-radius: 24px;
+    padding: 24px 28px;
+    margin-bottom: 30px;
+    border: 1px solid var(--border-light);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.rating-score {
+    text-align: center;
+    min-width: 120px;
+}
+
+.rating-number {
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--gold-primary);
+    line-height: 1;
+}
+
+.rating-stars {
+    margin: 8px 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.rating-count {
+    font-size: 12px;
+    color: var(--text-tertiary);
+}
+
+.rating-bars {
+    flex: 1;
+    min-width: 200px;
+}
+
+.rating-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.rating-star-label {
+    width: 65px;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.rating-bar-bg {
+    flex: 1;
+    height: 7px;
+    background: var(--bg-tertiary);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.rating-bar-fill {
+    height: 100%;
+    background: var(--gradient-gold);
+    border-radius: 4px;
+}
+
+.rating-percent {
+    width: 45px;
+    font-size: 12px;
+    color: var(--text-tertiary);
+    text-align: left;
+}
+
+.review-card {
+    background: var(--bg-secondary);
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 16px;
+    border: 1px solid var(--border-light);
+    transition: all 0.3s ease;
+}
+
+.review-card:hover {
+    border-color: var(--border-gold);
+    transform: translateX(-4px);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.reviewer-name {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--text-primary);
+}
+
+.review-date {
+    font-size: 11px;
+    color: var(--text-tertiary);
+}
+
+.review-stars {
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.review-text {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.75;
+}
+
+/* ========================================== */
+/* LOADING & EMPTY STATES */
+/* ========================================== */
+.loading-state {
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--text-tertiary);
+}
+
+.loading-state h3 {
+    margin-bottom: 20px;
+}
+
+/* ========================================== */
+/* TOAST MESSAGE */
+/* ========================================== */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--gold-primary);
+    border-radius: 12px;
+    padding: 12px 24px;
+    z-index: 10000;
+    animation: slideInRight 0.3s ease;
+    font-size: 14px;
+    box-shadow: var(--shadow-gold);
+    color: var(--text-primary);
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ========================================== */
+/* RESPONSIVE - ریسپانسیو کامل */
+/* ========================================== */
+
+/* تبلت */
+@media (max-width: 991px) {
+    .course-single-page {
+        padding: 100px 0 60px;
+    }
+    
+    .course-header {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .course-card-side {
+        position: static;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .course-info {
+        text-align: center;
+    }
+    
+    .course-meta {
+        justify-content: center;
+    }
+    
+    .tabs-header {
+        justify-content: center;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* موبایل بزرگ */
+@media (max-width: 768px) {
+    .course-single-container {
+        padding: 0 16px;
+    }
+    
+    .course-info h1 {
+        font-size: 26px;
+    }
+    
+    .course-price {
+        font-size: 24px;
+    }
+    
+    .syllabus-header {
+        padding: 14px 16px;
+    }
+    
+    .syllabus-title {
+        font-size: 14px;
+    }
+    
+    .syllabus-duration {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+    
+    .syllabus-body {
+        padding: 0 16px 14px 16px;
+    }
+    
+    .syllabus-lesson {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+    
+    .instructor-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 24px;
+    }
+    
+    .instructor-avatar {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .instructor-stats {
+        justify-content: center;
+    }
+    
+    .reviews-summary {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .rating-bars {
+        width: 100%;
+    }
+    
+    .rating-bar-item {
+        justify-content: center;
+    }
+    
+    .review-card {
+        padding: 16px;
+    }
+    
+    .tab-btn {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+    
+    .about-content h3 {
+        font-size: 20px;
+    }
+    
+    .about-content p {
+        font-size: 14px;
+    }
+}
+
+/* موبایل کوچک */
+@media (max-width: 480px) {
+    .course-single-page {
+        padding: 85px 0 40px;
+    }
+    
+    .course-single-container {
+        padding: 0 12px;
+    }
+    
+    .course-info h1 {
+        font-size: 22px;
+    }
+    
+    .course-badge {
+        font-size: 10px;
+        padding: 4px 12px;
+    }
+    
+    .course-description {
+        font-size: 13px;
+    }
+    
+    .meta-item {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+    
+    .course-card-body {
+        padding: 16px;
+    }
+    
+    .course-price {
+        font-size: 22px;
+    }
+    
+    .feature-item {
+        font-size: 12px;
+        padding: 6px 0;
+    }
+    
+    .tab-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+    
+    .rating-number {
+        font-size: 40px;
+    }
+    
+    .rating-stars {
+        font-size: 13px;
+    }
+    
+    .review-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .review-text {
+        font-size: 13px;
+    }
+    
+    .toast {
+        bottom: 20px;
+        right: 20px;
+        left: 20px;
+        text-align: center;
+    }
+    
+    .skills-grid span {
+        font-size: 13px;
+    }
+}
+
+/* دسکتاپ بزرگ */
+@media (min-width: 1600px) {
+    .course-single-container {
+        max-width: 1500px;
+    }
+    
+    .course-header {
+        gap: 50px;
+    }
+    
+    .course-card-side {
+        max-width: 400px;
+    }
+    
+    .course-info h1 {
+        font-size: 38px;
+    }
+}

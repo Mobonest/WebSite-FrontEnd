@@ -1,0 +1,128 @@
+/* =============================================
+   پولاریس آکادمی - ۴ تم رنگی
+   Theme Switching - Color Variations
+   ============================================= */
+
+/* ---------- تم سفالین (Terracotta) ---------- */
+[data-theme="terracotta"] {
+    --accent: #d46a3e;
+    --accent-hover: #b8542a;
+    --accent-light: rgba(212, 106, 62, 0.1);
+    --accent-medium: rgba(212, 106, 62, 0.18);
+    --accent-glow: rgba(212, 106, 62, 0.3);
+    --accent-rgb: 212, 106, 62;
+    --tag-bg: rgba(212, 106, 62, 0.14);
+    --tag-text: #e07a4f;
+    --star-color: #e8a317;
+    --success-color: #4a7c59;
+    --danger-color: #d46a3e;
+}
+:root.light-mode[data-theme="terracotta"] {
+    --accent: #c1552b;
+    --accent-hover: #a34420;
+    --accent-light: rgba(193, 85, 43, 0.07);
+    --accent-medium: rgba(193, 85, 43, 0.14);
+    --accent-glow: rgba(193, 85, 43, 0.22);
+    --accent-rgb: 193, 85, 43;
+    --tag-bg: rgba(193, 85, 43, 0.09);
+    --tag-text: #c1552b;
+}
+
+/* ---------- تم یاقوت (Sapphire) ---------- */
+[data-theme="sapphire"] {
+    --accent: #5b8ec9;
+    --accent-hover: #4575b0;
+    --accent-light: rgba(91, 142, 201, 0.1);
+    --accent-medium: rgba(91, 142, 201, 0.18);
+    --accent-glow: rgba(91, 142, 201, 0.3);
+    --accent-rgb: 91, 142, 201;
+    --tag-bg: rgba(91, 142, 201, 0.14);
+    --tag-text: #6e9dd4;
+    --star-color: #e8c547;
+    --success-color: #5fbf7a;
+    --danger-color: #e0556a;
+}
+:root.light-mode[data-theme="sapphire"] {
+    --accent: #4a6fa5;
+    --accent-hover: #3a5888;
+    --accent-light: rgba(74, 111, 165, 0.07);
+    --accent-medium: rgba(74, 111, 165, 0.14);
+    --accent-glow: rgba(74, 111, 165, 0.22);
+    --accent-rgb: 74, 111, 165;
+    --tag-bg: rgba(74, 111, 165, 0.09);
+    --tag-text: #4a6fa5;
+    --bg: #f4f6f9;
+    --bg-alt: #eceff3;
+    --surface: #ffffff;
+    --surface-hover: #f8f9fb;
+    --text: #1a2233;
+    --text-secondary: #556677;
+    --text-muted: #8899aa;
+    --border: #dce3ec;
+    --border-light: #e8edf3;
+    --shadow: 0 4px 20px rgba(0,0,0,0.04);
+    --shadow-lg: 0 20px 60px rgba(0,0,0,0.07);
+    --shadow-card: 0 8px 32px rgba(0,0,0,0.03);
+    --card-bg: #ffffff;
+    --hero-overlay: rgba(244, 246, 249, 0.45);
+    --glass: rgba(255,255,255,0.88);
+    --glass-border: rgba(220, 227, 236, 0.5);
+    --heading-color: #1a2233;
+}
+
+/* ---------- تم زمرد (Emerald) ---------- */
+[data-theme="emerald"] {
+    --accent: #5b9e6f;
+    --accent-hover: #458556;
+    --accent-light: rgba(91, 158, 111, 0.1);
+    --accent-medium: rgba(91, 158, 111, 0.18);
+    --accent-glow: rgba(91, 158, 111, 0.3);
+    --accent-rgb: 91, 158, 111;
+    --tag-bg: rgba(91, 158, 111, 0.14);
+    --tag-text: #6dae7e;
+    --star-color: #e8c547;
+    --success-color: #5bbf7a;
+    --danger-color: #e0556a;
+}
+:root.light-mode[data-theme="emerald"] {
+    --accent: #4a7c59;
+    --accent-hover: #3a6347;
+    --accent-light: rgba(74, 124, 89, 0.07);
+    --accent-medium: rgba(74, 124, 89, 0.14);
+    --accent-glow: rgba(74, 124, 89, 0.22);
+    --accent-rgb: 74, 124, 89;
+    --tag-bg: rgba(74, 124, 89, 0.09);
+    --tag-text: #4a7c59;
+    --bg: #f5f8f5;
+    --bg-alt: #edf2ed;
+    --surface: #ffffff;
+    --surface-hover: #f9fbf9;
+    --text: #1a2e1a;
+    --text-secondary: #556655;
+    --text-muted: #889988;
+    --border: #dce5dc;
+    --border-light: #e8efe8;
+    --shadow: 0 4px 20px rgba(0,0,0,0.04);
+    --shadow-lg: 0 20px 60px rgba(0,0,0,0.07);
+    --shadow-card: 0 8px 32px rgba(0,0,0,0.03);
+    --card-bg: #ffffff;
+    --hero-overlay: rgba(245, 248, 245, 0.45);
+    --glass: rgba(255,255,255,0.88);
+    --glass-border: rgba(220, 229, 220, 0.5);
+    --heading-color: #1a2e1a;
+}
+
+/* ---------- تم نیمه‌شب (Midnight) - پیش‌فرض ---------- */
+[data-theme="midnight"] {
+    --accent: #d4a853;
+    --accent-hover: #c4953b;
+    --accent-light: rgba(212, 168, 83, 0.08);
+    --accent-medium: rgba(212, 168, 83, 0.15);
+    --accent-glow: rgba(212, 168, 83, 0.3);
+    --accent-rgb: 212, 168, 83;
+    --tag-bg: rgba(212, 168, 83, 0.12);
+    --tag-text: #ddb860;
+    --star-color: #e8c547;
+    --success-color: #5fbf7a;
+    --danger-color: #e0556a;
+}

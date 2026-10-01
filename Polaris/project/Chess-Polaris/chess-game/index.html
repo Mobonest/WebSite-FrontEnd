@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شطرنج</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♟️</text></svg>">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- انتخاب رنگ -->
+    <div class="color-bar">
+        <span class="color-title">انتخاب رنگ شما :</span>
+        <button class="color-btn white-btn active" id="btnWhite">⚪ سفید</button>
+        <button class="color-btn black-btn" id="btnBlack">⚫ سیاه</button>
+        <button class="color-btn random-btn" id="btnRandom">🎲 تصادفی</button>
+    </div>
+
+    <div class="game-row">
+
+        <!-- مهره‌های گرفته شده سیاه -->
+        <div class="captured-panel" id="blackCapturedPanel">
+            <div class="captured-header">⚫ گرفته شده سیاه</div>
+            <div class="captured-list" id="blackCapturedList">
+                <div class="empty-text">-</div>
+            </div>
+        </div>
+
+        <!-- تخته -->
+        <div class="board-section">
+            <div class="coords-row" id="topCoords">
+                <span>a</span><span>b</span><span>c</span><span>d</span><span>e</span><span>f</span><span>g</span><span>h</span>
+            </div>
+
+            <div class="board-with-sides">
+                <div class="coords-col" id="leftCoords">
+                    <span>8</span><span>7</span><span>6</span><span>5</span><span>4</span><span>3</span><span>2</span><span>1</span>
+                </div>
+
+                <div class="chess-board" id="chessBoard"></div>
+
+                <div class="coords-col" id="rightCoords">
+                    <span>8</span><span>7</span><span>6</span><span>5</span><span>4</span><span>3</span><span>2</span><span>1</span>
+                </div>
+            </div>
+
+            <div class="coords-row" id="bottomCoords">
+                <span>a</span><span>b</span><span>c</span><span>d</span><span>e</span><span>f</span><span>g</span><span>h</span>
+            </div>
+        </div>
+
+        <!-- مهره‌های گرفته شده سفید -->
+        <div class="captured-panel" id="whiteCapturedPanel">
+            <div class="captured-header">⚪ گرفته شده سفید</div>
+            <div class="captured-list" id="whiteCapturedList">
+                <div class="empty-text">-</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- نوبت و ریست -->
+    <div class="bottom-bar">
+        <span id="turnDisplay">نوبت: سفید</span>
+        <button id="resetBtn">شروع مجدد</button>
+    </div>
+
+</div>
+
+<script src="assets/js/logic.js"></script>
+</body>
+</html>

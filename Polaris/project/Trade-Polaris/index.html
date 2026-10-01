@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>✦ آکادمی پولاریس | Polaris Trading Academy ✦</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='starGrad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FFD700'/%3E%3Cstop offset='100%25' stop-color='%23FF8C00'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='50,2 62,38 100,38 70,58 82,95 50,72 18,95 30,58 0,38 38,38' fill='url(%23starGrad)'/%3E%3C/svg%3E">
+    
+    <!-- Fonts -->
+    <link rel="preload" href="assets/fonts/Peyda-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="assets/fonts/Peyda-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body class="polaris-body">
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__inner">
+            <svg viewBox="0 0 120 120" width="90" height="90">
+                <defs><linearGradient id="pl"><stop offset="0%" stop-color="#FFD700"/><stop offset="100%" stop-color="#FF6B00"/></linearGradient></defs>
+                <polygon points="60,5 72,38 110,38 80,58 92,95 60,72 28,95 40,58 10,38 48,38" fill="url(#pl)">
+                    <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="3s" repeatCount="indefinite"/>
+                </polygon>
+            </svg>
+            <div class="preloader__text">
+                <span class="preloader__fa">پولاریس</span>
+                <span class="preloader__en">Polaris</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header__glow"></div>
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">
+                    <div class="header__logo-icon">
+                        <svg viewBox="0 0 60 60" width="48" height="48">
+                            <polygon points="30,3 39,22 60,22 44,37 50,57 30,44 10,57 16,37 0,22 21,22" fill="#FFD700"/>
+                            <polygon points="30,10 36,24 52,24 40,33 44,50 30,40 16,50 20,33 8,24 24,24" fill="#050505"/>
+                        </svg>
+                    </div>
+                    <div class="header__logo-text">
+                        <span class="header__logo-main">پولاریس</span>
+                        <span class="header__logo-sub">Polaris Trading Academy</span>
+                    </div>
+                </a>
+
+                <nav class="header__nav" id="mainNav">
+                    <ul class="header__menu">
+                        <li class="header__menu-item"><a href="#home" class="header__menu-link active"><span class="menu__icon">✦</span><span class="menu__text">خانه</span></a></li>
+                        <li class="header__menu-item"><a href="#courses" class="header__menu-link"><span class="menu__icon">◆</span><span class="menu__text">دوره‌ها</span></a></li>
+                        <li class="header__menu-item"><a href="#about" class="header__menu-link"><span class="menu__icon">◉</span><span class="menu__text">درباره ما</span></a></li>
+                        <li class="header__menu-item"><a href="#features" class="header__menu-link"><span class="menu__icon">◈</span><span class="menu__text">خدمات</span></a></li>
+                        <li class="header__menu-item"><a href="#blog" class="header__menu-link"><span class="menu__icon">❋</span><span class="menu__text">بلاگ</span></a></li>
+                        <li class="header__menu-item"><a href="#contact" class="header__menu-link"><span class="menu__icon">✉</span><span class="menu__text">ارتباط</span></a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__actions">
+                    <button class="header__icon-btn" id="themeToggle">
+                        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                    </button>
+
+                    <a href="cart.html" class="header__icon-btn cart-btn" id="cartBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="9" cy="21" r="1"/>
+                            <circle cx="20" cy="21" r="1"/>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                        </svg>
+                        <span class="cart-badge" id="cartCountBadge" style="display: none;">۰</span>
+                    </a>
+
+                    <button class="btn btn--luxury" id="accountBtn">
+                        <span class="btn__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+                        <span class="btn__text">حساب کاربری</span>
+                    </button>
+
+                    <button class="header__hamburger" id="hamburgerBtn"><span></span><span></span><span></span><span></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <div class="hero__bg-image"></div>
+            <div class="hero__bg-overlay"></div>
+            <div class="hero__bg">
+                <div class="hero__bg-circle hero__bg-circle--1"></div>
+                <div class="hero__bg-circle hero__bg-circle--2"></div>
+                <div class="hero__bg-circle hero__bg-circle--3"></div>
+                <div class="hero__bg-circle hero__bg-circle--4"></div>
+                <div class="hero__bg-grid"></div>
+            </div>
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <div class="hero__badge"><span class="hero__badge-star">✦</span><span>معتبرترین آکادمی ترید ایران</span></div>
+                        <h1 class="hero__title">مسیر <span class="text-gold">ثروت‌آفرینی</span> از اینجا آغاز می‌شود</h1>
+                        <p class="hero__desc">با آکادمی پولاریس، ترید را اصولی و حرفه‌ای بیاموزید. از صفر تا سوددهی پایدار در بازارهای مالی جهانی.</p>
+                        <p class="hero__desc-secondary">بیش از ۸ سال تجربه در آموزش ترید، منتورینگ اختصاصی، سیگنال‌های روزانه، تحلیل تکنیکال و فاندامنتال، روانشناسی بازار و مدیریت سرمایه — همه در یک پلتفرم جامع.</p>
+                        <p class="hero__desc-secondary">به جامعه ۱۲,۵۰۰+ تریدر حرفه‌ای بپیوندید که مسیر خود را با پولاریس ساخته‌اند. آینده مالی شما از امروز شروع می‌شود.</p>
+                        <div class="hero__actions">
+                            <a href="#courses" class="btn btn--gold btn--lg btn--shine"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l8 7-8 7V5z"/></svg><span>شروع یادگیری</span></a>
+                            <button class="btn btn--outline-gold btn--lg" data-modal="advisor"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><span>مشاوره رایگان</span></button>
+                        </div>
+                        <div class="hero__trust-badges">
+                            <div class="hero__trust-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span>گارانتی ۳۰ روزه بازگشت وجه</span></div>
+                            <div class="hero__trust-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg><span>پشتیبانی ۲۴ ساعته</span></div>
+                            <div class="hero__trust-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span>رضایت ۹۸٪ دانشجویان</span></div>
+                        </div>
+                        <div class="hero__stats">
+                            <div class="hero__stat"><span class="hero__stat-number" data-count="12500">۱۲۵۰۰+</span><span class="hero__stat-label">دانشجوی فعال</span></div>
+                            <div class="hero__stat-divider"></div>
+                            <div class="hero__stat"><span class="hero__stat-number" data-count="380">۳۸۰+</span><span class="hero__stat-label">دوره تخصصی</span></div>
+                            <div class="hero__stat-divider"></div>
+                            <div class="hero__stat"><span class="hero__stat-number" data-count="98">۹۸٪</span><span class="hero__stat-label">درصد رضایت</span></div>
+                            <div class="hero__stat-divider"></div>
+                            <div class="hero__stat"><span class="hero__stat-number" data-count="25000">۲۵۰۰۰+</span><span class="hero__stat-label">ساعت آموزش</span></div>
+                        </div>
+                    </div>
+                    <div class="hero__visual">
+                        <div class="hero__visual-frame">
+                            <img src="assets/images/hero-bg.png" alt="پولاریس" class="hero__visual-img" loading="eager">
+                            <div class="hero__visual-badge hero__visual-badge--1"><div class="badge__dot badge__dot--green"></div><span>لایو ترید</span></div>
+                            <div class="hero__visual-badge hero__visual-badge--2"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span>دوره طلایی</span></div>
+                            <div class="hero__visual-badge hero__visual-badge--3"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00ff88"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg><span>+۲۴۵٪ بازدهی</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll-indicator"><span>اسکرول کنید</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg></div>
+        </section>
+
+        <!-- PARTNERS BAR -->
+        <div class="partners-bar">
+            <div class="container">
+                <div class="partners-bar__inner">
+                    <span class="partners-bar__text">مورد اعتماد برترین بروکرها و صرافی‌ها</span>
+                    <div class="partners-bar__logos">
+                        <div class="partner-logo"><svg viewBox="0 0 100 30" width="100" height="30"><text x="50%" y="50%" text-anchor="middle" dy=".35em" fill="var(--text-tertiary)" font-size="14" font-weight="700">BROKER</text></svg></div>
+                        <div class="partner-logo"><svg viewBox="0 0 100 30" width="100" height="30"><text x="50%" y="50%" text-anchor="middle" dy=".35em" fill="var(--text-tertiary)" font-size="14" font-weight="700">EXCHANGE</text></svg></div>
+                        <div class="partner-logo"><svg viewBox="0 0 100 30" width="100" height="30"><text x="50%" y="50%" text-anchor="middle" dy=".35em" fill="var(--text-tertiary)" font-size="14" font-weight="700">TRADING</text></svg></div>
+                        <div class="partner-logo"><svg viewBox="0 0 100 30" width="100" height="30"><text x="50%" y="50%" text-anchor="middle" dy=".35em" fill="var(--text-tertiary)" font-size="14" font-weight="700">ANALYTICS</text></svg></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEATURES SECTION -->
+        <section class="features section" id="features">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge"><span class="badge__ornament">◈</span><span>چرا پولاریس؟</span><span class="badge__ornament">◈</span></span>
+                    <h2 class="section__title">ویژگی‌های <span class="text-gold">منحصربه‌فرد</span> ما</h2>
+                    <p class="section__desc">ما در پولاریس، فراتر از یک آموزش ساده، مسیر موفقیت شما را با استانداردهای جهانی هموار می‌کنیم.</p>
+                </div>
+                <div class="features__grid">
+                    <div class="feature-card"><span class="feature-card__number">۰۱</span><div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h3 class="feature-card__title">آموزش جامع</h3><p class="feature-card__desc">از مفاهیم پایه تا استراتژی‌های پیشرفته، همه چیز در یک مسیر مشخص و هدفمند.</p></div>
+                    <div class="feature-card"><span class="feature-card__number">۰۲</span><div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h3 class="feature-card__title">لایو ترید</h3><p class="feature-card__desc">معاملات زنده اساتید را به صورت Real-Time مشاهده کنید.</p></div>
+                    <div class="feature-card"><span class="feature-card__number">۰۳</span><div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg></div><h3 class="feature-card__title">منتورینگ خصوصی</h3><p class="feature-card__desc">هر دانشجو یک منتور شخصی دارد که مسیر پیشرفت را گام به گام همراهی می‌کند.</p></div>
+                    <div class="feature-card"><span class="feature-card__number">۰۴</span><div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3 class="feature-card__title">سیگنال روزانه</h3><p class="feature-card__desc">تحلیل تکنیکال و سیگنال‌های ورود و خروج دقیق به صورت روزانه.</p></div>
+                    <div class="feature-card"><span class="feature-card__number">۰۵</span><div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10"/></svg></div><h3 class="feature-card__title">دسترسی جهانی</h3><p class="feature-card__desc">در هر دستگاه و هر مکانی به محتوای دوره‌ها دسترسی کامل دارید.</p></div>
+                    <div class="feature-card"><span class="feature-card__number">۰۶</span><div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3 class="feature-card__title">گارانتی بازگشت</h3><p class="feature-card__desc">۳۰ روز ضمانت بازگشت وجه بدون هیچ شرطی.</p></div>
+                </div>
+                <div class="features__extra">
+                    <div class="features__extra-card"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><h4>جامعه ۱۲,۰۰۰+ تریدر</h4><p>تبادل نظر، اشتراک تحلیل و رشد جمعی</p></div>
+                    <div class="features__extra-card"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><h4>به‌روزرسانی مداوم</h4><p>محتواها هر ماه بازبینی و آپدیت می‌شوند</p></div>
+                    <div class="features__extra-card"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m-9 9a9 9 0 019-9"/></svg><h4>دسترسی بین‌المللی</h4><p>محتوای آموزشی به دو زبان فارسی و انگلیسی</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="how-it-works section" id="how-it-works">
+            <div class="container">
+                <div class="section__header"><span class="section__badge"><span class="badge__ornament">◆</span><span>مسیر یادگیری</span><span class="badge__ornament">◆</span></span><h2 class="section__title">چگونه در <span class="text-gold">پولاریس</span> یاد می‌گیرید؟</h2></div>
+                <div class="steps__grid">
+                    <div class="step-card"><div class="step-card__number">۱</div><div class="step-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/></svg></div><h3>ثبت‌نام و تعیین سطح</h3><p>تعیین سطح رایگان برای شروع مسیر</p></div>
+                    <div class="step-card"><div class="step-card__number">۲</div><div class="step-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h3>یادگیری با محتوای تعاملی</h3><p>ویدئوهای باکیفیت و تمرین‌های عملی</p></div>
+                    <div class="step-card"><div class="step-card__number">۳</div><div class="step-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3>تمرین با حساب دمو</h3><p>تمرین استراتژی‌ها در محیط شبیه‌سازی شده</p></div>
+                    <div class="step-card"><div class="step-card__number">۴</div><div class="step-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>ورود به بازار واقعی</h3><p>با پشتیبانی منتور و جامعه تریدرها</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COURSES SECTION -->
+        <section class="courses section" id="courses">
+            <div class="container">
+                <div class="section__header"><span class="section__badge"><span class="badge__ornament">◆</span><span>دوره‌های تخصصی</span><span class="badge__ornament">◆</span></span><h2 class="section__title">دوره‌های <span class="text-gold">تخصصی</span> ترید</h2></div>
+                <div class="courses__grid">
+                    <div class="course-card"><div class="course-card__image"><img src="assets/images/learn-Forex.jpg" alt="فارکس جامع"><span class="course-card__badge course-card__badge--hot">پرفروش</span></div><div class="course-card__body"><span class="course-card__level">مقدماتی تا پیشرفته</span><h3 class="course-card__title">فارکس جامع</h3><p class="course-card__desc">صفر تا صد معامله‌گری در بزرگترین بازار مالی جهان</p><div class="course-card__footer"><span class="course-card__price">۲,۴۹۰,۰۰۰ <small>تومان</small></span><button class="btn btn--gold btn--sm" onclick="addToCart(1)">➕ افزودن به سبد خرید</button></div></div></div>
+                    <div class="course-card"><div class="course-card__image"><img src="assets/images/forex-image2.jpg" alt="ارز دیجیتال"><span class="course-card__badge course-card__badge--new">جدید</span></div><div class="course-card__body"><span class="course-card__level">مقدماتی تا پیشرفته</span><h3 class="course-card__title">ارز دیجیتال</h3><p class="course-card__desc">تحلیل و معامله در بازار کریپتو</p><div class="course-card__footer"><span class="course-card__price">۱,۹۹۰,۰۰۰ <small>تومان</small></span><button class="btn btn--gold btn--sm" onclick="addToCart(2)">➕ افزودن به سبد خرید</button></div></div></div>
+                    <div class="course-card"><div class="course-card__image"><img src="assets/images/learn-Forex1.jpeg" alt="تحلیل تکنیکال"></div><div class="course-card__body"><span class="course-card__level">پیشرفته</span><h3 class="course-card__title">تحلیل تکنیکال</h3><p class="course-card__desc">پرایس اکشن، الگوهای هارمونیک و ICT</p><div class="course-card__footer"><span class="course-card__price">۱,۶۹۰,۰۰۰ <small>تومان</small></span><button class="btn btn--gold btn--sm" onclick="addToCart(3)">➕ افزودن به سبد خرید</button></div></div></div>
+                    <div class="course-card"><div class="course-card__image"><img src="assets/images/ler.jpeg" alt="روانشناسی ترید"><span class="course-card__badge course-card__badge--popular">محبوب</span></div><div class="course-card__body"><span class="course-card__level">متوسط</span><h3 class="course-card__title">روانشناسی ترید</h3><p class="course-card__desc">غلبه بر ترس و طمع، ذهنیت برنده</p><div class="course-card__footer"><span class="course-card__price">۱,۲۹۰,۰۰۰ <small>تومان</small></span><button class="btn btn--gold btn--sm" onclick="addToCart(4)">➕ افزودن به سبد خرید</button></div></div></div>
+                    <div class="course-card"><div class="course-card__image"><img src="assets/images/Screenshot 2023-06-01 192804.png" alt="بورس ایران"></div><div class="course-card__body"><span class="course-card__level">متوسط</span><h3 class="course-card__title">بورس ایران</h3><p class="course-card__desc">تحلیل بنیادی و ارزندگی سهام</p><div class="course-card__footer"><span class="course-card__price">۱,۴۹۰,۰۰۰ <small>تومان</small></span><button class="btn btn--gold btn--sm" onclick="addToCart(5)">➕ افزودن به سبد خرید</button></div></div></div>
+                    <div class="course-card course-card--vip"><div class="course-card__image"><img src="assets/images/Screenshot 2023-06-02 003216.png" alt="VIP"><span class="course-card__badge course-card__badge--vip">VIP</span></div><div class="course-card__body"><span class="course-card__level">VIP</span><h3 class="course-card__title">منتورینگ VIP</h3><p class="course-card__desc">جلسات خصوصی هفتگی و کوچینگ اختصاصی</p><div class="course-card__footer"><span class="course-card__price">تماس بگیرید</span><button class="btn btn--gold btn--sm" data-modal="advisor">مشاوره</button></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="about section" id="about">
+            <div class="container"><div class="about__content"><div class="about__visual"><div class="about__image-frame"><img src="assets/images/about.jpeg" alt="درباره پولاریس"><div class="about__experience"><span class="about__experience-number">۸+</span><span class="about__experience-text">سال تجربه</span></div></div><div class="about__secondary-image"><img src="assets/images/support.webp" alt="تیم پولاریس"></div></div><div class="about__text"><span class="section__badge about__badge"><span class="badge__ornament">◉</span><span>داستان ما</span></span><h2 class="section__title">چرا <span class="text-gold">پولاریس</span> متفاوت است؟</h2><p class="about__desc">آکادمی پولاریس در سال ۱۳۹۶ با هدف ارائه آموزش‌های باکیفیت در بازارهای مالی تأسیس شد. تیم ما متشکل از تریدرهای حرفه‌ای با سابقه بیش از ۱۰ سال است.</p><div class="about__values"><div class="about__value"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>شفافیت</span></div><div class="about__value"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>تخصص</span></div><div class="about__value"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>نتایج واقعی</span></div><div class="about__value"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>پشتیبانی دائمی</span></div></div></div></div></div>
+        </section>
+
+        <!-- STATS SECTION -->
+        <section class="stats section" id="stats">
+            <div class="container"><div class="section__header"><span class="section__badge"><span class="badge__ornament">◈</span><span>افتخارات</span><span class="badge__ornament">◈</span></span><h2 class="section__title">پولاریس در <span class="text-gold">اعداد</span></h2></div><div class="stats__grid"><div class="stat-item"><div class="stat-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><span class="stat-item__number" data-count="12500">۱۲۵۰۰+</span><span class="stat-item__label">دانشجوی فعال</span></div><div class="stat-item"><div class="stat-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15"/></svg></div><span class="stat-item__number" data-count="380">۳۸۰+</span><span class="stat-item__label">دوره تخصصی</span></div><div class="stat-item"><div class="stat-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><span class="stat-item__number" data-count="25000">۲۵۰۰۰+</span><span class="stat-item__label">ساعت آموزش</span></div><div class="stat-item"><div class="stat-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><span class="stat-item__number" data-count="98">۹۸٪</span><span class="stat-item__label">رضایت</span></div></div></div>
+        </section>
+
+        <!-- TEAM SECTION -->
+        <section class="team section" id="team">
+            <div class="container"><div class="section__header"><span class="section__badge"><span class="badge__ornament">❖</span><span>اساتید برتر</span></span><h2 class="section__title">تیم <span class="text-gold">حرفه‌ای</span> پولاریس</h2></div><div class="team__grid"><div class="team-card"><div class="team-card__image"><img src="assets/images/user2.jpg" alt="محمد کریمی"></div><h4 class="team-card__name">محمد کریمی</h4><span class="team-card__role">مدرس ارشد فارکس</span><p class="team-card__bio">۱۰ سال سابقه ترید در بازار فارکس، متخصص پرایس اکشن و ICT</p></div><div class="team-card"><div class="team-card__image"><img src="assets/images/user3.jpg" alt="احمد نوروزی"></div><h4 class="team-card__name">احمد نوروزی</h4><span class="team-card__role">متخصص تحلیل تکنیکال</span><p class="team-card__bio">۸ سال تجربه تحلیل تکنیکال، متخصص الگوهای هارمونیک</p></div><div class="team-card"><div class="team-card__image"><img src="assets/images/user1.jpg" alt="زهرا رحیمی"></div><h4 class="team-card__name">زهرا رحیمی</h4><span class="team-card__role">مدرس ارزهای دیجیتال</span><p class="team-card__bio">فعال در بازار کریپتو از سال ۲۰۱۶، تحلیلگر آنچین</p></div><div class="team-card"><div class="team-card__image"><img src="assets/images/user4.jpg" alt="رضا عباسی"></div><h4 class="team-card__name">رضا عباسی</h4><span class="team-card__role">روانشناس بازار</span><p class="team-card__bio">روانشناس بالینی و کوچ تریدینگ</p></div></div></div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section class="testimonials section" id="testimonials">
+<div class="container"><div class="section__header"><span class="section__badge"><span class="badge__ornament">★</span><span>نظرات دانشجویان</span></span><h2 class="section__title">مشتریان <span class="text-gold">پولاریس</span> چه می‌گویند؟</h2></div><div class="testimonials__grid"><div class="testimonial-card"><div class="testimonial-card__stars">★★★★★</div><p class="testimonial-card__text">"پس از ۲ سال ضرر در فارکس، با دوره‌های پولاریس تونستم سودده بشم."</p><div class="testimonial-card__author"><img src="assets/images/avatar-1.jpg" alt="سارا محمدی"><div><strong>سارا محمدی</strong><span>تریدر فارکس</span></div></div></div><div class="testimonial-card"><div class="testimonial-card__stars">★★★★★</div><p class="testimonial-card__text">"با یادگیری اصولی ارز دیجیتال، تونستم سبد سرمایه‌ام رو متحول کنم."</p><div class="testimonial-card__author"><img src="assets/images/avatar-2.jpg" alt="علی رضایی"><div><strong>علی رضایی</strong><span>سرمایه‌گذار کریپتو</span></div></div></div><div class="testimonial-card"><div class="testimonial-card__stars">★★★★★</div><p class="testimonial-card__text">"دوره بورس ایرانشون مسیر حرفه‌ای شدن رو برام هموار کرد."</p><div class="testimonial-card__author"><img src="assets/images/avatar-3.jpg" alt="مریم حسینی"><div><strong>مریم حسینی</strong><span>تحلیلگر بورس</span></div></div></div></div></div>        </section>
+
+        <!-- BLOG SECTION -->
+        <section class="blog section" id="blog">
+            <div class="container"><div class="section__header"><span class="section__badge"><span class="badge__ornament">❋</span><span>مقالات آموزشی</span></span><h2 class="section__title">بلاگ <span class="text-gold">پولاریس</span></h2></div><div class="blog__grid"><article class="blog-card"><div class="blog-card__image"><img src="assets/images/1564671557_DescendingTriangleBearish.png" alt="الگوهای کندل"></div><div class="blog-card__body"><span class="blog-card__date">۲۵ فروردین ۱۴۰۵</span><h3>۱۰ الگوی کندلی که باید بشناسید</h3><p>قدرتمندترین الگوهای کندل استیک برای ورود و خروج</p><a href="blog-post.html" class="blog-card__link">مطالعه بیشتر →</a></div></article><article class="blog-card"><div class="blog-card__image"><img src="assets/images/Stock-chart-pattern-cup-handle.png" alt="مدیریت سرمایه"></div><div class="blog-card__body"><span class="blog-card__date">۱۸ فروردین ۱۴۰۵</span><h3>مدیریت سرمایه در ترید</h3><p>قوانین طلایی بقا در بازارهای مالی</p><a href="blog.html" class="blog-card__link">مطالعه بیشتر →</a></div></article><article class="blog-card"><div class="blog-card__image"><img src="assets/images/Group-10985.jpg" alt="روانشناسی بازار"></div><div class="blog-card__body"><span class="blog-card__date">۱۰ فروردین ۱۴۰۵</span><h3>چگونه بر ترس و طمع غلبه کنیم؟</h3><p>تکنیک‌های عملی برای تصمیم‌گیری منطقی</p><a href="blog.html" class="blog-card__link">مطالعه بیشتر →</a></div></article></div></div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="faq section" id="faq">
+<div class="container"><div class="section__header"><span class="section__badge"><span class="badge__ornament">⁂</span><span>سوالات شما</span></span><h2 class="section__title">سوالات <span class="text-gold">متداول</span></h2></div><div class="faq__list"><div class="faq-item active"><button class="faq-item__question"><span>آیا نیاز به سرمایه زیاد دارم؟</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-item__answer"><p>خیر. می‌توانید با حداقل ۱۰۰ دلار شروع کنید. مهم‌تر از سرمایه، دانش شماست.</p></div></div><div class="faq-item"><button class="faq-item__question"><span>دوره‌ها برای چه سطحی است؟</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-item__answer"><p>برای تمام سطوح از مبتدی مطلق تا حرفه‌ای.</p></div></div><div class="faq-item"><button class="faq-item__question"><span>آیا پشتیبانی دائمی دارید؟</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-item__answer"><p>بله. پشتیبانی ۲۴/۷ و منتور اختصاصی برای هر دانشجو.</p></div></div><div class="faq-item"><button class="faq-item__question"><span>ضمانت بازگشت وجه دارید؟</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-item__answer"><p>بله. ۳۰ روز ضمانت بازگشت کامل وجه بدون هیچ شرطی.</p></div></div><div class="faq-item"><button class="faq-item__question"><span>آیا گواهی پایان دوره ارائه می‌شود؟</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-item__answer"><p>بله. پس از گذراندن موفقیت‌آمیز دوره، گواهی معتبر با تایید آکادمی پولاریس به شما اعطا می‌شود.</p></div></div><div class="faq-item"><button class="faq-item__question"><span>آیا دوره‌ها به‌روزرسانی می‌شوند؟</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-item__answer"><p>بله. محتوای دوره‌ها به‌طور مداوم با توجه به آخرین تغییرات بازار و تکنولوژی به‌روزرسانی می‌شود و دانشجویان قبلی رایگان به نسخه‌های جدید دسترسی دارند.</p></div></div></div></div>        </section>
+
+        <!-- CTA BANNER -->
+        <section class="cta-banner section">
+            <div class="container"><div class="cta-banner__inner"><div class="cta-banner__content"><h2>آماده‌اید مسیر <span class="text-gold">ثروت‌آفرینی</span> را شروع کنید؟</h2><p>همین امروز به خانواده ۱۲,۵۰۰+ نفری پولاریس بپیوندید و اولین گام را بردارید.</p><div class="cta-banner__actions"><a href="#courses" class="btn btn--gold btn--lg">مشاهده دوره‌ها</a><button class="btn btn--outline-gold btn--lg" data-modal="advisor">مشاوره رایگان</button></div></div><div class="cta-banner__image"><img src="assets/images/forex-image.jpg" alt="شروع کنید"></div></div></div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter section" id="newsletter">
+            <div class="container"><div class="newsletter__inner"><div class="newsletter__decoration"><svg viewBox="0 0 200 200" width="200" height="200"><circle cx="100" cy="100" r="98" fill="none" stroke="#FFD700" stroke-width="0.5" opacity="0.3"/><polygon points="100,20 110,75 170,75 118,105 138,165 100,125 62,165 82,105 30,75 90,75" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.5"/></svg></div><h2 class="newsletter__title">عضو خانواده <span class="text-gold">پولاریس</span> شوید</h2><p class="newsletter__desc">جدیدترین تحلیل‌ها، تخفیف‌ها و مقالات را در ایمیل خود دریافت کنید.</p><form class="newsletter__form" id="newsletterForm"><input type="email" class="newsletter__input" placeholder="ایمیل خود را وارد کنید" required><button type="submit" class="btn btn--gold btn--lg">عضویت</button></form></div></div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact section" id="contact">
+            <div class="container"><div class="section__header"><span class="section__badge"><span class="badge__ornament">✉</span><span>ارتباط با ما</span></span><h2 class="section__title">با <span class="text-gold">پولاریس</span> در تماس باشید</h2></div><div class="contact__content"><div class="contact__info"><div class="contact__info-card"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFD700"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><div><h4>آدرس</h4><p>تهران، خیابان ولیعصر، برج فناوری، طبقه ۱۲</p></div></div><div class="contact__info-card"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFD700"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4"/><polyline points="22,6 12,13 2,6"/></svg><div><h4>ایمیل</h4><p>info@polaris.academy</p></div></div><div class="contact__info-card"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFD700"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><div><h4>تلفن</h4><p>۰۲۱-۱۲۳۴۵۶۷۸</p></div></div><div class="contact__info-card"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFD700"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><div><h4>ساعات کاری</h4><p>شنبه تا پنجشنبه — ۹ صبح تا ۹ شب</p></div></div></div><form class="contact__form" id="contactForm"><div class="form__row"><input type="text" class="form__input" placeholder="نام کامل" required><input type="email" class="form__input" placeholder="ایمیل" required></div><input type="text" class="form__input" placeholder="موضوع" required><textarea class="form__input form__textarea" placeholder="پیام شما" rows="5" required></textarea><button type="submit" class="btn btn--gold btn--lg">ارسال پیام</button></form></div></div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand"><div class="footer__logo"><svg viewBox="0 0 40 40" width="40" height="40"><polygon points="20,2 26,15 40,15 30,22 34,38 20,29 6,38 10,22 0,15 14,15" fill="#FFD700"/></svg><span>پولاریس <em>Polaris</em></span></div><p>معتبرترین مرجع آموزش ترید در ایران. آینده مالی خود را با ما بسازید.</p></div>
+                <div><h4>دسترسی سریع</h4><ul><li><a href="#home">خانه</a></li><li><a href="#courses">دوره‌ها</a></li><li><a href="#about">درباره ما</a></li><li><a href="#blog">بلاگ</a></li><li><a href="#faq">سوالات متداول</a></li></ul></div>
+                <div><h4>دوره‌ها</h4><ul><li><a href="#courses">فارکس</a></li><li><a href="#courses">ارز دیجیتال</a></li><li><a href="#courses">بورس</a></li><li><a href="#courses">تحلیل تکنیکال</a></li><li><a href="#courses">روانشناسی ترید</a></li></ul></div>
+                <div><h4>ارتباط</h4><ul><li><a href="tel:02112345678">۰۲۱-۱۲۳۴۵۶۷۸</a></li><li><a href="mailto:info@polaris.academy">info@polaris.academy</a></li><li><a href="#contact">تماس با ما</a></li><li><a href="#">تلگرام</a></li><li><a href="#">اینستاگرام</a></li></ul></div>
+            </div>
+            <div class="footer__bottom"><span>© ۱۴۰۵ آکادمی پولاریس | تمامی حقوق محفوظ است</span></div>
+        </div>
+    </footer>
+
+    <!-- MODALS -->
+    <!-- Account Modal -->
+    <div class="modal-overlay" id="accountModal">
+        <div class="modal modal--luxury">
+            <button class="modal__close">&times;</button>
+            <div class="modal__header">
+                <svg viewBox="0 0 50 50" width="50" height="50"><polygon points="25,2 32,18 50,18 36,28 42,48 25,36 8,48 14,28 0,18 18,18" fill="#FFD700"/></svg>
+                <h3>حساب کاربری</h3>
+                <p>به خانواده پولاریس خوش آمدید</p>
+            </div>
+
+            <div class="modal__tabs">
+                <button class="modal__tab active" data-tab="login">ورود</button>
+                <button class="modal__tab" data-tab="register">ثبت‌نام</button>
+            </div>
+            
+            <!-- فرم لاگین -->
+            <form class="modal__form active" id="loginForm">
+                <div class="input-icon-group">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <input type="text" id="loginUsername" class="form__input" placeholder="نام کاربری" required autocomplete="off">
+                </div>
+                <div class="input-icon-group">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <input type="password" id="loginPassword" class="form__input" placeholder="رمز عبور" required>
+                </div>
+                <button type="submit" class="btn btn--gold btn-block">ورود به حساب</button>
+                
+                <!-- راهنمای ورود -->
+                <div class="login-hint">
+                    <div class="hint-title">📋 اطلاعات ورود آزمایشی:</div>
+                    <div class="hint-items">
+                        <div class="hint-item"><span>👤 نام کاربری:</span> <code>admin</code></div>
+                        <div class="hint-item"><span>🔑 رمز عبور:</span> <code>admin</code></div>
+                    </div>
+                </div>
+            </form>
+            
+            <!-- فرم ثبت‌نام -->
+            <form class="modal__form" id="registerForm">
+                <div class="input-icon-group">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <input type="text" id="regFullName" class="form__input" placeholder="نام کامل" required>
+                </div>
+                <div class="input-icon-group">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <input type="email" id="regEmail" class="form__input" placeholder="ایمیل" required>
+                </div>
+                <div class="input-icon-group">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <input style="direction: rtl;" type="tel" id="regPhone" class="form__input" placeholder="شماره تماس" required>
+                </div>
+                <div class="input-icon-group">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <input type="password" id="regPassword" class="form__input" placeholder="رمز عبور" required>
+                </div>
+                <button type="submit" class="btn btn--gold btn-block">ثبت‌نام</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal-overlay" id="advisorModal"><div class="modal modal--luxury"><button class="modal__close">&times;</button><div class="modal__header"><svg viewBox="0 0 50 50" width="50" height="50"><polygon points="25,2 32,18 50,18 36,28 42,48 25,36 8,48 14,28 0,18 18,18" fill="#FFD700"/></svg><h3>درخواست مشاوره</h3><p>مشاوران ما در کمتر از ۲۴ ساعت با شما تماس می‌گیرند.</p></div><form id="advisorForm"><input type="text" class="form__input" placeholder="نام کامل" required><input style="direction: rtl;" type="tel" class="form__input" placeholder="شماره تماس" required><select class="form__input" required><option value="">انتخاب کنید...</option><option value="forex">فارکس</option><option value="crypto">ارز دیجیتال</option><option value="stock">بورس ایران</option><option value="technical">تحلیل تکنیکال</option><option value="psychology">روانشناسی</option><option value="vip">VIP</option></select><textarea class="form__input form__textarea" placeholder="توضیحات (اختیاری)" rows="3"></textarea><button type="submit" class="btn btn--gold">درخواست مشاوره</button></form></div></div>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

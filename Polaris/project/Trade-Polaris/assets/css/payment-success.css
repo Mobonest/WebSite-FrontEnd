@@ -1,0 +1,218 @@
+/* Payment Success Page Styles */
+.payment-page {
+    padding: 140px 0 100px;
+    min-height: calc(100vh - 90px);
+    background: var(--bg-primary);
+}
+.payment-container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.payment-card {
+    background: var(--bg-card);
+    border-radius: 32px;
+    border: 1px solid var(--border-gold);
+    padding: 48px 32px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.payment-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #10b981;
+}
+.status-icon {
+    width: 90px;
+    height: 90px;
+    background: rgba(16, 185, 129, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    border: 2px solid #10b981;
+}
+.status-icon svg {
+    width: 48px;
+    height: 48px;
+    color: #10b981;
+}
+.payment-card h2 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #10b981;
+}
+.payment-card p {
+    color: var(--text-secondary);
+    margin-bottom: 32px;
+    line-height: 1.8;
+}
+.payment-details {
+    background: var(--bg-tertiary);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 24px;
+    text-align: right;
+}
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-light);
+    font-size: 14px;
+}
+.detail-row:last-child {
+    border-bottom: none;
+}
+.detail-row span:first-child {
+    color: var(--text-tertiary);
+}
+.detail-row span:last-child {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Purchased Courses */
+.purchased-courses {
+    margin-top: 24px;
+    text-align: right;
+}
+.purchased-courses h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.purchased-courses-list {
+    margin-bottom: 24px;
+}
+.course-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    background: var(--bg-secondary);
+    border-radius: 16px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+.course-item:hover {
+    transform: translateX(-5px);
+    border-color: var(--border-gold);
+}
+.course-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.course-item-info {
+    flex: 1;
+    text-align: right;
+}
+.course-item-info h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.course-item-info p {
+    font-size: 11px;
+    color: var(--text-tertiary);
+    margin: 0;
+}
+.course-item-price {
+    font-weight: 700;
+    color: var(--gold-primary);
+    font-size: 13px;
+}
+
+/* Next Steps */
+.next-steps {
+    background: linear-gradient(135deg, rgba(255,215,0,0.05) 0%, transparent 100%);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 24px;
+    text-align: right;
+    border: 1px solid var(--border-gold);
+}
+.next-steps h4 {
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: var(--gold-primary);
+}
+.next-steps ul {
+    list-style: none;
+    padding-right: 0;
+}
+.next-steps li {
+    padding: 8px 0;
+    font-size: 13px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.next-steps li svg {
+    width: 18px;
+    height: 18px;
+    color: var(--gold-primary);
+    flex-shrink: 0;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+.btn-primary {
+    background: var(--gradient-gold);
+    color: #000;
+    font-weight: 700;
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+}
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--border-gold);
+    color: var(--gold-primary);
+}
+.btn-outline:hover {
+    background: var(--bg-glass-strong);
+    border-color: var(--gold-primary);
+}
+
+@media (max-width: 576px) {
+    .payment-page {
+        padding: 120px 0 60px;
+    }
+    .payment-card {
+        padding: 32px 20px;
+    }
+    .action-buttons {
+        flex-direction: column;
+    }
+    .action-buttons .btn {
+        width: 100%;
+    }
+    .course-item {
+        flex-wrap: wrap;
+    }
+    .course-item-price {
+        width: 100%;
+        text-align: right;
+        margin-top: 8px;
+    }
+}

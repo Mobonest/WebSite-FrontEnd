@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دوره فارکس جامع | پولاریس آکادمی</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,2 62,38 100,38 70,58 82,95 50,72 18,95 30,58 0,38 38,38' fill='%23FFD700'/%3E%3C/svg%3E">
+    
+    <!-- Fonts -->
+    <link rel="preload" href="assets/fonts/Peyda-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="assets/fonts/Peyda-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/course-single.css">
+</head>
+<body class="polaris-body">
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__inner">
+            <svg viewBox="0 0 120 120" width="90" height="90">
+                <defs><linearGradient id="pl"><stop offset="0%" stop-color="#FFD700"/><stop offset="100%" stop-color="#FF6B00"/></linearGradient></defs>
+                <polygon points="60,5 72,38 110,38 80,58 92,95 60,72 28,95 40,58 10,38 48,38" fill="url(#pl)">
+                    <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="3s" repeatCount="indefinite"/>
+                </polygon>
+            </svg>
+            <div class="preloader__text">
+                <span class="preloader__fa">پولاریس</span>
+                <span class="preloader__en">Polaris</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header__glow"></div>
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">
+                    <div class="header__logo-icon">
+                        <svg viewBox="0 0 60 60" width="48" height="48">
+                            <polygon points="30,3 39,22 60,22 44,37 50,57 30,44 10,57 16,37 0,22 21,22" fill="#FFD700"/>
+                            <polygon points="30,10 36,24 52,24 40,33 44,50 30,40 16,50 20,33 8,24 24,24" fill="#050505"/>
+                        </svg>
+                    </div>
+                    <div class="header__logo-text">
+                        <span class="header__logo-main">پولاریس</span>
+                        <span class="header__logo-sub">Polaris Trading Academy</span>
+                    </div>
+                </a>
+
+                <nav class="header__nav" id="mainNav">
+                    <ul class="header__menu">
+                        <li class="header__menu-item"><a href="index.html#home" class="header__menu-link"><span class="menu__icon">✦</span><span class="menu__text">خانه</span></a></li>
+                        <li class="header__menu-item"><a href="index.html#courses" class="header__menu-link"><span class="menu__icon">◆</span><span class="menu__text">دوره‌ها</span></a></li>
+                        <li class="header__menu-item"><a href="index.html#about" class="header__menu-link"><span class="menu__icon">◉</span><span class="menu__text">درباره ما</span></a></li>
+                        <li class="header__menu-item"><a href="index.html#features" class="header__menu-link"><span class="menu__icon">◈</span><span class="menu__text">خدمات</span></a></li>
+                        <li class="header__menu-item"><a href="blog.html" class="header__menu-link"><span class="menu__icon">❋</span><span class="menu__text">بلاگ</span></a></li>
+                        <li class="header__menu-item"><a href="index.html#contact" class="header__menu-link"><span class="menu__icon">✉</span><span class="menu__text">ارتباط</span></a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__actions">
+                    <button class="header__icon-btn" id="themeToggle">
+                        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                    </button>
+                    <a href="cart.html" class="header__icon-btn cart-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="9" cy="21" r="1"/>
+                            <circle cx="20" cy="21" r="1"/>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                        </svg>
+                        <span class="cart-badge" id="cartCountBadge" style="display: none;">۰</span>
+                    </a>
+                    <button class="btn btn--luxury" id="accountBtn">
+                        <span class="btn__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+                        <span class="btn__text">حساب کاربری</span>
+                    </button>
+                    <button class="header__hamburger" id="hamburgerBtn"><span></span><span></span><span></span><span></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- MAIN CONTENT - HTML مستقیم بدون JS -->
+    <main class="course-single-page">
+        <div class="course-single-container">
+            
+            <!-- هدر دوره - دو بخش: اطلاعات و کارت خرید -->
+            <div class="course-header">
+                
+                <!-- بخش اطلاعات دوره (سمت راست) -->
+                <div class="course-info">
+                    <span class="course-badge">🏆 پرفروش‌ترین دوره | رضایت ۹۸٪ دانشجویان</span>
+                    <h1>دوره جامع فارکس <span class="text-gold">از صفر تا صد</span></h1>
+                    <p class="course-description">
+                        صفر تا صد معامله‌گری در بزرگترین بازار مالی جهان — از مفاهیم پایه تا استراتژی‌های پیشرفته ICT و Smart Money. 
+                        این دوره شما را از یک مبتدی مطلق به یک تریدر حرفه‌ای و سودده تبدیل می‌کند.
+                    </p>
+                    <div class="course-meta">
+                        <div class="meta-item"><span class="meta-icon">⏱️</span> مدت: ۱۲۵ ساعت</div>
+                        <div class="meta-item"><span class="meta-icon">📚</span> تعداد جلسات: ۵۲</div>
+                        <div class="meta-item"><span class="meta-icon">📊</span> سطح: مقدماتی تا پیشرفته</div>
+                        <div class="meta-item"><span class="meta-icon">👨‍🏫</span> مدرس: محمد کریمی</div>
+                        <div class="meta-item"><span class="meta-icon">⭐</span> امتیاز: ۴.۹ (۲۴۷ نظر)</div>
+                    </div>
+                    <div class="skills-box">
+                    <h4>✨ مهارت‌هایی که در این دوره کسب می‌کنید:</h4>
+                    <div class="skills-grid">
+                        <span>📊 تحلیل تکنیکال حرفه‌ای (پیشرفته)</span>
+                        <span>🎯 پرایس اکشن و ICT (پول هوشمند)</span>
+                        <span>💰 مدیریت سرمایه اصولی و ریسک</span>
+                        <span>🧠 روانشناسی معامله‌گری حرفه‌ای</span>
+                        <span>⚙️ طراحی استراتژی معاملاتی شخصی</span>
+                        <span>🔍 تحلیل مستقل و آنالیز لحظه‌ای بازار</span>
+                        <span>📈 شناسایی نواحی عرضه و تقاضا</span>
+                        <span>🕯️ الگوهای کندل استیک پیشرفته</span>
+                        <span>🏦 شناسایی سفارشات بانکی (Order Blocks)</span>
+                        <span>🎯 مدیریت سود و ضرر (Take Profit / Stop Loss)</span>
+                        <span>📝 ژورنال نویسی حرفه‌ای معاملات</span>
+                        <span>💎 ساخت پلن معاملاتی شخصی‌سازی شده</span>
+                    </div>
+                </div>
+                </div>
+                
+                <!-- کارت خرید (سمت چپ) -->
+                <div class="course-card-side">
+                    <div class="course-card-img">
+                        <img src="assets/images/learn-Forex.jpg" alt="دوره فارکس جامع" onerror="this.src='assets/images/hero-bg.png'">
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-price">۲,۴۹۰,۰۰۰ <small>تومان</small></div>
+                        <button class="btn btn--gold btn-block" onclick="addToCart(1)">➕ افزودن به سبد خرید</button>
+                        <button class="btn btn--outline-gold btn-block" onclick="location.href='index.html#courses'">← بازگشت به دوره‌ها</button>
+                        <div class="course-features">
+                            <div class="feature-item"><span>✅</span> دسترسی مادام‌العمر</div>
+                            <div class="feature-item"><span>✅</span> گواهی پایان دوره معتبر</div>
+                            <div class="feature-item"><span>✅</span> پشتیبانی ۲۴ ساعته</div>
+                            <div class="feature-item"><span>✅</span> جلسات لایو ترید هفتگی</div>
+                            <div class="feature-item"><span>✅</span> آپدیت رایگان</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- تب‌های دوره -->
+            <div class="course-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="about">📖 درباره دوره</button>
+                    <button class="tab-btn" data-tab="syllabus">📚 سرفصل‌های کامل</button>
+                    <button class="tab-btn" data-tab="instructor">👨‍🏫 معرفی مدرس</button>
+                    <button class="tab-btn" data-tab="reviews">⭐ نظرات دانشجویان (۵)</button>
+                </div>
+                
+                
+                <!-- تب 1: درباره دوره -->
+                <div class="tab-content active" id="tab-about">
+                    <div class="about-content">
+                        <h3>📖 درباره دوره فارکس جامع پولاریس</h3>
+                        <p>دوره جامع فارکس پولاریس یک مسیر کامل و ساختاریافته برای تبدیل شدن به یک تریدر حرفه‌ای و سودده در بازار فارکس است. این دوره بر اساس آخرین استانداردهای آموزشی بازارهای مالی جهان طراحی شده و بیش از ۱۲۵ ساعت محتوای ویدیویی با کیفیت، تمرین‌های عملی، جلسات لایو ترید و پشتیبانی اختصاصی را شامل می‌شود.</p>
+                        <p><strong>🎯 هدف دوره:</strong> آموزش اصولی و بدون هیچ میانبری که شما را قادر می‌سازد تا با اعتماد به نفس و دانش کافی وارد بازار فارکس شوید و سوددهی پایدار را تجربه کنید.</p>
+                        <p><strong>📌 چرا این دوره متفاوت است؟</strong> برخلاف بسیاری از دوره‌های دیگر، ما فقط به تئوری بسنده نمی‌کنیم. شما در طول دوره با معاملات واقعی اساتید آشنا می‌شوید، استراتژی‌های عملی را در حساب دمو تمرین می‌کنید و در نهایت با یک پلن معاملاتی شخصی‌سازی شده وارد بازار واقعی می‌شوید.</p>
+                        <p><strong>✅ پیش‌نیاز:</strong> هیچ پیش‌نیازی نیاز نیست. این دوره از سطح مطلق مبتدی شروع می‌شود و تا سطح پیشرفته و حرفه‌ای ادامه می‌یابد.</p>
+                        
+                    </div>
+                </div>
+                
+                <!-- تب 2: سرفصل‌ها -->
+                <div class="tab-content" id="tab-syllabus">
+                    <div class="syllabus-list">
+                        <div class="syllabus-item open">
+                            <div class="syllabus-header" onclick="toggleSyllabus(this)">
+                                <div class="syllabus-title"><span>📘</span> فصل اول: مبانی بازار فارکس</div>
+                                <div><span class="syllabus-duration">⏱️ ۱۲ ساعت</span><svg class="syllabus-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 9l6 6 6-6"/></svg></div>
+                            </div>
+                            <div class="syllabus-body">
+                                <div class="syllabus-lesson"><span>📖 معرفی بازار فارکس و اصطلاحات پایه</span></div>
+                                <div class="syllabus-lesson"><span>📖 جفت‌ارزها و نحوه تحلیل آنها</span></div>
+                                <div class="syllabus-lesson"><span>📖 پلتفرم‌های معاملاتی MetaTrader 4/5</span></div>
+                                <div class="syllabus-lesson"><span>📖 انواع سفارشات و نحوه اجرای معاملات</span></div>
+                                <div class="syllabus-lesson"><span>📖 مدیریت حساب و مفاهیم لات و پیپ</span></div>
+                            </div>
+                        </div>
+                        <div class="syllabus-item">
+                            <div class="syllabus-header" onclick="toggleSyllabus(this)">
+                                <div class="syllabus-title"><span>📘</span> فصل دوم: تحلیل تکنیکال پایه</div>
+                                <div><span class="syllabus-duration">⏱️ ۲۰ ساعت</span><svg class="syllabus-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 9l6 6 6-6"/></svg></div>
+                            </div>
+                            <div class="syllabus-body">
+                                <div class="syllabus-lesson"><span>📖 مفاهیم حمایت و مقاومت (Support & Resistance)</span></div>
+                                <div class="syllabus-lesson"><span>📖 شناخت روند و خطوط روند (Trendlines)</span></div>
+                                <div class="syllabus-lesson"><span>📖 الگوهای کندل استیک پیشرفته</span></div>
+                                <div class="syllabus-lesson"><span>📖 الگوهای کلاسیک نموداری (سروشانه، مثلث، پرچم)</span></div>
+                                <div class="syllabus-lesson"><span>📖 مقدمه‌ای بر اندیکاتورها (MA, RSI, MACD)</span></div>
+                            </div>
+                        </div>
+                        <div class="syllabus-item">
+                            <div class="syllabus-header" onclick="toggleSyllabus(this)">
+                                <div class="syllabus-title"><span>📘</span> فصل سوم: پرایس اکشن حرفه‌ای</div>
+                                <div><span class="syllabus-duration">⏱️ ۲۵ ساعت</span><svg class="syllabus-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 9l6 6 6-6"/></svg></div>
+                            </div>
+                            <div class="syllabus-body">
+                                <div class="syllabus-lesson"><span>📖 ساختار بازار (Market Structure)</span></div>
+                                <div class="syllabus-lesson"><span>📖 Break of Structure (BOS) و Change of Character (CHoCH)</span></div>
+                                <div class="syllabus-lesson"><span>📖 نواحی تقاضا و عرضه (Supply & Demand)</span></div>
+                                <div class="syllabus-lesson"><span>📖 Order Blocks و شناسایی سفارشات بانکی</span></div>
+                                <div class="syllabus-lesson"><span>📖 Fair Value Gap (FVG) و مفاهیم نقدینگی</span></div>
+                            </div>
+                        </div>
+                        <div class="syllabus-item">
+                            <div class="syllabus-header" onclick="toggleSyllabus(this)">
+                                <div class="syllabus-title"><span>📘</span> فصل چهارم: ICT و Smart Money</div>
+                                <div><span class="syllabus-duration">⏱️ ۲۸ ساعت</span><svg class="syllabus-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 9l6 6 6-6"/></svg></div>
+                            </div>
+                            <div class="syllabus-body">
+                                <div class="syllabus-lesson"><span>📖 مفاهیم پول هوشمند (Smart Money)</span></div>
+                                <div class="syllabus-lesson"><span>📖 Identify Liquidity و نحوه شکار استاپ‌ها</span></div>
+                                <div class="syllabus-lesson"><span>📖 مفاهیم Premium و Discount در بازار</span></div>
+                                <div class="syllabus-lesson"><span>📖 الگوهای ICT (OB, FVG, Mitigation)</span></div>
+                                <div class="syllabus-lesson"><span>📖 مدیریت زمانی معاملات (Killzones)</span></div>
+                            </div>
+                        </div>
+                        <div class="syllabus-item">
+                            <div class="syllabus-header" onclick="toggleSyllabus(this)">
+                                <div class="syllabus-title"><span>📘</span> فصل پنجم: مدیریت سرمایه و روانشناسی</div>
+                                <div><span class="syllabus-duration">⏱️ ۲۰ ساعت</span><svg class="syllabus-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 9l6 6 6-6"/></svg></div>
+                            </div>
+                            <div class="syllabus-body">
+                                <div class="syllabus-lesson"><span>📖 اصول حرفه‌ای مدیریت سرمایه (Risk Management)</span></div>
+                                <div class="syllabus-lesson"><span>📖 سایزینگ پوزیشن و نسبت ریسک به ریوارد (RRR)</span></div>
+                                <div class="syllabus-lesson"><span>📖 مدیریت احساسات: ترس، طمع و انتقام‌گیری</span></div>
+                                <div class="syllabus-lesson"><span>📖 طراحی و اجرای ژورنال معاملاتی حرفه‌ای</span></div>
+                                <div class="syllabus-lesson"><span>📖 ساخت یک پلن معاملاتی شخصی‌سازی شده</span></div>
+                            </div>
+                        </div>
+                        <div class="syllabus-item">
+                            <div class="syllabus-header" onclick="toggleSyllabus(this)">
+                                <div class="syllabus-title"><span>📘</span> فصل ششم: تمرین عملی و لایو ترید</div>
+                                <div><span class="syllabus-duration">⏱️ ۲۰ ساعت</span><svg class="syllabus-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 9l6 6 6-6"/></svg></div>
+                            </div>
+                            <div class="syllabus-body">
+                                <div class="syllabus-lesson"><span>📖 تمرین استراتژی‌ها در حساب دمو</span></div>
+                                <div class="syllabus-lesson"><span>📖 تحلیل روزانه و هفتگی بازار به صورت لایو</span></div>
+                                <div class="syllabus-lesson"><span>📖 مدیریت معاملات واقعی و بحث و بررسی</span></div>
+                                <div class="syllabus-lesson"><span>📖 رفع اشکال و آنالیز معاملات انجام شده</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- تب 3: مدرس -->
+                <div class="tab-content" id="tab-instructor">
+                    <div class="instructor-card">
+                        <div class="instructor-avatar">
+                            <img src="assets/images/user2.jpg" alt="محمد کریمی" onerror="this.src='assets/images/user1.jpg'">
+                        </div>
+                        <div class="instructor-info">
+                            <h3>محمد کریمی</h3>
+                            <div class="instructor-title">مدرس ارشد فارکس و ICT | ۱۰ سال سابقه ترید موفق</div>
+                            <p class="instructor-bio">محمد کریمی با بیش از ۱۰ سال تجربه مستقیم در بازار فارکس و مدیریت پرتفوی سرمایه‌گذاران حقیقی و حقوقی، یکی از برجسته‌ترین اساتید ایران در زمینه ICT و Smart Money Concepts است. ایشان دوره‌های تخصصی متعددی را در سطح بین‌المللی گذرانده‌اند و حاصل سال‌ها تجربه عملی خود را در این دوره به صورت کاملاً عملی و کاربردی ارائه کرده‌اند.</p>
+                            <div class="instructor-stats">
+                                <span>📊 بیش از ۱۰,۰۰۰ دانشجو</span>
+                                <span>🏆 میانگین رضایت ۴.۹ از ۵</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- تب 4: نظرات -->
+                <div class="tab-content" id="tab-reviews">
+                    <div class="reviews-summary">
+                        <div class="rating-score">
+                            <div class="rating-number">۴.۹</div>
+                            <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                            <div class="rating-count">۲۴۷ نظر ثبت شده</div>
+                        </div>
+                        <div class="rating-bars">
+                            <div class="rating-bar-item"><div class="rating-star-label">۵ ستاره</div><div class="rating-bar-bg"><div class="rating-bar-fill" style="width: 87%"></div></div><div class="rating-percent">۸۷٪</div></div>
+                            <div class="rating-bar-item"><div class="rating-star-label">۴ ستاره</div><div class="rating-bar-bg"><div class="rating-bar-fill" style="width: 10%"></div></div><div class="rating-percent">۱۰٪</div></div>
+                            <div class="rating-bar-item"><div class="rating-star-label">۳ ستاره</div><div class="rating-bar-bg"><div class="rating-bar-fill" style="width: 2%"></div></div><div class="rating-percent">۲٪</div></div>
+                            <div class="rating-bar-item"><div class="rating-star-label">۲ ستاره</div><div class="rating-bar-bg"><div class="rating-bar-fill" style="width: 1%"></div></div><div class="rating-percent">۱٪</div></div>
+                        </div>
+                    </div>
+                    <div class="reviews-list">
+                        <div class="review-card">
+                            <div class="review-header"><span class="reviewer-name">سارا محمدی</span><span class="review-date">۱۴۰۵/۰۲/۱۰</span></div>
+                            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">بعد از ۲ سال ضرر در فارکس و شرکت در چندین دوره مختلف، با دوره آقای کریمی تونستم واقعاً بفهمم بازار چطور کار میکنه. مدیریت سرمایه رو عالی یاد گرفتم و الان چند ماهه سوددهی پایدار دارم. واقعاً متشکرم.</p>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-header"><span class="reviewer-name">علی رضایی</span><span class="review-date">۱۴۰۵/۰۱/۲۵</span></div>
+                            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">باورم نمیشد بشه با ICT اینقدر دقیق بازار رو تحلیل کرد. استاد کریمی خیلی روان و عملی تدریس میکنن. هر سوالی داشتم توی گروه پشتیبانی سریع جواب گرفتم. بهترین سرمایه‌گذاری عمرم بود.</p>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-header"><span class="reviewer-name">مریم حسینی</span><span class="review-date">۱۴۰۵/۰۱/۱۵</span></div>
+                            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">دوره خیلی کاملی بود. از صفر مطلق شروع کردم و الان میتونم تحلیل تکنیکال حرفه‌ای انجام بدم. جلسات لایو ترید واقعاً عالی بودن.</p>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-header"><span class="reviewer-name">رضا عابدی</span><span class="review-date">۱۴۰۵/۰۱/۰۵</span></div>
+                            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">به جرأت میتونم بگم بهترین و کامل‌ترین دوره فارکسی که دیدم. هم مباحث تکنیکال خیلی عمیق، هم روانشناسی و مدیریت سرمایه عالی.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand"><div class="footer__logo"><svg viewBox="0 0 40 40" width="40" height="40"><polygon points="20,2 26,15 40,15 30,22 34,38 20,29 6,38 10,22 0,15 14,15" fill="#FFD700"/></svg><span>پولاریس <em>Polaris</em></span></div><p>معتبرترین مرجع آموزش ترید در ایران. آینده مالی خود را با ما بسازید.</p></div>
+                <div><h4>دسترسی سریع</h4><ul><li><a href="index.html#home">خانه</a></li><li><a href="index.html#courses">دوره‌ها</a></li><li><a href="blog.html">بلاگ</a></li></ul></div>
+                <div><h4>دوره‌ها</h4><ul><li><a href="index.html#courses">فارکس</a></li><li><a href="index.html#courses">ارز دیجیتال</a></li><li><a href="index.html#courses">تحلیل تکنیکال</a></li></ul></div>
+                <div><h4>ارتباط</h4><ul><li><a href="tel:02112345678">۰۲۱-۱۲۳۴۵۶۷۸</a></li><li><a href="mailto:info@polaris.academy">info@polaris.academy</a></li></ul></div>
+            </div>
+            <div class="footer__bottom"><span>© ۱۴۰۵ آکادمی پولاریس | تمامی حقوق محفوظ است</span></div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="accountModal"><div class="modal modal--luxury"><button class="modal__close">&times;</button><div class="modal__header"><svg viewBox="0 0 50 50" width="50" height="50"><polygon points="25,2 32,18 50,18 36,28 42,48 25,36 8,48 14,28 0,18 18,18" fill="#FFD700"/></svg><h3>حساب کاربری</h3></div><div class="modal__tabs"><button class="modal__tab active" data-tab="login">ورود</button><button class="modal__tab" data-tab="register">ثبت‌نام</button></div><form class="modal__form active" id="loginForm"><input type="text" class="form__input" placeholder="نام کاربری" required><input type="password" class="form__input" placeholder="رمز عبور" required><button type="submit" class="btn btn--gold">ورود</button><div class="login-hint"><div class="hint-title">📋 اطلاعات ورود آزمایشی:</div><div class="hint-items"><div class="hint-item"><span>👤 نام کاربری:</span> <code>admin</code></div><div class="hint-item"><span>🔑 رمز عبور:</span> <code>admin</code></div></div></div></form><form class="modal__form" id="registerForm"><input type="text" class="form__input" placeholder="نام کامل" required><input type="email" class="form__input" placeholder="ایمیل" required><input style="direction: rtl;" type="tel" class="form__input" placeholder="شماره تماس" required><input type="password" class="form__input" placeholder="رمز عبور" required><button type="submit" class="btn btn--gold">ثبت‌نام</button></form></div></div>
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // تابع باز و بسته شدن سرفصل‌ها
+        function toggleSyllabus(element) {
+            const item = element.closest('.syllabus-item');
+            item.classList.toggle('open');
+        }
+        
+        // تب‌ها
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById(`tab-${tabId}`).classList.add('active');
+            });
+        });
+        
+        // اضافه به سبد خرید
+        function addToCart(courseId) {
+            let cart = JSON.parse(localStorage.getItem('polaris_cart') || '[]');
+            if (!cart.includes(courseId)) {
+                cart.push(courseId);
+                localStorage.setItem('polaris_cart', JSON.stringify(cart));
+                showToast('✅ دوره به سبد خرید اضافه شد');
+                updateCartBadge();
+            } else {
+                showToast('ℹ️ این دوره قبلاً در سبد خرید موجود است');
+            }
+        }
+        
+        function updateCartBadge() {
+            const cart = JSON.parse(localStorage.getItem('polaris_cart') || '[]');
+            const badge = document.getElementById('cartCountBadge');
+            if (badge) {
+                if (cart.length > 0) {
+                    badge.textContent = cart.length;
+                    badge.style.display = 'flex';
+                } else {
+                    badge.style.display = 'none';
+                }
+            }
+        }
+        
+        function showToast(message) {
+            let toast = document.querySelector('.toast');
+            if (toast) toast.remove();
+            toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.innerHTML = `<span>${message}</span>`;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 3000);
+        }
+        
+        updateCartBadge();
+    </script>
+</body>
+</html>

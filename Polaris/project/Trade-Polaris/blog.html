@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✦ بلاگ پولاریس | Polaris Trading Blog ✦</title>
+    <meta name="description" content="مقالات آموزشی، تحلیل‌های تخصصی و جدیدترین مطالب بازارهای مالی در بلاگ آکادمی پولاریس">
+    
+    <!-- Favicon ستاره طلایی -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,2 62,38 100,38 70,58 82,95 50,72 18,95 30,58 0,38 38,38' fill='%23FFD700'/%3E%3C/svg%3E">
+    
+    <!-- Font & Styles -->
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+</head>
+<body class="polaris-body">
+
+    <!-- ============ PRELOADER ============ -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__inner">
+            <svg viewBox="0 0 120 120" width="90" height="90">
+                <polygon points="60,5 72,38 110,38 80,58 92,95 60,72 28,95 40,58 10,38 48,38" fill="url(#pl)">
+                    <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="3s" repeatCount="indefinite"/>
+                </polygon>
+                <defs><linearGradient id="pl"><stop offset="0%" stop-color="#FFD700"/><stop offset="100%" stop-color="#FF6B00"/></linearGradient></defs>
+            </svg>
+            <div class="preloader__text"><span class="preloader__fa">پولاریس</span><span class="preloader__en">Polaris</span></div>
+        </div>
+    </div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header" id="header">
+        <div class="header__glow"></div>
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">
+                    <div class="header__logo-icon">
+                        <svg viewBox="0 0 60 60" width="48" height="48">
+                            <polygon points="30,3 39,22 60,22 44,37 50,57 30,44 10,57 16,37 0,22 21,22" fill="#FFD700"/>
+                            <polygon points="30,10 36,24 52,24 40,33 44,50 30,40 16,50 20,33 8,24 24,24" fill="#050505"/>
+                        </svg>
+                    </div>
+                    <div class="header__logo-text">
+                        <span class="header__logo-main">پولاریس</span>
+                        <span class="header__logo-sub">Polaris Trading Academy</span>
+                    </div>
+                </a>
+                <nav class="header__nav" id="mainNav">
+                    <ul class="header__menu">
+                        <li class="header__menu-item"><a href="index.html#home" class="header__menu-link"><span class="menu__icon">✦</span><span class="menu__text" data-translate="home">خانه</span></a></li>
+                        <li class="header__menu-item"><a href="index.html#courses" class="header__menu-link"><span class="menu__icon">◆</span><span class="menu__text" data-translate="courses">دوره‌ها</span></a></li>
+                        <li class="header__menu-item"><a href="index.html#about" class="header__menu-link"><span class="menu__icon">◉</span><span class="menu__text" data-translate="about">درباره ما</span></a></li>
+                        <li class="header__menu-item"><a href="index.html#features" class="header__menu-link"><span class="menu__icon">◈</span><span class="menu__text" data-translate="features">خدمات</span></a></li>
+                        <li class="header__menu-item"><a href="blog.html" class="header__menu-link active"><span class="menu__icon">❋</span><span class="menu__text" data-translate="blog">بلاگ</span></a></li>
+                        <li class="header__menu-item"><a href="index.html#contact" class="header__menu-link"><span class="menu__icon">✉</span><span class="menu__text" data-translate="contact">ارتباط</span></a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <button class="header__icon-btn" id="themeToggle"><svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg><svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button>
+                    <button class="header__icon-btn" id="langToggle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10"/></svg></button>
+                    <button class="btn btn--luxury" id="accountBtn"><span class="btn__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><span class="btn__text" data-translate="account">حساب کاربری</span></button>
+                    <button class="header__hamburger" id="hamburgerBtn"><span></span><span></span><span></span><span></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <main>
+        <!-- ============ BLOG HERO ============ -->
+        <section class="blog-hero section">
+            <div class="container">
+                <div class="blog-hero__content">
+                    <span class="section__badge"><span class="badge__ornament">❋</span><span data-translate="blog_badge">مقالات آموزشی</span></span>
+                    <h1 class="blog-hero__title">بلاگ <span class="text-gold">پولاریس</span></h1>
+                    <p class="blog-hero__desc" data-translate="blog_desc">جدیدترین تحلیل‌ها، استراتژی‌های معاملاتی و مقالات تخصصی بازارهای مالی</p>
+                    <div class="blog-search">
+                        <input type="text" class="blog-search__input" id="blogSearchInput" placeholder="جستجوی مقالات ..." data-translate-placeholder="blog_search">
+                        <button class="blog-search__btn" id="blogSearchBtn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ BLOG GRID ============ -->
+        <section class="blog-grid-section section">
+            <div class="container">
+                <div class="blog-categories" id="blogCategories">
+                    <button class="blog-category active" data-cat="all" data-translate="blog_cat_all">همه مقالات</button>
+                    <button class="blog-category" data-cat="technical" data-translate="blog_cat_technical">تحلیل تکنیکال</button>
+                    <button class="blog-category" data-cat="psychology" data-translate="blog_cat_psychology">روانشناسی</button>
+                    <button class="blog-category" data-cat="crypto" data-translate="blog_cat_crypto">ارز دیجیتال</button>
+                    <button class="blog-category" data-cat="forex" data-translate="blog_cat_forex">فارکس</button>
+                    <button class="blog-category" data-cat="education" data-translate="blog_cat_education">آموزشی</button>
+                </div>
+                <div class="blog__grid" id="blogGrid"></div>
+                <div class="blog-loadmore" id="loadMoreBtn">
+                    <button class="btn btn--outline-gold" data-translate="blog_load_more">بارگذاری بیشتر</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ NEWSLETTER ============ -->
+        <section class="newsletter section">
+            <div class="container">
+                <div class="newsletter__inner">
+                    <div class="newsletter__decoration"><svg viewBox="0 0 200 200" width="200" height="200"><circle cx="100" cy="100" r="98" fill="none" stroke="#FFD700" stroke-width="0.5" opacity="0.3"/><polygon points="100,20 110,75 170,75 118,105 138,165 100,125 62,165 82,105 30,75 90,75" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.5"/></svg></div>
+                    <h2 class="newsletter__title" data-translate="newsletter_title">عضو خانواده <span class="text-gold">پولاریس</span> شوید</h2>
+                    <p class="newsletter__desc" data-translate="newsletter_desc">جدیدترین تحلیل‌ها، تخفیف‌ها و مقالات را مستقیماً در ایمیل خود دریافت کنید.</p>
+                    <form class="newsletter__form" id="blogNewsletterForm">
+                        <input type="email" class="newsletter__input" data-translate-placeholder="newsletter_placeholder" placeholder="ایمیل خود را وارد کنید" required>
+                        <button type="submit" class="btn btn--gold btn--lg" data-translate="newsletter_btn">عضویت</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo"><svg viewBox="0 0 40 40" width="40" height="40"><polygon points="20,2 26,15 40,15 30,22 34,38 20,29 6,38 10,22 0,15 14,15" fill="#FFD700"/></svg><span>پولاریس <em>Polaris</em></span></div>
+                    <p data-translate="footer_desc">معتبرترین مرجع آموزش ترید در ایران. آینده مالی خود را با ما بسازید.</p>
+                </div>
+                <div><h4 data-translate="footer_quick">دسترسی سریع</h4><ul><li><a href="index.html#home" data-translate="home">خانه</a></li><li><a href="index.html#courses" data-translate="courses">دوره‌ها</a></li><li><a href="index.html#about" data-translate="about">درباره ما</a></li><li><a href="blog.html" data-translate="blog">بلاگ</a></li></ul></div>
+                <div><h4 data-translate="footer_courses">دوره‌ها</h4><ul><li><a href="index.html#courses" data-translate="footer_forex">فارکس</a></li><li><a href="index.html#courses" data-translate="footer_crypto">ارز دیجیتال</a></li><li><a href="index.html#courses" data-translate="footer_stock">بورس</a></li><li><a href="index.html#courses" data-translate="footer_technical">تکنیکال</a></li></ul></div>
+                <div><h4 data-translate="footer_contact">ارتباط</h4><ul><li><a href="tel:02112345678">۰۲۱-۱۲۳۴۵۶۷۸</a></li><li><a href="mailto:info@polaris.academy">info@polaris.academy</a></li></ul></div>
+            </div>
+            <div class="footer__bottom"><span data-translate="footer_rights">© ۱۴۰۵ آکادمی پولاریس</span></div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="accountModal"><div class="modal modal--luxury"><button class="modal__close">&times;</button><div class="modal__header"><svg viewBox="0 0 50 50" width="50" height="50"><polygon points="25,2 32,18 50,18 36,28 42,48 25,36 8,48 14,28 0,18 18,18" fill="#FFD700"/></svg><h3 data-translate="modal_account_title">حساب کاربری</h3></div><div class="modal__tabs"><button class="modal__tab active" data-tab="login" data-translate="modal_login">ورود</button><button class="modal__tab" data-tab="register" data-translate="modal_register">ثبت‌نام</button></div><form class="modal__form active" id="loginForm"><input type="text" class="form__input" data-translate-placeholder="modal_login_email" placeholder="ایمیل یا موبایل" required><input type="password" class="form__input" data-translate-placeholder="modal_login_password" placeholder="رمز عبور" required><button type="submit" class="btn btn--gold" data-translate="modal_login">ورود</button></form><form class="modal__form" id="registerForm"><input type="text" class="form__input" data-translate-placeholder="modal_register_name" placeholder="نام کامل" required><input type="email" class="form__input" data-translate-placeholder="modal_register_email" placeholder="ایمیل" required><input style="direction: rtl;" type="tel" class="form__input" data-translate-placeholder="modal_register_phone" placeholder="موبایل" required><input type="password" class="form__input" data-translate-placeholder="modal_register_password" placeholder="رمز عبور" required><button type="submit" class="btn btn--gold" data-translate="modal_register">ثبت‌نام</button></form></div></div>
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/blog.js"></script>
+</body>
+</html>

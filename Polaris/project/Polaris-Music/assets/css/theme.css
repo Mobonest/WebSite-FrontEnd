@@ -1,0 +1,60 @@
+:root {
+    --primary: #E11D48;
+    --primary-dark: #BE123C;
+    --primary-light: #FB7185;
+    --dark-bg: #0A0805;
+    --dark-bg-alt: #0F0D09;
+    --card-bg: #14110D;
+    --card-bg-light: #1C1813;
+    --text-light: #F5F0E8;
+    --text-light-dim: #C4BDB3;
+    --polaris-grad: linear-gradient(135deg, #E11D48 0%, #BE123C 50%, #E11D48 100%);
+    --shadow-polaris: 0 0 30px rgba(225, 29, 72, 0.3);
+    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --border-polaris: 1px solid rgba(225, 29, 72, 0.2);
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+}
+
+body.light-mode {
+    --dark-bg: #F8F6F0;
+    --dark-bg-alt: #EFECE5;
+    --card-bg: #FFFFFF;
+    --card-bg-light: #F5F1E8;
+    --text-light: #2A241C;
+    --text-light-dim: #6B6154;
+    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* Light mode overrides */
+body.light-mode .hero-overlay {
+    background: linear-gradient(to top, rgba(248,246,240,0.95) 0%, rgba(248,246,240,0.7) 40%, rgba(248,246,240,0.4) 70%, rgba(248,246,240,0.3) 100%);
+}
+
+body.light-mode .hero-title {
+    color: #2A241C;
+    text-shadow: 0 2px 20px rgba(255,255,255,0.5);
+}
+
+body.light-mode .hero-desc {
+    color: rgba(42,36,28,0.85);
+}
+
+body.light-mode .hero-floating-badge {
+    background: rgba(255,255,255,0.9);
+    color: #2A241C;
+}
+
+body.light-mode .navbar {
+    background: rgba(248,246,240,0.92);
+}
+
+body.light-mode .header-top {
+    background: #EFECE5;
+}
+
+body.light-mode .loader-overlay {
+    background: #F8F6F0;
+}
