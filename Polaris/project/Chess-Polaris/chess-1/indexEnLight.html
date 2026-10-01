@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polaris Academy | Professional Chess Training - Iran's Most Prestigious Academy</title>
+    <meta name="description" content="Polaris Academy - Iran's most prestigious chess training platform with 15 years of experience, 120 specialized courses, 45 international coaches, and over 5,000 successful students">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♟️</text></svg>">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/style-light.css">
+    <style>
+        body { direction: ltr; }
+        .hero__description, .hero__features-list, .hero__buttons { text-align: left; }
+        .hero__feature-item { justify-content: flex-start; }
+        .about__feature:hover { transform: translateX(5px); }
+        .faq__question { text-align: left; }
+        .faq__answer p { text-align: left; }
+        .footer__links a:hover { transform: translateX(5px); }
+        .course-card__includes li { padding-right: 0; padding-left: 1rem; }
+        .course-card__includes li::before { right: auto; left: 0; }
+        .blog-card__link { direction: ltr; }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== LOADER ==================== -->
+    <div class="loader" id="loader">
+        <div class="loader__content">
+            <svg class="loader__logo" width="60" height="60" viewBox="0 0 40 40" fill="none">
+                <path d="M20 4L28 12L26 14L24 12L22 14L20 12L18 14L16 12L14 14L12 12L20 4Z" fill="currentColor"/>
+                <path d="M20 12L28 20L20 36L12 20L20 12Z" fill="currentColor" opacity="0.3"/>
+                <rect x="8" y="22" width="24" height="4" rx="2" fill="currentColor" opacity="0.5"/>
+                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            </svg>
+            <div class="loader__spinner"></div>
+            <p class="loader__text">Polaris Academy</p>
+        </div>
+    </div>
+
+    <!-- ==================== PROGRESS BAR ==================== -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <svg class="nav__logo-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 4L28 12L26 14L24 12L22 14L20 12L18 14L16 12L14 14L12 12L20 4Z" fill="currentColor"/>
+                    <path d="M20 12L28 20L20 36L12 20L20 12Z" fill="currentColor" opacity="0.3"/>
+                    <rect x="8" y="22" width="24" height="4" rx="2" fill="currentColor" opacity="0.5"/>
+                    <rect x="14" y="28" width="12" height="3" rx="1.5" fill="currentColor" opacity="0.4"/>
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                </svg>
+                <span class="nav__logo-text">Polaris Academy</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#courses" class="nav__link">Courses</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#champions" class="nav__link">Champions</a></li>
+                    <li class="nav__item"><a href="#results" class="nav__link">Rankings</a></li>
+                    <li class="nav__item"><a href="#team" class="nav__link">Coaches</a></li>
+                    <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <a href="tel:09123456789" class="nav__phone">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                    <span class="nav__phone-number">09123456789</span>
+                </a>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Menu">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ==================== HERO SECTION ==================== -->
+        <section class="hero" id="home">
+            <div class="hero__bg-effects">
+                <div class="hero__bg-noise"></div>
+                <div class="hero__bg-grid"></div>
+                <div class="hero__bg-glow hero__bg-glow--1"></div>
+                <div class="hero__bg-glow hero__bg-glow--2"></div>
+                <div class="hero__bg-glow hero__bg-glow--3"></div>
+                <div class="hero__bg-particles" id="heroParticles"></div>
+            </div>
+            
+            <div class="hero__container container">
+                <div class="hero__data">
+                    <div class="hero__badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        Iran's Most Prestigious Chess Academy
+                    </div>
+                    
+                    <h1 class="hero__title">
+                        <span class="hero__title-line">Grandmaster</span>
+                        <span class="hero__title-line hero__title-line--highlight">Awaken the one within you</span>
+                    </h1>
+                    
+                    <p class="hero__description">
+                        Polaris Academy, with <strong>15 years of brilliant experience</strong>, has designed a comprehensive and scientific program to nurture your chess talents. 
+                        From <strong>learning the basics</strong> to <strong>advanced techniques of world grandmasters</strong>, 
+                        we are with you every step of the way. With <strong>internationally titled coaches</strong>, 
+                        a dedicated educational platform, and round-the-clock support, we guarantee you will reach the highest level of your chess ability.
+                    </p>
+
+                    <div class="hero__features-list">
+                        <div class="hero__feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Training from beginner to championship with scientific methods</span>
+                        </div>
+                        <div class="hero__feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Access to educational videos and exclusive materials</span>
+                        </div>
+                        <div class="hero__feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>24-hour support by distinguished coaches</span>
+                        </div>
+                        <div class="hero__feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Official and verifiable course completion certificate</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero__buttons">
+                        <a href="#courses" class="btn btn--primary btn--lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            View Training Courses
+                        </a>
+                        <a href="#contact" class="btn btn--consult btn--lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                            Request Free Consultation
+                        </a>
+                    </div>
+
+                    <div class="hero__stats">
+                        <div class="hero__stat">
+                            <span class="hero__stat-number" data-count="5000">5000+</span>
+                            <span class="hero__stat-label">Successful Students</span>
+                            <p class="hero__stat-desc">From across Iran</p>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number" data-count="120">120+</span>
+                            <span class="hero__stat-label">Specialized Courses</span>
+                            <p class="hero__stat-desc">Beginner to advanced</p>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number" data-count="15">15</span>
+                            <span class="hero__stat-label">Years of Experience</span>
+                            <p class="hero__stat-desc">Continuous activity</p>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number" data-count="45">45+</span>
+                            <span class="hero__stat-label">International Coaches</span>
+                            <p class="hero__stat-desc">With official titles</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__visual">
+                    <div class="hero__image-card">
+                        <div class="hero__image-frame">
+                            <img src="assets/images/hero-chess-bg.webp" alt="Professional chess training at Polaris Academy" class="hero__image" loading="eager" onerror="this.style.display='none'; this.parentElement.classList.add('hero__image-placeholder');">
+                        </div>
+                        <div class="hero__image-badge">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>Top Academy 2025</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero__floating-cards">
+                        <div class="hero__float-card hero__float-card--1">
+                            <span class="hero__float-number">4.9</span>
+                            <span class="hero__float-label">Student Rating</span>
+                            <div class="hero__float-stars">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                        </div>
+                        <div class="hero__float-card hero__float-card--2">
+                            <span class="hero__float-number">24/7</span>
+                            <span class="hero__float-label">Permanent Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__scroll">
+                <span>Scroll for more</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+        </section>
+
+                <!-- ==================== COURSES SECTION ==================== -->
+        <section class="courses section" id="courses">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__icon-wrapper2">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h2 class="section__title">Specialized Training Courses</h2>
+                    <p class="section__subtitle">Choose your learning path intelligently and progress from beginner to grandmaster. All courses are designed and taught by international coaches.</p>
+                    <div class="section__divider">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+
+                <div class="courses__filter">
+                    <button class="courses__filter-btn active" data-filter="all">All Courses</button>
+                    <button class="courses__filter-btn" data-filter="beginner">Beginner</button>
+                    <button class="courses__filter-btn" data-filter="intermediate">Intermediate</button>
+                    <button class="courses__filter-btn" data-filter="advanced">Advanced</button>
+                    <button class="courses__filter-btn" data-filter="master">Professional</button>
+                </div>
+
+                <div class="courses__grid">
+                    <!-- Course 1 -->
+                    <article class="course-card" data-category="beginner" data-aos="fade-up">
+                        <div class="course-card__image">
+                            <img src="assets/images/img1.jpg" alt="Beginner chess course" loading="lazy" onerror="this.style.display='none'">
+                            <span class="course-card__badge course-card__badge--popular">Most Popular</span>
+                            <div class="course-card__overlay">
+                                <a href="#contact" class="btn btn--primary btn--sm">Request Consultation</a>
+                            </div>
+                        </div>
+                        <div class="course-card__body">
+                            <div class="course-card__level">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+                                Level: Beginner
+                            </div>
+                            <h3 class="course-card__title">Chess Fundamentals & Principles</h3>
+                            <p class="course-card__desc">Complete chess rules training with piece movements, basic tactics, opening principles, and elementary strategies for absolute beginners.</p>
+                            <div class="course-card__info">
+                                <span>12 Sessions</span>
+                                <span>6 Hours Video</span>
+                                <span>2340 Students</span>
+                            </div>
+                            <div class="course-card__includes">
+                                <h4>Included in this course:</h4>
+                                <ul>
+                                    <li>Complete FIDE rules training</li>
+                                    <li>Piece movements and values</li>
+                                    <li>Essential checkmate patterns</li>
+                                    <li>Opening principles</li>
+                                    <li>Simple tactics</li>
+                                    <li>Exclusive handbook</li>
+                                </ul>
+                            </div>
+                            <div class="course-card__footer">
+                                <div class="course-card__price">
+                                    <span class="course-card__price-old">499,000 Toman</span>
+                                    <span class="course-card__price-new">299,000 Toman</span>
+                                    <span class="course-card__discount">40% OFF</span>
+                                </div>
+                                <a href="#contact" class="btn btn--primary">Purchase & Consult</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Course 2 -->
+                    <article class="course-card course-card--featured" data-category="intermediate" data-aos="fade-up" data-aos-delay="100">
+                        <div class="course-card__image">
+                            <img src="assets/images/img2.webp" alt="Intermediate chess course" loading="lazy" onerror="this.style.display='none'">
+                            <span class="course-card__badge course-card__badge--bestseller">Best Seller</span>
+                            <div class="course-card__overlay">
+                                <a href="#contact" class="btn btn--primary btn--sm">Request Consultation</a>
+                            </div>
+                        </div>
+                        <div class="course-card__body">
+                            <div class="course-card__level">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/></svg>
+                                Level: Intermediate
+                            </div>
+                            <h3 class="course-card__title">Advanced Tactics & Strategy</h3>
+                            <p class="course-card__desc">Master modern opening strategies with middlegame management, pawn structures, attack techniques, and historical grandmaster game studies.</p>
+                            <div class="course-card__info">
+                                <span>18 Sessions</span>
+                                <span>10 Hours Video</span>
+                                <span>1850 Students</span>
+                            </div>
+                            <div class="course-card__includes">
+                                <h4>Included in this course:</h4>
+                                <ul>
+                                    <li>Modern opening strategies</li>
+                                    <li>Middlegame management</li>
+                                    <li>Pawn structures</li>
+                                    <li>Attack and defense</li>
+                                    <li>Grandmaster game studies</li>
+                                    <li>Time management</li>
+                                </ul>
+                            </div>
+                            <div class="course-card__footer">
+                                <div class="course-card__price">
+                                    <span class="course-card__price-old">799,000 Toman</span>
+                                    <span class="course-card__price-new">599,000 Toman</span>
+                                    <span class="course-card__discount">25% OFF</span>
+                                </div>
+                                <a href="#contact" class="btn btn--primary">Purchase & Consult</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Course 3 -->
+                    <article class="course-card" data-category="advanced" data-aos="fade-up" data-aos-delay="200">
+                        <div class="course-card__image">
+                            <img src="assets/images/img3.webp" alt="Advanced chess course" loading="lazy" onerror="this.style.display='none'">
+                            <span class="course-card__badge course-card__badge--new">New</span>
+                            <div class="course-card__overlay">
+                                <a href="#contact" class="btn btn--primary btn--sm">Request Consultation</a>
+                            </div>
+                        </div>
+                        <div class="course-card__body">
+                            <div class="course-card__level">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                Level: Advanced
+                            </div>
+                            <h3 class="course-card__title">Endgame Theory & Analysis</h3>
+                            <p class="course-card__desc">Study advanced endgame theory with tactical sacrifices, complex positions, tournament psychology and official competition preparation.</p>
+                            <div class="course-card__info">
+                                <span>24 Sessions</span>
+                                <span>15 Hours Video</span>
+                                <span>980 Students</span>
+                            </div>
+                            <div class="course-card__includes">
+                                <h4>Included in this course:</h4>
+                                <ul>
+                                    <li>Advanced endgame theory</li>
+                                    <li>Tactical sacrifices</li>
+                                    <li>Professional game analysis</li>
+                                    <li>Tournament psychology</li>
+                                    <li>Time management</li>
+                                    <li>Competition preparation</li>
+                                </ul>
+                            </div>
+                            <div class="course-card__footer">
+                                <div class="course-card__price">
+                                    <span class="course-card__price-old">1,299,000 Toman</span>
+                                    <span class="course-card__price-new">999,000 Toman</span>
+                                    <span class="course-card__discount">23% OFF</span>
+                                </div>
+                                <a href="#contact" class="btn btn--primary">Purchase & Consult</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Course 4 -->
+                    <article class="course-card" data-category="master" data-aos="fade-up" data-aos-delay="300">
+                        <div class="course-card__image">
+                            <img src="assets/images/img4.webp" alt="Championship preparation" loading="lazy" onerror="this.style.display='none'">
+                            <span class="course-card__badge course-card__badge--special">Special</span>
+                            <div class="course-card__overlay">
+                                <a href="#contact" class="btn btn--primary btn--sm">Request Consultation</a>
+                            </div>
+                        </div>
+                        <div class="course-card__body">
+                            <div class="course-card__level">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg>
+                                Level: Professional
+                            </div>
+                            <h3 class="course-card__title">Championship Preparation</h3>
+                            <p class="course-card__desc">Dedicated training for titles with opponent analysis, match simulation, stress management, nutrition and fitness for professionals.</p>
+                            <div class="course-card__info">
+                                <span>12 Sessions</span>
+                                <span>5 Hours Video</span>
+                                <span>450 Students</span>
+                            </div>
+                            <div class="course-card__includes">
+                                <h4>Included in this course:</h4>
+                                <ul>
+                                    <li>Personal training plan</li>
+                                    <li>Opponent analysis</li>
+                                    <li>Match simulation</li>
+                                    <li>Championship psychology</li>
+                                    <li>Nutrition and fitness</li>
+                                    <li>Exclusive consulting</li>
+                                </ul>
+                            </div>
+                            <div class="course-card__footer">
+                                <div class="course-card__price">
+                                    <span class="course-card__price-old">2,499,000 Toman</span>
+                                    <span class="course-card__price-new">1,899,000 Toman</span>
+                                    <span class="course-card__discount">24% OFF</span>
+                                </div>
+                                <a href="#contact" class="btn btn--primary">Purchase & Consult</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Course 5 -->
+                    <article class="course-card" data-category="beginner" data-aos="fade-up" data-aos-delay="100">
+                        <div class="course-card__image">
+                            <img src="assets/images/img5.webp" alt="Chess for kids" loading="lazy" onerror="this.style.display='none'">
+                            <div class="course-card__overlay">
+                                <a href="#contact" class="btn btn--primary btn--sm">Request Consultation</a>
+                            </div>
+                        </div>
+                        <div class="course-card__body">
+                            <div class="course-card__level">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+                                Level: Beginner
+                            </div>
+                            <h3 class="course-card__title">Chess for Kids & Teens</h3>
+                            <p class="course-card__desc">Game-based chess for ages 6 to 16 enhancing focus, decision-making and creativity through fun interactive learning methods.</p>
+                            <div class="course-card__info">
+                                <span>16 Sessions</span>
+                                <span>8 Hours Video</span>
+                                <span>3120 Students</span>
+                            </div>
+                            <div class="course-card__includes">
+                                <h4>Included in this course:</h4>
+                                <ul>
+                                    <li>Learning through play</li>
+                                    <li>Children's focus building</li>
+                                    <li>Creativity development</li>
+                                    <li>Standard instruction</li>
+                                    <li>Course certificate</li>
+                                    <li>Internal competitions</li>
+                                </ul>
+                            </div>
+                            <div class="course-card__footer">
+                                <div class="course-card__price">
+                                    <span class="course-card__price-old">399,000 Toman</span>
+                                    <span class="course-card__price-new">249,000 Toman</span>
+                                    <span class="course-card__discount">38% OFF</span>
+                                </div>
+                                <a href="#contact" class="btn btn--primary">Purchase & Consult</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Course 6 -->
+                    <article class="course-card" data-category="intermediate" data-aos="fade-up" data-aos-delay="200">
+                        <div class="course-card__image">
+                            <img src="assets/images/img6.webp" alt="Defense in chess" loading="lazy" onerror="this.style.display='none'">
+                            <div class="course-card__overlay">
+                                <a href="#contact" class="btn btn--primary btn--sm">Request Consultation</a>
+                            </div>
+                        </div>
+                        <div class="course-card__body">
+                            <div class="course-card__level">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/></svg>
+                                Level: Intermediate
+                            </div>
+                            <h3 class="course-card__title">Art of Chess Defense</h3>
+                            <p class="course-card__desc">Master defensive techniques, crisis management, countering attacks and converting defense into counter-attacks in all game phases.</p>
+                            <div class="course-card__info">
+                                <span>14 Sessions</span>
+                                <span>8 Hours Video</span>
+                                <span>890 Students</span>
+                            </div>
+                            <div class="course-card__includes">
+                                <h4>Included in this course:</h4>
+                                <ul>
+                                    <li>Active defense principles</li>
+                                    <li>Crisis management</li>
+                                    <li>Counter attacking</li> 
+                                    <li>Endgame defense</li>
+                                    <li>Defensive game studies</li>
+                                    <li>Practical exercises</li>
+                                </ul>
+                            </div>
+                            <div class="course-card__footer">
+                                <div class="course-card__price">
+                                    <span class="course-card__price-old">649,000 Toman</span>
+                                    <span class="course-card__price-new">449,000 Toman</span>
+                                    <span class="course-card__discount">31% OFF</span>
+                                </div>
+                                <a href="#contact" class="btn btn--primary">Purchase & Consult</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="courses__more">
+                    <p>All courses include <strong>Official Certificate</strong>, <strong>6-Month Support</strong>, and <strong>Exclusive Materials</strong>.</p>
+                    <a href="#contact" class="btn btn--primary btn--lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                        Free Course Selection Consultation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__icon-wrapper2">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h2 class="section__title">About Polaris Academy</h2>
+                    <p class="section__subtitle">Our success story began with a love for chess and teaching. From a small training center to Iran's most prestigious chess academy.</p>
+                    <div class="section__divider">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+
+                <div class="about__content">
+                    <div class="about__image" data-aos="fade-left">
+                        <img src="assets/images/about.jpeg" alt="About Polaris Academy - Chess Training" loading="lazy" onerror="this.style.display='none'" style="aspect-ratio:3/4;object-fit:cover;">
+                        <div class="about__experience">
+                            <span class="about__exp-number">15</span>
+                            <span class="about__exp-label">Years of Teaching Experience</span>
+                        </div>
+                        <div class="about__stats-overlay">
+                            <div class="about__stat-item">
+                                <span>120+</span>
+                                <span>Specialized Courses</span>
+                            </div>
+                            <div class="about__stat-item">
+                                <span>5000+</span>
+                                <span>Successful Students</span>
+                            </div>
+                            <div class="about__stat-item">
+                                <span>45+</span>
+                                <span>Professional Coaches</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__text" data-aos="fade-right">
+                        <div class="about__mission">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                            <div>
+                                <h3>Our Mission</h3>
+                                <p>Discovering and nurturing chess talents across Iran and helping enthusiasts reach their highest potential. We believe that with proper training, anyone can become a professional chess player.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about__history">
+                            <h3>History of Polaris Academy</h3>
+                            <p>Polaris Academy began its activities in 2010 with the aim of elevating the level of chess in Iran, in collaboration with a group of distinguished coaches and national champions. Over 15 years of continuous activity, relying on modern teaching methods and utilizing cutting-edge technologies, we have become Iran's most prestigious chess academy.</p>
+                            <p>We are proud that over 5,000 students from across Iran and even neighboring countries have participated in our courses, many of whom are now prominent champions and successful chess coaches. Our educational programs are designed based on FIDE standards and are constantly updated.</p>
+                        </div>
+                        
+                        <div class="about__features">
+                            <div class="about__feature">
+                                <div class="about__feature-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                                </div>
+                                <div>
+                                    <strong>Internationally Titled Coaches</strong>
+                                    <p>Coaches with Grandmaster, International Master, and FIDE Master titles with global coaching experience</p>
+                                </div>
+                            </div>
+                            <div class="about__feature">
+                                <div class="about__feature-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                </div>
+                                <div>
+                                    <strong>Online & In-Person Training</strong>
+                                    <p>Dedicated educational platform with live streaming, session recording, and material downloads from anywhere, anytime</p>
+                                </div>
+                            </div>
+                            <div class="about__feature">
+                                <div class="about__feature-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                                </div>
+                                <div>
+                                    <strong>Valid & Verifiable Certificate</strong>
+                                    <p>Official course completion certificate with online verification capability, usable for participation in official tournaments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CHAMPIONS SECTION ==================== -->
+        <section class="champions section" id="champions">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__icon-wrapper2">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                    </div>
+                    <h2 class="section__title">Polaris Champions</h2>
+                    <p class="section__subtitle">Academy pride-bearers in national and international arenas. Students who started at Polaris and are now champions of Iran and the world.</p>
+                    <div class="section__divider">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+
+                <div class="champions__grid">
+                    <div class="champion-card" data-aos="flip-left">
+                        <div class="champion-card__image">
+                            <img src="assets/images/user1.jpg" alt="Arash Boroumand - National Chess Champion" loading="lazy" onerror="this.style.display='none'">
+                            <div class="champion-card__medal">1</div>
+                        </div>
+                        <div class="champion-card__info">
+                            <h3>Arash Boroumand</h3>
+                            <span class="champion-card__title">National Champion 2024</span>
+                            <p>Champion of the National Chess Championship in the adult category. Member of Iran's national chess team with 12 years of training at Polaris Academy. International Master title holder.</p>
+                            <div class="champion-card__stats">
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <strong>2450</strong><span>Rating</span></div>
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <strong>12</strong><span>Years Experience</span></div>
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg> <strong>8</strong><span>Gold Medals</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="champion-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="champion-card__image">
+                            <img src="assets/images/user2.jpg" alt="Sara Rezaei - Asian Women's Champion" loading="lazy" onerror="this.style.display='none'">
+                            <div class="champion-card__medal champion-card__medal--gold">1</div>
+                        </div>
+                        <div class="champion-card__info">
+                            <h3>Sara Rezaei</h3>
+                            <span class="champion-card__title">Asian Women's Champion 2023</span>
+                            <p>Gold medalist at the Asian Women's Chess Championship. Women's Grandmaster title holder from FIDE. 8 years of continuous training at Polaris Academy and a role model for Iranian women chess players.</p>
+                            <div class="champion-card__stats">
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <strong>2310</strong><span>Rating</span></div>
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <strong>8</strong><span>Years Experience</span></div>
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg> <strong>6</strong><span>Gold Medals</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="champion-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="champion-card__image">
+                            <img src="assets/images/user3.jpg" alt="Ali Moradi - World Youth Vice Champion" loading="lazy" onerror="this.style.display='none'">
+                            <div class="champion-card__medal champion-card__medal--silver">2</div>
+                        </div>
+                        <div class="champion-card__info">
+                            <h3>Ali Moradi</h3>
+                            <span class="champion-card__title">World Youth Vice Champion</span>
+                            <p>Silver medalist at the World Youth Chess Championship in Turkey. With 10 years of training at Polaris, rose from beginner to world vice champion. Rating of 2560 and ready to acquire the Grandmaster title.</p>
+                            <div class="champion-card__stats">
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <strong>2560</strong><span>Rating</span></div>
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <strong>10</strong><span>Years Experience</span></div>
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg> <strong>4</strong><span>World Medals</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== RESULTS SECTION ==================== -->
+        <section class="results section" id="results">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__icon-wrapper2">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <line x1="3" y1="9" x2="21" y2="9"/>
+                            <line x1="9" y1="21" x2="9" y2="9"/>
+                            <line x1="15" y1="21" x2="15" y2="9"/>
+                        </svg>
+                    </div>
+                    <h2 class="section__title">Student Results & Rankings</h2>
+                    <p class="section__subtitle">Table of achievements and scores earned by top Polaris Academy students in periodic evaluations. These results demonstrate the quality of education and the effort of our students.</p>
+                    <div class="section__divider">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+
+                <div class="results__controls" data-aos="fade-up">
+                    <div class="results__tabs">
+                        <button class="results__tab active" data-tab="all">All</button>
+                        <button class="results__tab" data-tab="beginner">Beginner</button>
+                        <button class="results__tab" data-tab="intermediate">Intermediate</button>
+                        <button class="results__tab" data-tab="advanced">Advanced</button>
+                    </div>
+                    <div class="results__search">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                        <input type="text" placeholder="Search student name..." class="results__search-input">
+                    </div>
+                </div>
+
+                <div class="results__table-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <table class="results__table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Full Name</th>
+                                <th>Course</th>
+                                <th>Level</th>
+                                <th>Theory Score</th>
+                                <th>Practical Score</th>
+                                <th>Overall Average</th>
+                                <th>Medal</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="results__row--gold">
+                                <td><span class="results__rank results__rank--1">1</span></td>
+                                <td class="results__name">Arash Boroumand</td>
+                                <td>Endgame Theory</td>
+                                <td>Advanced</td>
+                                <td>98</td>
+                                <td>99</td>
+                                <td><strong>98.5</strong></td>
+                                <td><span class="results__medal-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#FFD700"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                                </span></td>
+                                <td><span class="results__status results__status--passed">Passed</span></td>
+                            </tr>
+                            <tr class="results__row--silver">
+                                <td><span class="results__rank results__rank--2">2</span></td>
+                                <td class="results__name">Sara Rezaei</td>
+                                <td>Advanced Strategy</td>
+                                <td>Advanced</td>
+                                <td>96</td>
+                                <td>96.5</td>
+                                <td><strong>96.2</strong></td>
+                                <td><span class="results__medal-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#C0C0C0"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                                </span></td>
+                                <td><span class="results__status results__status--passed">Passed</span></td>
+                            </tr>
+                            <tr class="results__row--bronze">
+                                <td><span class="results__rank results__rank--3">3</span></td>
+                                <td class="results__name">Ali Moradi</td>
+                                <td>Tactics & Strategy</td>
+                                <td>Intermediate</td>
+                                <td>95</td>
+                                <td>94.5</td>
+                                <td><strong>94.8</strong></td>
+                                <td><span class="results__medal-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#CD7F32"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                                </span></td>
+                                <td><span class="results__status results__status--passed">Passed</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="results__rank">4</span></td>
+                                <td class="results__name">Maryam Hosseini</td>
+                                <td>Fundamentals</td>
+                                <td>Beginner</td>
+                                <td>92</td>
+                                <td>92</td>
+                                <td><strong>92</strong></td>
+                                <td><span class="results__star">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </span></td>
+                                <td><span class="results__status results__status--passed">Passed</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="results__rank">5</span></td>
+                                <td class="results__name">Reza Karimi</td>
+                                <td>Kids Chess</td>
+                                <td>Beginner</td>
+                                <td>90</td>
+                                <td>91</td>
+                                <td><strong>90.5</strong></td>
+                                <td><span class="results__star">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </span></td>
+                                <td><span class="results__status results__status--passed">Passed</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="results__rank">6</span></td>
+                                <td class="results__name">Narges Abdollahi</td>
+                                <td>Defense in Chess</td>
+                                <td>Intermediate</td>
+                                <td>89</td>
+                                <td>89.5</td>
+                                <td><strong>89.3</strong></td>
+                                <td><span class="results__star">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </span></td>
+                                <td><span class="results__status results__status--passed">Passed</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="results__rank">7</span></td>
+                                <td class="results__name">Amirhossein Taheri</td>
+                                <td>Championship Prep</td>
+                                <td>Professional</td>
+                                <td>88</td>
+                                <td>88</td>
+                                <td><strong>88</strong></td>
+                                <td><span class="results__star">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </span></td>
+                                <td><span class="results__status results__status--passed">Passed</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="results__rank">8</span></td>
+                                <td class="results__name">Zahra Mohammadi</td>
+                                <td>Fundamentals</td>
+                                <td>Beginner</td>
+                                <td>86</td>
+                                <td>87</td>
+                                <td><strong>86.5</strong></td>
+                                <td><span class="results__star">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </span></td>
+                                <td><span class="results__status results__status--passed">Passed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="results__note" data-aos="fade-up">
+                    <div class="non-non">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+                        </svg>
+                        <span>Results are updated every 3 months based on periodic exams. Minimum passing score is 70 out of 100.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+                <!-- ==================== TEAM SECTION ==================== -->
+        <section class="team section" id="team">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__icon-wrapper2">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 010 7.75"/>
+                        </svg>
+                    </div>
+                    <h2 class="section__title">Distinguished Managers & Coaches</h2>
+                    <p class="section__subtitle">The professional team of Polaris Academy consists of the best chess coaches in Iran and the world with prestigious international titles and brilliant teaching records</p>
+                    <div class="section__divider">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+
+                <div class="team__grid">
+                    <!-- Team Member 1 -->
+                    <div class="team-card" data-aos="zoom-in">
+                        <div class="team-card__image">
+                            <img src="assets/images/manager1.jpg" alt="Grandmaster Kasra - Academy Director" loading="lazy" onerror="this.style.display='none'">
+                            <div class="team-card__social-links">
+                                <a href="#" aria-label="Website">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                                </a>
+                                <a href="#" aria-label="Email">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,5 12,13 2,5"/></svg>
+                                </a>
+                                <a href="#" aria-label="LinkedIn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="16" y2="15"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team-card__info">
+                            <h3>Grandmaster Kasra</h3>
+                            <span class="team-card__role">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+                                Director & Founder of Academy
+                            </span>
+                            <p>Chess Grandmaster with twenty years of international coaching experience, former Iran national team member and Asian Games gold medalist.</p>
+                            <div class="team-card__credentials">
+                                <div>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <strong>Rating:</strong> 2650
+                                </div>
+                                <div>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <strong>Experience:</strong> 20 Years
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="team-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="team-card__image">
+                            <img src="assets/images/manager2.jpg" alt="Mina Shayegan - Senior Coach" loading="lazy" onerror="this.style.display='none'">
+                            <div class="team-card__social-links">
+                                <a href="#" aria-label="Website">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                                </a>
+                                <a href="#" aria-label="Email">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,5 12,13 2,5"/></svg>
+                                </a>
+                                <a href="#" aria-label="LinkedIn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="16" y2="15"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team-card__info">
+                            <h3>Mina Shayegan</h3>
+                            <span class="team-card__role">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+                                Senior Coach & International
+                            </span>
+                            <p>Former Iranian women's champion with twelve years of teaching experience, Women's International Master and chess specialist for children.</p>
+                            <div class="team-card__credentials">
+                                <div>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <strong>Rating:</strong> 2420
+                                </div>
+                                <div>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <strong>Experience:</strong> 12 Years
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="team-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="team-card__image">
+                            <img src="assets/images/manager3.jpg" alt="Pedram Naderi - Tactics Specialist" loading="lazy" onerror="this.style.display='none'">
+                            <div class="team-card__social-links">
+                                <a href="#" aria-label="Website">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                                </a>
+                                <a href="#" aria-label="Email">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,5 12,13 2,5"/></svg>
+                                </a>
+                                <a href="#" aria-label="LinkedIn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="16" y2="15"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team-card__info">
+                            <h3>Pedram Naderi</h3>
+                            <span class="team-card__role">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/></svg>
+                                Tactics & Analysis Specialist
+                            </span>
+                            <p>FIDE Master with ten years of professional game analysis experience, specialist in advanced attack techniques and tactics course instructor.</p>
+                            <div class="team-card__credentials">
+                                <div>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <strong>Rating:</strong> 2380
+                                </div>
+                                <div>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <strong>Experience:</strong> 10 Years
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 4 -->
+                    <div class="team-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="team-card__image">
+                            <img src="assets/images/manager4.jpg" alt="Shiva Mehrad - Sports Psychologist" loading="lazy" onerror="this.style.display='none'">
+                            <div class="team-card__social-links">
+                                <a href="#" aria-label="Website">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                                </a>
+                                <a href="#" aria-label="Email">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,5 12,13 2,5"/></svg>
+                                </a>
+                                <a href="#" aria-label="LinkedIn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="16" y2="15"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team-card__info">
+                            <h3>Shiva Mehrad</h3>
+                            <span class="team-card__role">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                                Sports Psychologist
+                            </span>
+                            <p>PhD in Sports Psychology with eight years of mental preparation experience, specialist in tournament stress management and focus enhancement.</p>
+                            <div class="team-card__credentials">
+                                <div>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <strong>Rating:</strong> 2880
+                                </div>
+                                <div>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <strong>Experience:</strong> 8 Years
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== BLOG SECTION ==================== -->
+        <section class="blog section" id="blog">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__icon-wrapper2">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                            <line x1="8" y1="7" x2="16" y2="7"/>
+                            <line x1="8" y1="11" x2="14" y2="11"/>
+                        </svg>
+                    </div>
+                    <h2 class="section__title">Specialized Chess Blog</h2>
+                    <p class="section__subtitle">Latest educational articles, world championship analysis, modern opening introductions, and inspiring stories from the chess world by Polaris coaches</p>
+                    <div class="section__divider">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+
+                <div class="blog__grid">
+                    <!-- Article 1 -->
+                    <article class="blog-card" data-aos="fade-up">
+                        <div class="blog-card__image">
+                            <img src="assets/images/blog1.jpg" alt="10 Best Openings for Beginner Players" loading="lazy" onerror="this.style.display='none'">
+                            <span class="blog-card__category">Basic Training</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    March 10, 2025
+                                </span>
+                                <span class="blog-card__author">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    GM Kasra
+                                </span>
+                            </div>
+                            <h3>10 Best Openings Every Beginner Player Must Know</h3>
+                            <p>In this comprehensive article, we introduce 10 essential and practical openings that every beginner chess player must learn. From the Sicilian Defense to the Italian Game...</p>
+                            <div class="blog-card__tags">
+                                <span>Openings</span>
+                                <span>Beginner</span>
+                                <span>Training</span>
+                            </div>
+                            <a href="blog-post-en-light.html?id=1" class="blog-card__link">
+                                Read More
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="blog-card__image">
+                            <img src="assets/images/blog2.jpg" alt="How to Increase Your Rating in 30 Days" loading="lazy" onerror="this.style.display='none'">
+                            <span class="blog-card__category">Progress & Practice</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    March 5, 2025
+                                </span>
+                                <span class="blog-card__author">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    Pedram Naderi
+                                </span>
+                            </div>
+                            <h3>Complete Training Plan: How to Increase Your Rating by 200 Points in 30 Days?</h3>
+                            <p>An intensive and scientific 30-day training plan that helps you increase your rating by up to 200 points. Includes daily exercises and tactical puzzles...</p>
+                            <div class="blog-card__tags">
+                                <span>Practice</span>
+                                <span>Rating</span>
+                                <span>Progress</span>
+                            </div>
+                            <a href="blog-post-en-light.html?id=2" class="blog-card__link">
+                                Read More
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="blog-card__image">
+                            <img src="assets/images/blog3.webp" alt="Analysis of the 2024 World Championship Final" loading="lazy" onerror="this.style.display='none'">
+                            <span class="blog-card__category">Match Analysis</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    February 28, 2025
+                                </span>
+                                <span class="blog-card__author">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    Ali Moradi
+                                </span>
+                            </div>
+                            <h3>Deep Analysis of the 2024 World Championship Final: Lessons for Club Players</h3>
+                            <p>A move-by-move examination of the exciting World Championship final. Analysis of critical decisions, mistakes with impact, and lessons every player should learn...</p>
+                            <div class="blog-card__tags">
+                                <span>Analysis</span>
+                                <span>Tournaments</span>
+                                <span>Professional</span>
+                            </div>
+                            <a href="blog-post-en-light.html?id=3" class="blog-card__link">
+                                Read More
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="blog-card__image">
+                            <img src="assets/images/blog4.webp" alt="The Art of Defense Against Aggressive Players" loading="lazy" onerror="this.style.display='none'">
+                            <span class="blog-card__category">Tactics & Defense</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    February 23, 2025
+                                </span>
+                                <span class="blog-card__author">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    Mina Shayegan
+                                </span>
+                            </div>
+                            <h3>The Art of Defense: How to Resist Aggressive Players and Win?</h3>
+                            <p>Advanced defensive techniques every chess player should know. Learn how to neutralize your opponent's wild attacks and turn the game in your favor with precise counter-attacks...</p>
+                            <div class="blog-card__tags">
+                                <span>Defense</span>
+                                <span>Tactics</span>
+                                <span>Counter-attack</span>
+                            </div>
+                            <a href="blog-post-en-light.html?id=4" class="blog-card__link">
+                                Read More
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="blog-card__image">
+                            <img src="assets/images/blog5.jpg" alt="Chess Psychology" loading="lazy" onerror="this.style.display='none'">
+                            <span class="blog-card__category">Psychology</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    February 18, 2025
+                                </span>
+                                <span class="blog-card__author">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    Shiva Mehrad
+                                </span>
+                            </div>
+                            <h3>Chess Psychology: Stress Management and Increasing Focus in Tournaments</h3>
+                            <p>Scientific stress management techniques before and during chess tournaments. Methods for increasing concentration, proper breathing, and mental preparation for facing strong opponents...</p>
+                            <div class="blog-card__tags">
+                                <span>Psychology</span>
+                                <span>Focus</span>
+                                <span>Tournaments</span>
+                            </div>
+                            <a href="blog-post-en-light.html?id=5" class="blog-card__link">
+                                Read More
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="blog-card__image">
+                            <img src="assets/images/blog6.jpg" alt="Nutrition for Professional Chess Players" loading="lazy" onerror="this.style.display='none'">
+                            <span class="blog-card__category">Health & Nutrition</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    February 12, 2025
+                                </span>
+                                <span class="blog-card__author">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    GM Kasra
+                                </span>
+                            </div>
+                            <h3>Proper Nutrition & Targeted Fitness for Professional Chess Players</h3>
+                            <p>Complete nutrition and physical training program to increase mental endurance in long tournaments. Brain-beneficial foods and specialized exercise programs for chess players...</p>
+                            <div class="blog-card__tags">
+                                <span>Nutrition</span>
+                                <span>Health</span>
+                                <span>Professional</span>
+                            </div>
+                            <a href="blog-post-en-light.html?id=6" class="blog-card__link">
+                                Read More
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FAQ SECTION ==================== -->
+        <section class="faq section" id="faq">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__icon-wrapper2">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </div>
+                    <h2 class="section__title">Frequently Asked Questions</h2>
+                    <p class="section__subtitle">Answers to frequently asked questions from students about courses, teaching methods, tuition, certificates, and more</p>
+                    <div class="section__divider">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+
+                <div class="faq__wrapper">
+                    <div class="faq__list" data-aos="fade-up">
+                        <div class="faq__item">
+                            <button class="faq__question">
+                                <span>How can I enroll in Polaris Academy courses?</span>
+                                <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                            <div class="faq__answer">
+                                <p>To enroll in Polaris Academy courses, you can use the "Purchase & Consult" button on each course page or directly call <strong>09123456789</strong>. Our educational consultants will assess your level and recommend the best course for you.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__question">
+                                <span>Are courses held online or only in-person?</span>
+                                <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                            <div class="faq__answer">
+                                <p>All Polaris Academy courses are held <strong>both online and in-person</strong>. Our dedicated online platform offers complete features including high-quality live streaming, automatic session recording, material downloads, and interactive Q&A. In-person courses are held at our branches in Tehran, Isfahan, and Shiraz.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__question">
+                                <span>Is the course completion certificate valid and verifiable?</span>
+                                <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                            <div class="faq__answer">
+                                <p>Yes, all Polaris Academy certificates are <strong>official, valid, and verifiable</strong>. These certificates are approved by the Chess Federation of the Islamic Republic of Iran and can be officially translated into English for submission to international centers.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__question">
+                                <span>Do you have courses for absolute beginners with no chess knowledge?</span>
+                                <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                            <div class="faq__answer">
+                                <p>Absolutely! Our <strong>"Chess Fundamentals & Principles"</strong> course is precisely designed for those who don't even know the names of the pieces. We start from absolute zero: board and piece recognition, basic rules, legal moves, simple checkmates, and opening principles. Our patient coaches guide you step by step.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__question">
+                                <span>How does support and troubleshooting work?</span>
+                                <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                            <div class="faq__answer">
+                                <p>Support at Polaris Academy is <strong>24 hours a day, 7 days a week</strong>. You can ask your questions through the <strong>dedicated Telegram group</strong> for each course, <strong>online chat</strong> on the educational platform, <strong>ticketing</strong> in your user panel, and <strong>phone calls</strong> with your coach. Coaches respond within a maximum of 12 hours.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__question">
+                                <span>What are the tuition payment conditions? Is installment payment available?</span>
+                                <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                            <div class="faq__answer">
+                                <p>Yes, Polaris Academy provides flexible payment conditions for students. You can pay tuition <strong>in cash with a 10% discount</strong> or in <strong>4 equal installments</strong> without any fees. For long-term courses, payment in 6 installments is also available. Special discounts are also offered for students, large families, and group registrations.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__question">
+                                <span>Is it possible to attend a free trial session before enrolling?</span>
+                                <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                            <div class="faq__answer">
+                                <p>Yes, to ensure the quality of education, Polaris Academy offers <strong>a free 45-minute trial session</strong> for all courses. In this session, you'll meet the course coach, experience the teaching method, and have your level assessed. To book a trial session, simply call <strong>09123456789</strong> or fill out the consultation form.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="faq__ask-form" data-aos="fade-up">
+                        <h3>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/></svg>
+                            Ask Your Question
+                        </h3>
+                        <p>If you have a question not listed above, ask through the form below.</p>
+                        <input type="text" placeholder="Full Name" class="contact__input" required>
+                        <input type="email" placeholder="Email (Optional)" class="contact__input">
+                        <input type="text" placeholder="Subject" class="contact__input" required>
+                        <textarea placeholder="Write your question here..." class="contact__input" rows="3" required></textarea>
+                        <button type="submit" class="btn btn--primary btn--full">Submit Question</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT SECTION ==================== -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__icon-wrapper2">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                        </svg>
+                    </div>
+                    <h2 class="section__title">Contact Us & Free Consultation</h2>
+                    <p class="section__subtitle">For course purchase, specialized consultation, or any questions, get in touch with us. Our consultants are ready to assist and guide you.</p>
+                    <div class="section__divider">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+
+                <div class="contact__wrapper" data-aos="fade-up">
+                    <div class="contact__options">
+                        <div class="contact__option-card">
+                            <div class="contact__option-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                                </svg>
+                            </div>
+                            <h3>Direct Phone Call</h3>
+                            <p>For immediate consultation and course purchase, call now</p>
+                            <a href="tel:09123456789" class="contact__option-number">0912-345-6789</a>
+                            <span class="contact__option-hours">Available daily 9 AM to 9 PM</span>
+                        </div>
+
+                        <div class="contact__option-card">
+                            <div class="contact__option-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <h3>Email</h3>
+                            <p>Official correspondence and additional information</p>
+                            <a href="mailto:info@polarisacademy.ir" class="contact__option-number">info@polarisacademy.ir</a>
+                            <span class="contact__option-hours">Response within 24 hours</span>
+                        </div>
+
+                        <div class="contact__option-card">
+                            <div class="contact__option-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+                                </svg>
+                            </div>
+                            <h3>WhatsApp & Telegram</h3>
+                            <p>Online, instant, 24/7 support</p>
+                            <a href="https://wa.me/989123456789" class="contact__option-number" target="_blank" rel="noopener">09123456789</a>
+                            <span class="contact__option-hours">24-hour response</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__divider">
+                        <span>Or contact us through the form below</span>
+                    </div>
+
+                    <form class="contact__form">
+                        <h3 class="contact__form-title">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                            Free Consultation Request Form
+                        </h3>
+                        <p class="contact__form-desc">Enter your information, and our consultants will contact you in less than 2 hours.</p>
+                        
+                        <div class="contact__form-row">
+                            <div class="contact__form-group">
+                                <label for="fullname">Full Name *</label>
+                                <input type="text" id="fullname" placeholder="Enter your full name" class="contact__input" required>
+                            </div>
+                            <div class="contact__form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" placeholder="Example: 09123456789" class="contact__input" required>
+                            </div>
+                        </div>
+
+                        <div class="contact__form-row">
+                            <div class="contact__form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="example@email.com" class="contact__input">
+                            </div>
+                            <div class="contact__form-group">
+                                <label for="course">Desired Course *</label>
+                                <select id="course" class="contact__input" required>
+                                    <option value="">Select a course</option>
+                                    <option value="beginner">Chess Fundamentals & Principles (Beginner)</option>
+                                    <option value="kids">Chess for Kids & Teenagers</option>
+                                    <option value="intermediate">Advanced Tactics & Strategy (Intermediate)</option>
+                                    <option value="defense">The Art of Defense in Chess (Intermediate)</option>
+                                    <option value="advanced">Endgame Theory & Deep Analysis (Advanced)</option>
+                                    <option value="master">Championship Tournament Preparation (Professional)</option>
+                                    <option value="consulting">Just Consultation</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="contact__form-group">
+                            <label for="message">Your Message or Question</label>
+                            <textarea id="message" placeholder="Details, questions, or anything else you'd like to share..." class="contact__input contact__textarea" rows="5"></textarea>
+                        </div>
+
+                        <div class="contact__form-consent">
+                            <label class="contact__checkbox-label">
+                                <input type="checkbox" required>
+                                <span class="contact__checkbox-custom">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                                </span>
+                                <span>By submitting this form, I accept the <a href="#">Terms and Conditions</a> of Polaris Academy.</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            Submit Consultation Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer__bg-pattern"></div>
+        
+        <div class="footer__top">
+            <div class="container footer__container">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4L28 12L26 14L24 12L22 14L20 12L18 14L16 12L14 14L12 12L20 4Z" fill="currentColor"/>
+                            <path d="M20 12L28 20L20 36L12 20L20 12Z" fill="currentColor" opacity="0.3"/>
+                            <rect x="8" y="22" width="24" height="4" rx="2" fill="currentColor" opacity="0.5"/>
+                            <rect x="14" y="28" width="12" height="3" rx="1.5" fill="currentColor" opacity="0.4"/>
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                        </svg>
+                        Polaris Academy
+                    </a>
+                    <p>Iran's most prestigious chess training academy with 15 years of brilliant experience, over 5,000 successful students, 120 specialized courses, and 45 international coaches. We pave your path to championship.</p>
+                    
+                    <div class="footer__social">
+                        <a href="#" aria-label="Instagram" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" aria-label="Telegram" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2.5L2.5 9.76 9.38 12.5l2.92 5.74L21.5 2.5z"/><line x1="9.38" y1="12.5" x2="21.5" y2="2.5"/></svg>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29.94 29.94 0 001 11.75a29.94 29.94 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29.94 29.94 0 00.46-5.33 29.94 29.94 0 00-.46-5.25z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Quick Access</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#courses">Training Courses</a></li>
+                        <li><a href="#about">About Academy</a></li>
+                        <li><a href="#champions">Our Champions</a></li>
+                        <li><a href="#results">Results & Rankings</a></li>
+                        <li><a href="#blog">Specialized Blog</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Training Courses</h4>
+                    <ul>
+                        <li><a href="#courses">Chess Fundamentals & Principles</a></li>
+                        <li><a href="#courses">Advanced Tactics & Strategy</a></li>
+                        <li><a href="#courses">Endgame Theory & Analysis</a></li>
+                        <li><a href="#courses">Championship Tournament Preparation</a></li>
+                        <li><a href="#courses">Chess for Kids & Teenagers</a></li>
+                        <li><a href="#courses">The Art of Defense in Chess</a></li>
+                        <li><a href="#contact">Private Courses</a></li>
+                        <li><a href="#contact">Free Consultation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__newsletter">
+                    <h4>Newsletter Subscription</h4>
+                    <p>Subscribe to receive the latest educational articles, special course discounts, and chess world news.</p>
+                    <form class="footer__newsletter-form">
+                        <div class="footer__newsletter-input-wrapper">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <input type="email" placeholder="Enter your email" class="footer__newsletter-input">
+                        </div>
+                        <button type="submit" class="btn btn--primary">Subscribe</button>
+                    </form>
+                    
+                    <div class="footer__certificates">
+                        <div class="footer__cert-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                            <span>E-Trust Symbol</span>
+                        </div>
+                        <div class="footer__cert-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            <span>Quality Assurance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container footer__bottom-content">
+                <p>All rights reserved by <strong>Polaris Academy</strong>. © 2025</p>
+                <div class="footer__bottom-links">
+                    <a href="#">Terms & Conditions</a>
+                    <span class="footer__separator">|</span>
+                    <a href="#">Privacy Policy</a>
+                    <span class="footer__separator">|</span>
+                    <a href="#">Site Map</a>
+                </div>
+                <p class="footer__credit">Designed & Developed with 
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    for the Chess Community of Iran
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BACK TO TOP ==================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

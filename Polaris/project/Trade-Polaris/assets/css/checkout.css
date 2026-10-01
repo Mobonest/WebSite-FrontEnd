@@ -1,0 +1,369 @@
+/* Checkout Page Styles */
+.checkout-page {
+    padding: 120px 0 80px;
+    min-height: calc(100vh - 90px);
+    background: var(--bg-primary);
+}
+.checkout-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.checkout-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.checkout-header .badge {
+    display: inline-block;
+    background: var(--bg-glass-strong);
+    border: 1px solid var(--border-gold);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    color: var(--gold-primary);
+    margin-bottom: 16px;
+}
+.checkout-header h1 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+.checkout-header p {
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+.checkout-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 32px;
+}
+
+/* Info Section */
+.section-card {
+    background: var(--bg-card);
+    border-radius: 24px;
+    padding: 28px;
+    border: 1px solid var(--border-light);
+}
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-light);
+}
+.card-header .header-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--bg-glass-strong);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.card-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.input-group {
+    position: relative;
+}
+.input-group.full-width {
+    grid-column: span 2;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    color: var(--text-primary);
+    font-family: 'Peyda', sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+.input-group input:focus, .input-group textarea:focus {
+    outline: none;
+    border-color: var(--gold-primary);
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
+}
+.input-group .input-icon {
+    position: absolute;
+    left: 16px;
+    bottom: 14px;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.divider {
+    height: 1px;
+    background: var(--border-light);
+    margin: 24px 0;
+}
+
+/* Payment Options */
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+.payment-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.payment-card:hover {
+    border-color: var(--border-gold);
+    background: var(--bg-glass-strong);
+}
+.payment-card.active {
+    border-color: var(--gold-primary);
+    background: var(--bg-glass-strong);
+}
+.payment-icon {
+    font-size: 28px;
+}
+.payment-info {
+    flex: 1;
+}
+.payment-info strong {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+.payment-info span {
+    font-size: 12px;
+    color: var(--text-tertiary);
+}
+.payment-check {
+    width: 24px;
+    height: 24px;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: var(--gold-primary);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.payment-card.active .payment-check {
+    opacity: 1;
+    border-color: var(--gold-primary);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: var(--gradient-gold);
+    border: none;
+    border-radius: 16px;
+    color: #000;
+    font-family: 'Peyda', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+}
+
+/* Order Section */
+.order-card {
+    background: var(--bg-card);
+    border-radius: 24px;
+    padding: 24px;
+    border: 1px solid var(--border-gold);
+    position: sticky;
+    top: 100px;
+}
+.order-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-light);
+}
+.order-icon {
+    font-size: 24px;
+}
+.order-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.order-items {
+    max-height: 350px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+.order-item {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-light);
+}
+.order-item-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, var(--gold-primary), var(--gold-800));
+}
+.order-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.order-item-info {
+    flex: 1;
+}
+.order-item-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.order-item-price {
+    font-size: 13px;
+    color: var(--gold-primary);
+    font-weight: 600;
+}
+
+.order-total {
+    padding-top: 16px;
+    border-top: 1px solid var(--border-light);
+}
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+.total-row.grand {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-light);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--gold-primary);
+}
+
+.order-footer {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-light);
+}
+.secure-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text-tertiary);
+}
+
+.help-card {
+    margin-top: 20px;
+    background: var(--bg-glass-strong);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid var(--border-gold);
+}
+.help-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--bg-secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.help-content strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.help-content p {
+    font-size: 12px;
+    color: var(--text-tertiary);
+    margin-bottom: 8px;
+}
+.help-phone {
+    color: var(--gold-primary);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.loading-items {
+    text-align: center;
+    padding: 40px;
+    color: var(--text-tertiary);
+}
+
+/* Toast */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--gold-primary);
+    border-radius: 12px;
+    padding: 12px 20px;
+    z-index: 10000;
+    animation: slideInRight 0.3s ease;
+}
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@media (max-width: 900px) {
+    .checkout-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    .input-group.full-width {
+        grid-column: span 1;
+    }
+}

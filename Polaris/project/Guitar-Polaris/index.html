@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="siteTitle">پولاریس آکادمی | آموزش بین‌المللی گیتار</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ==================== لودر ==================== -->
+<div class="loader-wrapper">
+    <div class="loader">
+        <svg width="100" height="80" viewBox="0 0 200 120" class="loader-svg">
+            <path d="M40,60 L80,30 L120,30 L160,60 L120,90 L80,90 L40,60Z" fill="none" stroke="#DAA520" stroke-width="3"/>
+            <circle cx="100" cy="60" r="12" fill="#DAA520"/>
+            <line x1="80" y1="50" x2="70" y2="40" stroke="#DAA520" stroke-width="3"/>
+            <line x1="120" y1="50" x2="130" y2="40" stroke="#DAA520" stroke-width="3"/>
+            <path d="M85,70 Q100,80 115,70" stroke="#DAA520" stroke-width="2" fill="none"/>
+        </svg>
+        <div class="loader-text" data-translate="loaderText">POLARIS ACADEMY</div>
+        <div class="loader-progress"></div>
+    </div>
+</div>
+
+<!-- ==================== لایه اول: نوار بالایی ==================== -->
+<div class="top-bar">
+    <div class="top-container">
+        <div class="top-left">
+            <div class="contact-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#DAA520" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span data-translate="phoneNumber">+۴۴ ۲۰ ۷۹۴۶ ۰۹۵۸</span>
+            </div>
+            <div class="contact-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#DAA520" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span data-translate="emailAddress">info@polarisacademy.com</span>
+            </div>
+        </div>
+        <div class="top-center">
+            <div class="marquee"><span data-translate="marqueeText">🔥 ثبت‌نام ترم تابستان با ۲۵٪ تخفیف ویژه | 🎸 دوره فشرده گیتار فلامنکو | 🌍 کلاس‌های آنلاین با اساتید بین‌المللی | ⭐ ۹۸٪ رضایت هنرجویان | 🏆 برنده جایزه بهترین آکادمی موسیقی ۲۰۲۴</span></div>
+        </div>
+        <div class="top-right">
+            <button class="theme-toggle" id="themeToggle">
+                <svg class="light-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
+                <svg class="dark-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <div class="lang-select-wrapper">
+                <button class="lang-select-btn">
+                    <span class="selected-lang">FA</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="lang-dropdown">
+                    <div class="lang-option" data-lang="fa">
+                        <span>فارسی</span>
+                    </div>
+                    <div class="lang-option" data-lang="en">
+                        <span>English</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== هدر اصلی ==================== -->
+<header class="main-header">
+    <div class="header-container">
+        <div class="header-right">
+            <button class="icon-btn" id="menuBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+        </div>
+        <div class="header-center logo-wrapper">
+            <svg width="48" height="48" viewBox="0 0 100 100">
+                <defs><linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#DAA520"/><stop offset="100%" stop-color="#B8860B"/></linearGradient></defs>
+                <circle cx="50" cy="50" r="44" fill="none" stroke="url(#logoGrad)" stroke-width="2.5"/>
+                <circle cx="50" cy="50" r="36" fill="none" stroke="url(#logoGrad)" stroke-width="1" stroke-dasharray="4 4"/>
+                <path d="M50 22 L63 45 L54 45 L58 62 L42 62 L46 45 L37 45 Z" fill="url(#logoGrad)" opacity="0.9"/>
+                <text x="50" y="57" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="bold" font-family="Peyda">P</text>
+            </svg>
+            <div class="logo-text"><span class="logo-title" data-translate="logoTitle">پولاریس آکادمی</span><span class="logo-sub" data-translate="logoSub">آموزش بین‌المللی گیتار</span></div>
+        </div>
+        <div class="header-left">
+            <button class="icon-btn" id="searchBtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+            <button class="icon-btn" id="userBtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
+            <button class="icon-btn cart-btn" id="cartBtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 6L2 6L4 20L20 20L22 6L18 6"/><path d="M8 6C8 3 16 3 16 6"/></svg><span class="cart-badge" data-translate="cartBadge">۳</span></button>
+        </div>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#" data-translate="home"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-5v-7H9v7H4a2 2 0 0 1-2-2z"/></svg> خانه</a></li>
+            <li><a href="#" data-translate="courses"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> دوره‌ها</a></li>
+            <li><a href="#" data-translate="masters"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> اساتید</a></li>
+            <li><a href="#" data-translate="workshops"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> کارگاه‌ها</a></li>
+            <li><a href="#" data-translate="online"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> کلاس آنلاین</a></li>
+            <li><a href="#" data-translate="store"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 6L2 6L4 20L20 20L22 6L18 6"/><path d="M8 6C8 3 16 3 16 6"/></svg> فروشگاه</a></li>
+            <li><a href="#" data-translate="blog"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> وبلاگ</a></li>
+            <li><a href="#" data-translate="about"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="8" r="4"/><path d="M5 20v-2a7 7 0 0 1 14 0v2"/></svg> درباره ما</a></li>
+            <li><a href="#" data-translate="contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> تماس</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- منوی دسکتاپ -->
+<nav class="desktop-menu">
+    <div class="menu-container">
+        <ul class="menu-list">
+            <li class="menu-item"><a href="#" data-translate="home"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-5v-7H9v7H4a2 2 0 0 1-2-2z"/></svg><span>خانه</span></a></li>
+            <li class="menu-item dropdown"><a href="#" data-translate="courses"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg><span>دوره‌ها</span></a>
+                <div class="mega-dropdown"><div class="mega-content"><div class="mega-col"><h4 data-translate="classicalGuitar">گیتار کلاسیک</h4><ul><li data-translate="beginner">مقدماتی</li><li data-translate="advanced">پیشرفته</li><li data-translate="performanceTech">تکنیک‌های اجرا</li><li data-translate="composition">آهنگسازی</li><li data-translate="advancedNoteReading">نت‌خوانی پیشرفته</li></ul></div><div class="mega-col"><h4 data-translate="electricGuitar">گیتار الکتریک</h4><ul><li data-translate="rockMetal">راک و متال</li><li data-translate="bluesJazz">بلوز و جاز</li><li data-translate="soloPlaying">سولو نوازی</li><li data-translate="effects">افکت‌ها</li><li data-translate="improvisation">ایمپرووایزیشن</li></ul></div><div class="mega-col"><h4 data-translate="flamencoGuitar">گیتار فلامنکو</h4><ul><li data-translate="rasgueado">راسگئادو</li><li data-translate="picado">پیکادو</li><li data-translate="alzapua">آلزپورا</li><li data-translate="flamencoDance">رقص فلامنکو</li><li data-translate="cajon">کاخون نوازی</li></ul></div><div class="mega-col"><h4 data-translate="acousticGuitar">گیتار آکوستیک</h4><ul><li data-translate="strumming">استرامینگ</li><li data-translate="fingerstyle">فینگراستایل</li><li data-translate="coverSinging">کاورخوانی</li><li data-translate="slideGuitar">اسلاید گیتار</li><li data-translate="doping">دوپینگ</li></ul></div></div></div>
+            </li>
+            <li class="menu-item"><a href="#" data-translate="masters"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>اساتید</span></a></li>
+            <li class="menu-item"><a href="#" data-translate="workshops"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span>کارگاه‌ها</span></a></li>
+            <li class="menu-item"><a href="#" data-translate="online"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><span>کلاس آنلاین</span></a></li>
+            <li class="menu-item dropdown"><a href="#" data-translate="store"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 6L2 6L4 20L20 20L22 6L18 6"/><path d="M8 6C8 3 16 3 16 6"/></svg><span>فروشگاه</span></a>
+                <div class="mega-dropdown"><div class="mega-content"><div class="mega-col"><h4 data-translate="guitars">گیتار</h4><ul><li data-translate="classical">کلاسیک</li><li data-translate="electric">الکتریک</li><li data-translate="acoustic">آکوستیک</li><li data-translate="bassGuitar">بیس گیتار</li><li data-translate="spanishGuitar">گیتار اسپانیایی</li></ul></div><div class="mega-col"><h4 data-translate="equipment">تجهیزات</h4><ul><li data-translate="amplifier">آمپلیفایر</li><li data-translate="effects">افکت</li><li data-translate="strings">سیم و بند</li><li data-translate="pickStrap">پیک و استرپ</li><li data-translate="bagCase">کیف و کاور</li></ul></div><div class="mega-col"><h4 data-translate="booksSheets">کتاب و نت</h4><ul><li data-translate="educationalBooks">کتاب آموزشی</li><li data-translate="famousSheets">نت‌های معروف</li><li data-translate="specializedMagazine">مجله تخصصی</li><li data-translate="educationalDVD">DVD آموزشی</li><li data-translate="musicSoftware">نرم‌افزارهای موسیقی</li></ul></div></div></div>
+            </li>
+            <li class="menu-item"><a href="#" data-translate="blog"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span>وبلاگ</span></a></li>
+            <li class="menu-item"><a href="#" data-translate="about"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="8" r="4"/><path d="M5 20v-2a7 7 0 0 1 14 0v2"/></svg><span>درباره ما</span></a></li>
+            <li class="menu-item"><a href="#" data-translate="contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>تماس</span></a></li>
+        </ul>
+        <button class="quote-btn" id="registerHeaderBtn" data-translate="registerOnline">ثبت‌نام آنلاین</button>
+    </div>
+</nav>
+
+<!-- مودال‌ها -->
+<div class="modal" id="searchModal"><div class="modal-overlay"></div><div class="modal-container search-modal"><button class="modal-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="modal-icon"><svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#DAA520"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h3 data-translate="searchTitle">جستجو</h3><form id="searchForm"><input type="text" data-translate="searchPlaceholder" placeholder="نام دوره، استاد یا سبک..." class="search-input-modal"><button type="submit" class="modal-btn" data-translate="searchBtnText">جستجو</button></form></div></div>
+
+<div class="modal" id="userModal"><div class="modal-overlay"></div><div class="modal-container"><button class="modal-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="modal-icon"><svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#DAA520"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3 data-translate="accountTitle">حساب کاربری</h3><div class="modal-tabs"><button class="tab-btn active" data-tab="login" data-translate="loginTab">ورود</button><button class="tab-btn" data-tab="register" data-translate="registerTab">ثبت‌نام</button></div><form id="loginForm" class="tab-content active"><div class="form-group"><input type="text" data-translate="usernamePlaceholder" placeholder="شماره موبایل یا ایمیل"></div><div class="form-group"><input type="password" data-translate="passwordPlaceholder" placeholder="رمز عبور"></div><div class="form-options"><label><input type="checkbox"> <span data-translate="rememberMe">مرا به خاطر بسپار</span></label><a href="#" data-translate="forgotPassword">فراموشی رمز</a></div><button type="submit" class="modal-btn" data-translate="loginBtn">ورود</button></form><form id="registerForm" class="tab-content"><div class="form-group"><input type="text" data-translate="fullNamePlaceholder" placeholder="نام و نام خانوادگی"></div><div class="form-group"><input style="direction: rtl;" type="tel" data-translate="phonePlaceholder" placeholder="شماره موبایل"></div><div class="form-group"><input type="email" data-translate="emailPlaceholder" placeholder="ایمیل"></div><div class="form-group"><input type="password" data-translate="passwordPlaceholder" placeholder="رمز عبور"></div><button type="submit" class="modal-btn" data-translate="registerBtn">ثبت‌نام</button></form></div></div>
+
+<!-- ==================== هیرو ==================== -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-badge" data-translate="heroBadge1"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#DAA520"><path d="M12 2L15 8.5L22 9.5L17 14L18.5 21L12 17.5L5.5 21L7 14L2 9.5L9 8.5L12 2z"/></svg>معتبرترین آکادمی گیتار خاورمیانه</div>
+            <h1 data-translate="heroTitle1">آموزش حرفه‌ای گیتار<br>با اساتید بین‌المللی</h1>
+            <p data-translate="heroSub1">از مبتدی تا استادی، در کنار بهترین‌های جهان گیتار بیاموزید. بیش از ۱۵۰۰۰ هنرجو در ۳۲ کشور جهان به ما اعتماد کرده‌اند. با متدهای اختصاصی و پیشرفته، در کوتاه‌ترین زمان به یک گیتاریست حرفه‌ای تبدیل شوید.</p>
+            <div class="hero-buttons"><button class="btn-primary" id="startCourseBtn" data-translate="startLearning">شروع یادگیری</button><button class="btn-outline" id="consultationBtn" data-translate="freeConsultation">مشاوره رایگان</button></div>
+            <div class="hero-stats">
+                <div class="stat-item"><span class="stat-number" data-translate="statNumber1">۱۵٬۰۰۰+</span><span class="stat-label" data-translate="statLabel1">هنرجوی فعال</span></div>
+                <div class="stat-item"><span class="stat-number" data-translate="statNumber2">۳۲</span><span class="stat-label" data-translate="statLabel2">کشور جهان</span></div>
+                <div class="stat-item"><span class="stat-number" data-translate="statNumber3">۱۲۸</span><span class="stat-label" data-translate="statLabel3">استاد مجرب</span></div>
+                <div class="stat-item"><span class="stat-number" data-translate="statNumber4">۵۲۰+</span><span class="stat-label" data-translate="statLabel4">دوره تخصصی</span></div>
+            </div>
+        </div>
+        <div class="hero-visual"><img src="assets/image/gitar.jpg" alt="Guitarist" class="hero-img" onerror="this.src='https://placehold.co/500x500/1A1A2E/DAA520?text=Guitar'"></div>
+    </div>
+    <div class="hero-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+</section>
+
+<!-- ==================== بخش ۱: دوره‌ها ==================== -->
+<section class="courses">
+    <div class="section-header"><h3 data-translate="coursesTitle">دوره‌های محبوب آکادمی پولاریس</h3><p data-translate="coursesSubtitle">پرطرفدارترین دوره‌های آموزشی با بالاترین رضایت هنرجویان - بیش از ۵۲۰ دوره تخصصی</p></div>
+    <div class="courses-grid">
+        <div class="course-card"><div class="course-img"><img src="assets/image/classical-guitar.webp" alt="Classical" onerror="this.src='https://placehold.co/400x250/21262D/DAA520?text=Classical'"></div><span class="course-badge" data-translate="badgeBestSeller">پرفروش‌ترین</span><h4 data-translate="course1Title">گیتار کلاسیک متد استرادا</h4><p data-translate="course1Desc">آموزش تکنیک‌های پایه تا کنسرت‌نوازی حرفه‌ای. شامل ۱۲ اتود اختصاصی از باخ تا تارگا، آشنایی با رپرتوار کلاسیک جهانی</p><div class="course-meta"><span data-translate="sessionsCount">۳۲ جلسه</span><span data-translate="studentsCount">۱,۲۸۰ هنرجو</span></div><div class="course-price" data-translate="course1Price">۱۲,۸۰۰,۰۰۰ تومان</div><button class="course-btn" data-translate="registerCourse">ثبت‌نام</button></div>
+        <div class="course-card"><div class="course-img"><img src="assets/image/electric-guitar.jpg" alt="Electric" onerror="this.src='https://placehold.co/400x250/21262D/DAA520?text=Electric'"></div><span class="course-badge" data-translate="badgeNew">جدید</span><h4 data-translate="course2Title">الکتریک راک متال پرو</h4><p data-translate="course2Desc">سویپ، تپینگ، اسپید پیکینگ و تکنیک‌های دو دست. همراه با آنالیز سولوهای استیو وای، پتروچی، متالیکا و دریم تیتر</p><div class="course-meta"><span data-translate="sessionsCount2">۴۵ جلسه</span><span data-translate="studentsCount2">۹۴۰ هنرجو</span></div><div class="course-price" data-translate="course2Price">۱۵,۵۰۰,۰۰۰ تومان</div><button class="course-btn" data-translate="registerCourse">ثبت‌نام</button></div>
+        <div class="course-card"><div class="course-img"><img src="assets/image/flamenco-guitar.jpg" alt="Flamenco" onerror="this.src='https://placehold.co/400x250/21262D/DAA520?text=Flamenco'"></div><span class="course-badge" data-translate="badgeSpecial">خاص</span><h4 data-translate="course3Title">فلامنکو اصیل آندلس</h4><p data-translate="course3Desc">آموزش راسگئادو، پیکادو، آلزپورا و تکنیک‌های ضربی. همراه با آنالیز قطعات پاکو د لوسیا، ویسنته آمیگو و توماسیتو</p><div class="course-meta"><span data-translate="sessionsCount3">۲۸ جلسه</span><span data-translate="studentsCount3">۶۵۰ هنرجو</span></div><div class="course-price" data-translate="course3Price">۱۴,۲۰۰,۰۰۰ تومان</div><button class="course-btn" data-translate="registerCourse">ثبت‌نام</button></div>
+        <div class="course-card"><div class="course-img"><img src="assets/image/fingerstyle.jpeg" alt="Fingerstyle" onerror="this.src='https://placehold.co/400x250/21262D/DAA520?text=Fingerstyle'"></div><span class="course-badge" data-translate="badgePopular">محبوب</span><h4 data-translate="course4Title">فینگراستایل مدرن کوبه‌ای</h4><p data-translate="course4Desc">نوازی همزمان ملودی، بیس و ضرب با هر دو دست. متد اختصاصی توماس لوب، مایک دوز، اندی مک کی و سان لین</p><div class="course-meta"><span data-translate="sessionsCount4">۳۶ جلسه</span><span data-translate="studentsCount4">۲,۱۰۰ هنرجو</span></div><div class="course-price" data-translate="course4Price">۱۳,۹۰۰,۰۰۰ تومان</div><button class="course-btn" data-translate="registerCourse">ثبت‌نام</button></div>
+        <div class="course-card"><div class="course-img"><img src="assets/image/blues-guitar.jpg" alt="Blues" onerror="this.src='https://placehold.co/400x250/21262D/DAA520?text=Blues'"></div><span class="course-badge" data-translate="badgeExclusive">ویژه</span><h4 data-translate="course5Title">بلوز و جاز ایمپرووایزیشن</h4><p data-translate="course5Desc">آموزش بداهه‌نوازی، پنتاتونیک، مدهای مختلف و لیک‌های معروف از بی‌بی کینگ، اریک کلپتون، جیمی هندریکس و جو پاس</p><div class="course-meta"><span data-translate="sessionsCount5">۴۰ جلسه</span><span data-translate="studentsCount5">۸۷۰ هنرجو</span></div><div class="course-price" data-translate="course5Price">۱۶,۵۰۰,۰۰۰ تومان</div><button class="course-btn" data-translate="registerCourse">ثبت‌نام</button></div>
+        <div class="course-card"><div class="course-img"><img src="assets/image/acoustic-fingerstyle.jpg" alt="Acoustic" onerror="this.src='https://placehold.co/400x250/21262D/DAA520?text=Acoustic'"></div><span class="course-badge" data-translate="badgeTrendy">پرطرفدار</span><h4 data-translate="course6Title">آکوستیک فینگرپیکینگ</h4><p data-translate="course6Desc">تکنیک‌های پیشرفته انگشتی روی گیتار آکوستیک، ترانه‌سرایی، هارمونی و آرپژهای حرفه‌ای</p><div class="course-meta"><span data-translate="sessionsCount6">۳۰ جلسه</span><span data-translate="studentsCount6">۱,۵۰۰ هنرجو</span></div><div class="course-price" data-translate="course6Price">۱۱,۸۰۰,۰۰۰ تومان</div><button class="course-btn" data-translate="registerCourse">ثبت‌نام</button></div>
+        <div class="course-card"><div class="course-img"><img src="assets/image/shred-guitar.jpg" alt="Shred" onerror="this.src='https://placehold.co/400x250/21262D/DAA520?text=Shred'"></div><span class="course-badge" data-translate="badgeAdvanced">فوق پیشرفته</span><h4 data-translate="course7Title">شرد گیتار تکنیکال</h4><p data-translate="course7Desc">تکنیک‌های سولو نویسی نئوکلاسیک، اکونومی پیکینگ، لگاتو، وایبراتو حرفه‌ای و سرعت بالای ۲۴۰ BMP</p><div class="course-meta"><span data-translate="sessionsCount7">۵۰ جلسه</span><span data-translate="studentsCount7">۴۳۰ هنرجو</span></div><div class="course-price" data-translate="course7Price">۱۸,۹۰۰,۰۰۰ تومان</div><button class="course-btn" data-translate="registerCourse">ثبت‌نام</button></div>
+        <div class="course-card"><div class="course-img"><img src="assets/image/songwriting.jpg" alt="Songwriting" onerror="this.src='https://placehold.co/400x250/21262D/DAA520?text=Songwriting'"></div><span class="course-badge" data-translate="badgeCreativity">خلاقیت</span><h4 data-translate="course8Title">ترانه‌سرایی و آهنگسازی</h4><p data-translate="course8Desc">آموزش اصول آهنگسازی، ساخت ملودی، هارمونی پیشرفته، تنظیم و میکس و مسترینگ با نرم‌افزارهای حرفه‌ای</p><div class="course-meta"><span data-translate="sessionsCount8">۳۵ جلسه</span><span data-translate="studentsCount8">۷۲۰ هنرجو</span></div><div class="course-price" data-translate="course8Price">۱۴,۵۰۰,۰۰۰ تومان</div><button class="course-btn" data-translate="registerCourse">ثبت‌نام</button></div>
+        <div class="course-card"><div class="course-img"><img src="assets/image/bass-guitar.jpg" alt="Bass" onerror="this.src='https://placehold.co/400x250/21262D/DAA520?text=Bass'"></div><span class="course-badge" data-translate="badgeNew">جدید</span><h4 data-translate="course9Title">بیس گیتار حرفه‌ای</h4><p data-translate="course9Desc">تکنیک‌های اسلپ، پاپینگ، فینگراستایل و والیوم نویسی، همراه با ریتم‌های فانک، راک و جاز</p><div class="course-meta"><span data-translate="sessionsCount9">۲۵ جلسه</span><span data-translate="studentsCount9">۵۶۰ هنرجو</span></div><div class="course-price" data-translate="course9Price">۱۰,۹۰۰,۰۰۰ تومان</div><button class="course-btn" data-translate="registerCourse">ثبت‌نام</button></div>
+        <div class="course-card"><div class="course-img"><img src="assets/image/music-theory.jpg" alt="Theory" onerror="this.src='https://placehold.co/400x250/21262D/DAA520?text=Theory'"></div><span class="course-badge" data-translate="badgeBasic">پایه</span><h4 data-translate="course10Title">تئوری موسیقی و سلفژ</h4><p data-translate="course10Desc">آموزش کامل نت‌خوانی، فواصل، گام‌ها، آکوردشناسی، ریتم‌خوانی و تربیت شنوایی برای همه نوازندگان</p><div class="course-meta"><span data-translate="sessionsCount10">۲۰ جلسه</span><span data-translate="studentsCount10">۳,۲۰۰ هنرجو</span></div><div class="course-price" data-translate="course10Price">۷,۵۰۰,۰۰۰ تومان</div><button class="course-btn" data-translate="registerCourse">ثبت‌نام</button></div>
+        <div class="course-card"><div class="course-img"><img src="assets/image/classical-advanced.jpg" alt="Classical Advanced" onerror="this.src='https://placehold.co/400x250/21262D/DAA520?text=Classical+Adv'"></div><span class="course-badge" data-translate="badgeAdvanced">پیشرفته</span><h4 data-translate="course11Title">کلاسیک پیشرفته کنسرت‌نوازی</h4><p data-translate="course11Desc">آماده‌سازی برای کنسرت، تکنیک‌های صحنه، مدیریت استرس و رپرتوار سخت‌ترین قطعات کلاسیک</p><div class="course-meta"><span data-translate="sessionsCount11">۴۰ جلسه</span><span data-translate="studentsCount11">۳۸۰ هنرجو</span></div><div class="course-price" data-translate="course11Price">۲۱,۵۰۰,۰۰۰ تومان</div><button class="course-btn" data-translate="registerCourse">ثبت‌نام</button></div>
+        <div class="course-card"><div class="course-img"><img src="assets/image/latin-guitar.jpg" alt="Latin" onerror="this.src='https://placehold.co/400x250/21262D/DAA520?text=Latin'"></div><span class="course-badge" data-translate="badgeExpress">اکسپرس</span><h4 data-translate="course12Title">گیتار لاتین و سامبا</h4><p data-translate="course12Desc">ریتم‌های برزیلی، بوسا نوا، سامبا، تانگو و سالسا روی گیتار - تکنیک‌های منحصربه‌فرد</p><div class="course-meta"><span data-translate="sessionsCount12">۱۵ جلسه</span><span data-translate="studentsCount12">۹۱۰ هنرجو</span></div><div class="course-price" data-translate="course12Price">۸,۹۰۰,۰۰۰ تومان</div><button class="course-btn" data-translate="registerCourse">ثبت‌نام</button></div>
+    </div>
+</section>
+
+<!-- ==================== بخش ۲: اساتید ==================== -->
+<section class="masters">
+    <div class="section-header"><h3 data-translate="mastersTitle">اساتید بین‌المللی آکادمی پولاریس</h3><p data-translate="mastersSubtitle">آموزش با برترین گیتاریست‌های جهان از ۱۲ کشور مختلف - بیش از ۱۲۸ استاد مجرب</p></div>
+    <div class="masters-grid">
+        <div class="master-card"><div class="master-img"><img src="assets/image/master-1.jpg" alt="Master" onerror="this.src='https://placehold.co/300x300/21262D/DAA520?text=Master'"></div><h4 data-translate="master1Name">فرانسیسکو دلگادو</h4><span class="master-country" data-translate="master1Country">🇪🇸 اسپانیا • مرد</span><p data-translate="master1Desc">استاد برجسته گیتار فلامنکو، برنده جایزه گرمی ۲۰۱۹، شاگرد پاکو د لوسیا، مدرس کنسرواتوار مادرید</p></div>
+        <div class="master-card"><div class="master-img"><img src="assets/image/master-2.jpg" alt="Master" onerror="this.src='https://placehold.co/300x300/21262D/DAA520?text=Master'"></div><h4 data-translate="master2Name">سارا جانسون</h4><span class="master-country" data-translate="master2Country">🇺🇸 آمریکا • زن</span><p data-translate="master2Desc">نوازنده تکنیکال گیتار الکتریک، همکاری با متالیکا، دریم تیتر و جو ساتریانی، مدرس برکلی کالج</p></div>
+        <div class="master-card"><div class="master-img"><img src="assets/image/master-3.jpg" alt="Master" onerror="this.src='https://placehold.co/300x300/21262D/DAA520?text=Master'"></div><h4 data-translate="master3Name">یوکی یاماموتو</h4><span class="master-country" data-translate="master3Country">🇯🇵 ژاپن • مرد</span><p data-translate="master3Desc">استاد فینگراستایل، مبتکر تکنیک هایبرید پیکینگ، برنده مسابقات جهانی گیتار آکوستیک ۲۰۱۷</p></div>
+        <div class="master-card"><div class="master-img"><img src="assets/image/master-4.jpg" alt="Master" onerror="this.src='https://placehold.co/300x300/21262D/DAA520?text=Master'"></div><h4 data-translate="master4Name">محمد رضا لطفی</h4><span class="master-country" data-translate="master4Country">🇮🇷 ایران • مرد</span><p data-translate="master4Desc">پیشکسوت گیتار کلاسیک ایران، مدرس دانشگاه هنر تهران، بنیانگذار سبک تلفیقی ایرانی-کلاسیک</p></div>
+        <div class="master-card"><div class="master-img"><img src="assets/image/master-5.jpg" alt="Master" onerror="this.src='https://placehold.co/300x300/21262D/DAA520?text=Master'"></div><h4 data-translate="master5Name">النا مارتینز</h4><span class="master-country" data-translate="master5Country">🇪🇸 اسپانیا • زن</span><p data-translate="master5Desc">نوازنده حرفه‌ای گیتار فلامنکو، برنده جایزه بهترین نوازنده زن فلامنکو ۲۰۲۰، مدرس بین‌المللی</p></div>
+        <div class="master-card"><div class="master-img"><img src="assets/image/master-6.jpg" alt="Master" onerror="this.src='https://placehold.co/300x300/21262D/DAA520?text=Master'"></div><h4 data-translate="master6Name">مارکوس میلر</h4><span class="master-country" data-translate="master6Country">🇫🇷 فرانسه • مرد</span><p data-translate="master6Desc">استاد گیتار جاز و فیوژن، برنده ۳ جایزه گرمی، همکاری با مایلز دیویس و هربی هنکاک</p></div>
+        <div class="master-card"><div class="master-img"><img src="assets/image/master-7.jpg" alt="Master" onerror="this.src='https://placehold.co/300x300/21262D/DAA520?text=Master'"></div><h4 data-translate="master7Name">آناهیتا قاسمی</h4><span class="master-country" data-translate="master7Country">🇨🇦 کانادا • زن</span><p data-translate="master7Desc">نوازنده بین‌المللی گیتار آکوستیک، تخصص در سبک فینگراستایل، مدرس دانشگاه تورنتو</p></div>
+        <div class="master-card"><div class="master-img"><img src="assets/image/master-8.jpg" alt="Master" onerror="this.src='https://placehold.co/300x300/21262D/DAA520?text=Master'"></div><h4 data-translate="master8Name">لیلا کریمی</h4><span class="master-country" data-translate="master8Country">🇮🇷 ایران • زن</span><p data-translate="master8Desc">نوازنده بین‌المللی گیتار کلاسیک، برنده جایزه بهترین نوازنده زن خاورمیانه ۲۰۲۲، مدرس کنسرواتوار تهران</p></div>
+    </div>
+</section>
+
+<!-- ==================== بخش ۳: کارگاه‌ها ==================== -->
+<section class="workshops">
+    <div class="section-header"><h3 data-translate="workshopsTitle">کارگاه‌های تخصصی و مسترکلاس‌ها</h3><p data-translate="workshopsSubtitle">رویدادهای آنلاین و حضوری با حضور اساتید بزرگ جهان - ظرفیت محدود</p></div>
+    <div class="workshops-grid">
+        <div class="workshop-card"><div class="workshop-date" data-translate="workshop1Date">۲۵ تیر ۱۴۰۴</div><h4 data-translate="workshop1Title">تکنیک‌های سولو نویسی پیشرفته</h4><p data-translate="workshop1Desc">همراه با جو ساتریانی به صورت آنلاین زنده - آموزش فرازها، لیک‌ها و ساختارهای سولو حرفه‌ای</p><div class="workshop-meta" data-translate="workshop1Meta">⏰ ۴ ساعت | ظرفیت: ۲۵۰ نفر</div><button class="workshop-btn" data-translate="registerWorkshopBtn">ثبت‌نام کارگاه</button></div>
+        <div class="workshop-card"><div class="workshop-date" data-translate="workshop2Date">۱۲ مرداد ۱۴۰۴</div><h4 data-translate="workshop2Title">رازهای فلامنکو؛ راسگئادو تا آلزپورا</h4><p data-translate="workshop2Desc">کارگاه فشرده با فرانسیسکو دلگادو در تهران - تکنیک‌های اصیل آندلسی و اجرای زنده</p><div class="workshop-meta" data-translate="workshop2Meta">⏰ ۸ ساعت | ظرفیت: ۱۰۰ نفر</div><button class="workshop-btn" data-translate="registerWorkshopBtn">ثبت‌نام کارگاه</button></div>
+        <div class="workshop-card"><div class="workshop-date" data-translate="workshop3Date">۵ شهریور ۱۴۰۴</div><h4 data-translate="workshop3Title">فینگراستایل مدرن؛ ضرب‌های کوبه‌ای</h4><p data-translate="workshop3Desc">مسترکلاس با یوکی یاماموتو - تکنیک‌های ضربی همزمان با ملودی‌نوازی و استفاده از بدنه گیتار</p><div class="workshop-meta" data-translate="workshop3Meta">⏰ ۳ ساعت | ظرفیت: ۵۰۰ نفر</div><button class="workshop-btn" data-translate="registerWorkshopBtn">ثبت‌نام کارگاه</button></div>
+        <div class="workshop-card"><div class="workshop-date" data-translate="workshop4Date">۲۰ شهریور ۱۴۰۴</div><h4 data-translate="workshop4Title">بلوز ایمپرووایزیشن؛ از پنتاتونیک تا مودال</h4><p data-translate="workshop4Desc">کارگاه بداهه‌نوازی با سبک بلوز و جاز - همراه با آنالیز لیک‌های اسطوره‌ها</p><div class="workshop-meta" data-translate="workshop4Meta">⏰ ۵ ساعت | ظرفیت: ۲۰۰ نفر</div><button class="workshop-btn" data-translate="registerWorkshopBtn">ثبت‌نام کارگاه</button></div>
+        <div class="workshop-card"><div class="workshop-date" data-translate="workshop5Date">۲ مهر ۱۴۰۴</div><h4 data-translate="workshop5Title">تکنیک‌های ضبط و میکس گیتار در استودیو</h4><p data-translate="workshop5Desc">آموزش حرفه‌ای ضبط گیتار، تنظیم آمپ، افکت‌ها و میکس و مسترینگ با مدرسان مجرب</p><div class="workshop-meta" data-translate="workshop5Meta">⏰ ۶ ساعت | ظرفیت: ۱۵۰ نفر</div><button class="workshop-btn" data-translate="registerWorkshopBtn">ثبت‌نام کارگاه</button></div>
+        <div class="workshop-card"><div class="workshop-date" data-translate="workshop6Date">۱۸ مهر ۱۴۰۴</div><h4 data-translate="workshop6Title">لوتینگ و تعمیرات گیتار حرفه‌ای</h4><p data-translate="workshop6Desc">کارگاه عملی تعمیر و تنظیم گیتار، تعویض فرت، تنظیم دسته و الکترونیک</p><div class="workshop-meta" data-translate="workshop6Meta">⏰ ۱۲ ساعت | ظرفیت: ۵۰ نفر</div><button class="workshop-btn" data-translate="registerWorkshopBtn">ثبت‌نام کارگاه</button></div>
+    </div>
+</section>
+
+<!-- ==================== بخش ۴: کلاس آنلاین لوکس ==================== -->
+<section class="online-luxury">
+    <div class="online-luxury-bg"></div>
+    <div class="online-luxury-container">
+        <div class="online-luxury-content">
+            <div class="online-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DAA520" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><circle cx="12" cy="10" r="2" fill="#DAA520"/></svg><span data-translate="onlineBadge">پخش زنده • کیفیت 4K</span></div>
+            <h2 class="online-luxury-title"><span data-translate="onlineTitle">کلاس‌های آنلاین زنده</span> <span class="gold-text" data-translate="onlineTitleGold">با کیفیت استودیویی</span></h2>
+            <p class="online-luxury-desc" data-translate="onlineDesc">از هر کجای جهان، در بهترین کلاس‌های گیتار با اساتید بین‌المللی شرکت کنید. تجربه‌ای متفاوت از آموزش آنلاین با کیفیت تصویر 4K و صدای دالبی اتموس</p>
+            <div class="online-features-grid">
+                <div class="online-feature-item"><div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#DAA520" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="feature-text"><h4 data-translate="feature1Title">کیفیت استودیویی</h4><p data-translate="feature1Desc">تصویر 4K + صدای دالبی اتموس</p></div></div>
+                <div class="online-feature-item"><div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#DAA520" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div><div class="feature-text"><h4 data-translate="feature2Title">پرسش و پاسخ زنده</h4><p data-translate="feature2Desc">ارتباط مستقیم با استاد</p></div></div>
+                <div class="online-feature-item"><div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#DAA520" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><path d="M4 3h16l-2 3H6L4 3z"/></svg></div><div class="feature-text"><h4 data-translate="feature3Title">ضبط خودکار جلسات</h4><p data-translate="feature3Desc">دسترسی یک ساله به فیلم‌ها</p></div></div>
+                <div class="online-feature-item"><div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#DAA520" stroke-width="1.8"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="3"/></svg></div><div class="feature-text"><h4 data-translate="feature4Title">گواهی بین‌المللی</h4><p data-translate="feature4Desc">قابل ترجمه و تایید جهانی</p></div></div>
+            </div>
+            <div class="online-stats-row"><div class="online-stat"><span class="online-stat-number" data-translate="onlineStatNumber1">۱۵٬۰۰۰+</span><span data-translate="onlineStatLabel1">هنرجوی آنلاین</span></div><div class="online-stat"><span class="online-stat-number" data-translate="onlineStatNumber2">۳۲</span><span data-translate="onlineStatLabel2">کشور جهان</span></div><div class="online-stat"><span class="online-stat-number" data-translate="onlineStatNumber3">۹۸٪</span><span data-translate="onlineStatLabel3">رضایت کاربران</span></div></div>
+            <div class="online-buttons"><button class="online-luxury-btn primary" data-translate="startFreeClass">شروع کلاس رایگان</button><button class="online-luxury-btn secondary" data-translate="viewSchedule">مشاهده برنامه کلاس‌ها</button></div>
+        </div>
+        <div class="online-luxury-image"><div class="image-wrapper"><img src="assets/image/online-class-luxury.jpg" alt="Online Class Studio" onerror="this.src='https://placehold.co/550x500/1A1A2E/DAA520?text=Studio+Class'"><div class="image-glow"></div><div class="play-badge"><svg width="30" height="30" viewBox="0 0 24 24" fill="#DAA520" stroke="none"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div><div class="floating-card top-card"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#DAA520"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span data-translate="floatingCard1">کیفیت 4K</span></div><div class="floating-card bottom-card"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#DAA520"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg><span data-translate="floatingCard2">اساتید بین‌المللی</span></div></div>
+    </div>
+</section>
+
+<!-- ==================== بخش ۵: فروشگاه ==================== -->
+<section class="store">
+    <div class="section-header"><h3 data-translate="storeTitle">فروشگاه تخصصی گیتار و تجهیزات</h3><p data-translate="storeSubtitle">بهترین برندهای گیتار، آمپلیفایر و افکت‌ها با گارانتی اصل - موجود در آکادمی با بهترین قیمت‌ها</p></div>
+    <div class="store-grid-6">
+        <div class="product-card"><div class="product-img"><img src="assets/image/guitar-classic-pro.jpg" alt="Guitar" onerror="this.src='https://placehold.co/300x250/21262D/DAA520?text=Guitar'"></div><h5 data-translate="product1Name">گیتار کلاسیک آلارا مدل AC-50 حرفه‌ای</h5><p data-translate="product1Desc">ساخت دست اسپانیا، صفحه از چوب سدار، دسته آبنوس، فیشرمن پیکاپ اصلی، کیف حمل حرفه‌ای</p><div class="product-price" data-translate="product1Price">۳۸,۵۰۰,۰۰۰ تومان</div><div class="product-stock" data-translate="inStock">✅ موجود در آکادمی</div></div>
+        <div class="product-card"><div class="product-img"><img src="assets/image/guitar-fender.png" alt="Fender" onerror="this.src='https://placehold.co/300x250/21262D/DAA520?text=Fender'"></div><h5 data-translate="product2Name">فندر استرتوکاستر آمریکا (American Pro II)</h5><p data-translate="product2Desc">اصالت آمریکا، سیستم نویزلس، وینتیج پیکاپ، گارانتی ۵ ساله، رنگ سانبرست، بدنه آلدر</p><div class="product-price" data-translate="product2Price">۱۲۵,۰۰۰,۰۰۰ تومان</div><div class="product-stock" data-translate="inStock">✅ موجود در آکادمی</div></div>
+        <div class="product-card"><div class="product-img"><img src="assets/image/guitar-gibson.jpg" alt="Gibson" onerror="this.src='https://placehold.co/300x250/21262D/DAA520?text=Gibson'"></div><h5 data-translate="product3Name">گیبسون لس پال استاندارد ۶۰</h5><p data-translate="product3Desc">صدای افسانه‌ای راک و بلوز، با بورباکس پیکاپ، ساخت آمریکا، بدنه ماهوگانی، دسته روزوود</p><div class="product-price" data-translate="product3Price">۱۸۵,۰۰۰,۰۰۰ تومان</div><div class="product-stock" data-translate="inStock">✅ موجود در آکادمی</div></div>
+        <div class="product-card"><div class="product-img"><img src="assets/image/guitar-prs.jpg" alt="PRS" onerror="this.src='https://placehold.co/300x250/21262D/DAA520?text=PRS'"></div><h5 data-translate="product4Name">PRS Custom 24 - SE</h5><p data-translate="product4Desc">گیتار الکتریک نیمه‌حرفه‌ای، پیکاپ ۸۵/۱۵، سیستم ترمولو، ساخت کره، رنگ توباکو برست</p><div class="product-price" data-translate="product4Price">۶۸,۰۰۰,۰۰۰ تومان</div><div class="product-stock" data-translate="inStock">✅ موجود در آکادمی</div></div>
+        <div class="product-card"><div class="product-img"><img src="assets/image/guitar-martin.png" alt="Martin" onerror="this.src='https://placehold.co/300x250/21262D/DAA520?text=Martin'"></div><h5 data-translate="product5Name">مارتین D-28 آکوستیک</h5><p data-translate="product5Desc">گیتار آکوستیک افسانه‌ای، ساخت آمریکا، بدنه رزروود، صفحه سیتکا اسپروس، صدای قدرتمند</p><div class="product-price" data-translate="product5Price">۲۴۵,۰۰۰,۰۰۰ تومان</div><div class="product-stock" data-translate="inStock">✅ موجود در آکادمی</div></div>
+        <div class="product-card"><div class="product-img"><img src="assets/image/guitar-tayr.png" alt="Taylor" onerror="this.src='https://placehold.co/300x250/21262D/DAA520?text=Taylor'"></div><h5 data-translate="product6Name">تیلور 214CE آکوستیک الکتریک</h5><p data-translate="product6Desc">گیتار آکوستیک الکتریک نیمه‌حرفه‌ای، ساخت مکزیک، پیکاپ اکسپرسیون سیستم ۲، کیف استاندارد</p><div class="product-price" data-translate="product6Price">۸۹,۰۰۰,۰۰۰ تومان</div><div class="product-stock" data-translate="inStock">✅ موجود در آکادمی</div></div>
+        <div class="product-card"><div class="product-img"><img src="assets/image/guitar-ibanez.jpg" alt="Ibanez" onerror="this.src='https://placehold.co/300x250/21262D/DAA520?text=Ibanez'"></div><h5 data-translate="product7Name">ایبانز RG550 GENESIS</h5><p data-translate="product7Desc">گیتار الکتریک متال و راک، دسته بسیار نازک، پیکاپ دیمارزیو، سیستم فلوید رز، ساخت ژاپن</p><div class="product-price" data-translate="product7Price">۹۵,۰۰۰,۰۰۰ تومان</div><div class="product-stock" data-translate="inStock">✅ موجود در آکادمی</div></div>
+        <div class="product-card"><div class="product-img"><img src="assets/image/guitar-ramirez.jpg" alt="Ramirez" onerror="this.src='https://placehold.co/300x250/21262D/DAA520?text=Ramirez'"></div><h5 data-translate="product8Name">رامیرز 4NE گیتار کلاسیک حرفه‌ای</h5><p data-translate="product8Desc">ساخت دست اسپانیا، برند معروف رامیرز، صفحه سدار، دسته آبنوس، کیف سخت حرفه‌ای، صدای گرم و بینظیر</p><div class="product-price" data-translate="product8Price">۱۸۸,۰۰۰,۰۰۰ تومان</div><div class="product-stock" data-translate="inStock">✅ موجود در آکادمی</div></div>
+        <div class="product-card"><div class="product-img"><img src="assets/image/guitar-bass.jpg" alt="Bass Guitar" onerror="this.src='https://placehold.co/300x250/21262D/DAA520?text=Bass+Guitar'"></div><h5 data-translate="product9Name">فندر پرشن بیس (Player Series)</h5><p data-translate="product9Desc">گیتار بیس ۴ سیم حرفه‌ای، ساخت مکزیک، پیکاپ آلنکو، صدای کلاسیک پرشن بیس، کیف حمل</p><div class="product-price" data-translate="product9Price">۵۹,۰۰۰,۰۰۰ تومان</div><div class="product-stock" data-translate="inStock">✅ موجود در آکادمی</div></div>
+    </div>
+</section>
+
+<!-- ==================== بخش ۶: وبلاگ ==================== -->
+<section class="blog">
+    <div class="section-header"><h3 data-translate="blogTitle">مجله تخصصی آکادمی پولاریس</h3><p data-translate="blogSubtitle">جدیدترین مقالات و آموزش‌های رایگان گیتار - هر هفته با محتوای جدید</p></div>
+    <div class="blog-grid">
+        <div class="blog-card"><div class="blog-img"><img src="assets/image/blog-1.jpg" alt="Blog" onerror="this.src='https://placehold.co/400x220/21262D/DAA520?text=Blog'"></div><div class="blog-category" data-translate="blogCat1">آموزشی</div><h4 data-translate="blogTitle1">۱۰ تکنیک طلایی برای افزایش سرعت نوازندگی (از ۸۰ تا ۲۰۰ BMP)</h4><p data-translate="blogDesc1">با تمرینات روزانه ۱۵ دقیقه‌ای و متد کرونومتر، سرعت خود را تا ۳ برابر افزایش دهید. همراه با تمرینات اختصاصی و فایل صوتی</p><a href="#" class="blog-link" data-translate="readMore">ادامه مطلب</a></div>
+        <div class="blog-card"><div class="blog-img"><img src="assets/image/blog-2.jpg" alt="Blog" onerror="this.src='https://placehold.co/400x220/21262D/DAA520?text=Blog'"></div><div class="blog-category" data-translate="blogCat2">معرفی ساز</div><h4 data-translate="blogTitle2">بهترین گیتارهای الکتریک زیر ۱۰۰ میلیون تومان (نیمه دوم ۲۰۲۴)</h4><p data-translate="blogDesc2">راهنمای خرید برای نوازندگان مبتدی و حرفه‌ای همراه با تست صدا، بررسی تخصصی و مقایسه برندها</p><a href="#" class="blog-link" data-translate="readMore">ادامه مطلب</a></div>
+        <div class="blog-card"><div class="blog-img"><img src="assets/image/blog-3.jpg" alt="Blog" onerror="this.src='https://placehold.co/400x220/21262D/DAA520?text=Blog'"></div><div class="blog-category" data-translate="blogCat3">تکنیک</div><h4 data-translate="blogTitle3">آشنایی کامل با مدهای یونانی در گیتار (Modal Masterclass)</h4><p data-translate="blogDesc3">همراه با تبلچر، دیاگرام و تمرین‌های کاربردی برای تسلط بر ۷ مد اصلی به همراه آهنگ‌های معروف هر مد</p><a href="#" class="blog-link" data-translate="readMore">ادامه مطلب</a></div>
+        <div class="blog-card"><div class="blog-img"><img src="assets/image/blog-4.jpg" alt="Blog" onerror="this.src='https://placehold.co/400x220/21262D/DAA520?text=Blog'"></div><div class="blog-category" data-translate="blogCat4">استادان</div><h4 data-translate="blogTitle4">گفتگوی اختصاصی با استاد فرانسیسکو دلگادو</h4><p data-translate="blogDesc4">از سبک فلامنکو تا همکاری با نوازندگان بزرگ جهان و رازهای تمرین روزانه یک نوازنده حرفه‌ای</p><a href="#" class="blog-link" data-translate="readMore">ادامه مطلب</a></div>
+        <div class="blog-card"><div class="blog-img"><img src="assets/image/blog-5.jpg" alt="Blog" onerror="this.src='https://placehold.co/400x220/21262D/DAA520?text=Blog'"></div><div class="blog-category" data-translate="blogCat5">آموزشی</div><h4 data-translate="blogTitle5">آکوردشناسی پیشرفته: از آکوردهای ساده تا جایگزینی و گسترش</h4><p data-translate="blogDesc5">آموزش کامل آکوردهای ماژور، مینور، هفتم، نهم، یازدهم، سیزدهم و کاربرد آن‌ها در آهنگسازی</p><a href="#" class="blog-link" data-translate="readMore">ادامه مطلب</a></div>
+        <div class="blog-card"><div class="blog-img"><img src="assets/image/blog-6.jpg" alt="Blog" onerror="this.src='https://placehold.co/400x220/21262D/DAA520?text=Blog'"></div><div class="blog-category" data-translate="blogCat6">تجهیزات</div><h4 data-translate="blogTitle6">راهنمای خرید آمپلیفایر: تیوب در مقابل ترانزیستور و مدلینگ</h4><p data-translate="blogDesc6">مقایسه کامل انواع آمپلیفایر، بهترین انتخاب برای سبک‌های مختلف و بودجه‌های متفاوت</p><a href="#" class="blog-link" data-translate="readMore">ادامه مطلب</a></div>
+        <div class="blog-card"><div class="blog-img"><img src="assets/image/blog-7.jpg" alt="Blog" onerror="this.src='https://placehold.co/400x220/21262D/DAA520?text=Blog'"></div><div class="blog-category" data-translate="blogCat7">اخبار</div><h4 data-translate="blogTitle7">برگزاری اولین جشنواره بین‌المللی گیتار پولاریس</h4><p data-translate="blogDesc7">جزئیات کامل جشنواره، جوایز، داوران، شرایط شرکت و مهلت ثبت‌نام تا ۳۰ شهریور</p><a href="#" class="blog-link" data-translate="readMore">ادامه مطلب</a></div>
+        <div class="blog-card"><div class="blog-img"><img src="assets/image/blog-8.jpg" alt="Blog" onerror="this.src='https://placehold.co/400x220/21262D/DAA520?text=Blog'"></div><div class="blog-category" data-translate="blogCat8">تمرین</div><h4 data-translate="blogTitle8">برنامه تمرینی ۳۰ روزه برای تبدیل شدن به نوازنده حرفه‌ای</h4><p data-translate="blogDesc8">یک برنامه تمرینی کامل و ساختارمند برای هر سطح از مبتدی تا پیشرفته به همراه چک‌لیست روزانه</p><a href="#" class="blog-link" data-translate="readMore">ادامه مطلب</a></div>
+    </div>
+</section>
+
+<!-- ==================== بخش ۷: افتخارات هنرجویان ==================== -->
+<section class="success">
+    <div class="section-header"><h3 data-translate="successTitle">افتخارات هنرجویان آکادمی پولاریس</h3><p data-translate="successSubtitle">موفقیت‌های درخشان هنرجویان ما در عرصه‌های بین‌المللی - بیش از ۵۰۰ هنرجوی موفق در سطح جهان</p></div>
+    <div class="success-grid">
+        <div class="success-card"><img src="assets/image/master-1.jpg" alt="student" class="success-img" onerror="this.src='https://placehold.co/80x80/21262D/DAA520?text=ع'"><div class="success-quote">"</div><p data-translate="success1Text">بعد از ۱۸ ماه آموزش در آکادمی پولاریس، موفق به کسب مقام سوم جشنواره بین‌المللی گیتار وین شدم. این مدال را مدیون اساتید بزرگ این آکادمی هستم.</p><div class="success-user" data-translate="success1User">🎸 امیرحسین کرمی | هنرجوی دوره فلامنکو</div></div>
+        <div class="success-card"><img src="assets/image/master-5.jpg" alt="student" class="success-img" onerror="this.src='https://placehold.co/80x80/21262D/DAA520?text=س'"><div class="success-quote">"</div><p data-translate="success2Text">اساتید فوق‌العاده حرفه‌ای و پشتیبانی عالی تیم پولاریس. الان ۲ ساله که توی گروه موسیقی بین‌المللی خودم مشغول تدریس و اجرا هستم.</p><div class="success-user" data-translate="success2User">🎸 سارا محمدی | هنرجوی گیتار الکتریک</div></div>
+        <div class="success-card"><img src="assets/image/master-4.jpg" alt="student" class="success-img" onerror="this.src='https://placehold.co/80x80/21262D/DAA520?text=ع'"><div class="success-quote">"</div><p data-translate="success3Text">از صفر مطلق گیتار شروع کردم و الان تونستم اولین آلبوم مستقل خودم رو با ۸ قطعه منتشر کنم. بی‌نهایت سپاسگزارم از خانواده پولاریس.</p><div class="success-user" data-translate="success3User">🎸 علی نوری | هنرجوی فینگراستایل</div></div>
+        <div class="success-card"><img src="assets/image/master-2.jpg" alt="student" class="success-img" onerror="this.src='https://placehold.co/80x80/21262D/DAA520?text=م'"><div class="success-quote">"</div><p data-translate="success4Text">به لطف آموزش‌های حرفه‌ای پولاریس، تونستم بورسیه تحصیلی کنسرواتوار سلطنتی لندن رو دریافت کنم.</p><div class="success-user" data-translate="success4User">🎸 مریم احمدی | هنرجوی گیتار کلاسیک</div></div>
+        <div class="success-card"><img src="assets/image/master-3.jpg" alt="student" class="success-img" onerror="this.src='https://placehold.co/80x80/21262D/DAA520?text=ر'"><div class="success-quote">"</div><p data-translate="success5Text">بعد از اتمام دوره‌های پولاریس، تونستم شرکت تولید محتوای موسیقی خودم رو تاسیس کنم.</p><div class="success-user" data-translate="success5User">🎸 رضا کریمی | هنرجوی آهنگسازی</div></div>
+        <div class="success-card"><img src="assets/image/master-6.jpg" alt="student" class="success-img" onerror="this.src='https://placehold.co/80x80/21262D/DAA520?text=ن'"><div class="success-quote">"</div><p data-translate="success6Text">اساتید بین‌المللی پولاریس، من رو به یک گیتاریست حرفه‌ای تبدیل کردن. الان توی لس‌آنجلس اجرا دارم.</p><div class="success-user" data-translate="success6User">🎸 نوید صالحی | هنرجوی راک متال</div></div>
+    </div>
+</section>
+
+<!-- ==================== بخش ۸: آمار ==================== -->
+<section class="stats-section">
+    <div class="stats-grid">
+    <div class="stat-box"><span class="stat-num" data-translate="statNum1">۱۵٬۰۰۰+</span><span data-translate="statLabel1">هنرجوی فعال</span></div>
+    <div class="stat-box"><span class="stat-num" data-translate="statNum2">۳۲</span><span data-translate="statLabel2">کشور جهان</span></div>
+    <div class="stat-box"><span class="stat-num" data-translate="statNum3">۱۲۸</span><span data-translate="statLabel3">استاد مجرب</span></div>
+    <div class="stat-box"><span class="stat-num" data-translate="statNum4">۵۲۰+</span><span data-translate="statLabel4">دوره تخصصی</span></div>
+    <div class="stat-box"><span class="stat-num" data-translate="statNum5">۹۸٪</span><span data-translate="statLabel5">رضایت هنرجویان</span></div>
+    <div class="stat-box"><span class="stat-num" data-translate="statNum6">۴.۹</span><span data-translate="statLabel6">امتیاز از ۵</span></div>
+    </div>
+</section>
+
+<!-- ==================== بخش ۹: کشورها ==================== -->
+<section class="countries">
+    <div class="section-header"><h3 data-translate="countriesTitle">هنرجویان آکادمی پولاریس در سراسر جهان</h3><p data-translate="countriesSubtitle">بیش از ۳۲ کشور جهان با ما همراه هستند - جامعه پولاریس در حال گسترش به سراسر کره زمین</p></div>
+    <div class="countries-grid">
+        <div class="country-card"><span class="flag">🇮🇷</span><h5 data-translate="country1">ایران</h5><p data-translate="country1Students">۴,۲۰۰+ هنرجو</p></div>
+        <div class="country-card"><span class="flag">🇺🇸</span><h5 data-translate="country2">آمریکا</h5><p data-translate="country2Students">۲,۸۰۰+ هنرجو</p></div>
+        <div class="country-card"><span class="flag">🇬🇧</span><h5 data-translate="country3">انگلیس</h5><p data-translate="country3Students">۱,۹۰۰+ هنرجو</p></div>
+        <div class="country-card"><span class="flag">🇩🇪</span><h5 data-translate="country4">آلمان</h5><p data-translate="country4Students">۱,۵۰۰+ هنرجو</p></div>
+        <div class="country-card"><span class="flag">🇨🇦</span><h5 data-translate="country5">کانادا</h5><p data-translate="country5Students">۱,۲۰۰+ هنرجو</p></div>
+        <div class="country-card"><span class="flag">🇦🇺</span><h5 data-translate="country6">استرالیا</h5><p data-translate="country6Students">۹۰۰+ هنرجو</p></div>
+        <div class="country-card"><span class="flag">🇹🇷</span><h5 data-translate="country7">ترکیه</h5><p data-translate="country7Students">۸۵۰+ هنرجو</p></div>
+        <div class="country-card"><span class="flag">🇦🇪</span><h5 data-translate="country8">امارات</h5><p data-translate="country8Students">۷۲۰+ هنرجو</p></div>
+        <div class="country-card"><span class="flag">🇫🇷</span><h5 data-translate="country9">فرانسه</h5><p data-translate="country9Students">۶۸۰+ هنرجو</p></div>
+        <div class="country-card"><span class="flag">🇮🇹</span><h5 data-translate="country10">ایتالیا</h5><p data-translate="country10Students">۶۲۰+ هنرجو</p></div>
+        <div class="country-card"><span class="flag">🇪🇸</span><h5 data-translate="country11">اسپانیا</h5><p data-translate="country11Students">۵۸۰+ هنرجو</p></div>
+        <div class="country-card"><span class="flag">🇯🇵</span><h5 data-translate="country12">ژاپن</h5><p data-translate="country12Students">۵۲۰+ هنرجو</p></div>
+        <div class="country-card"><span class="flag">🇰🇷</span><h5 data-translate="country13">کره جنوبی</h5><p data-translate="country13Students">۴۸۰+ هنرجو</p></div>
+        <div class="country-card"><span class="flag">🇧🇷</span><h5 data-translate="country14">برزیل</h5><p data-translate="country14Students">۴۳۰+ هنرجو</p></div>
+        <div class="country-card"><span class="flag">🇨🇭</span><h5 data-translate="country15">سوئیس</h5><p data-translate="country15Students">۳۹۰+ هنرجو</p></div>
+        <div class="country-card"><span class="flag">🇸🇪</span><h5 data-translate="country16">سوئد</h5><p data-translate="country16Students">۳۵۰+ هنرجو</p></div>
+    </div>
+</section>
+
+<!-- ==================== بخش ۱۰: رویدادها ==================== -->
+<section class="events">
+    <div class="section-header"><h3 data-translate="eventsTitle">رویدادهای پیش‌رو</h3><p data-translate="eventsSubtitle">کنسرت‌ها، مسترکلاس‌ها و مسابقات گیتار - فرصت‌های استثنایی برای یادگیری و شبکه‌سازی</p></div>
+    <div class="events-grid">
+        <div class="event-card"><div class="event-date"><span data-translate="event1Day">۲۵</span><span data-translate="event1Month">تیر</span></div><div><h4 data-translate="event1Title">کنسرت آنلاین استیو وای - اجرای زنده</h4><p data-translate="event1Desc">اجرای اختصاصی با کیفیت ۴K و صدای دالبی - به همراه پرسش و پاسخ زنده</p></div></div>
+        <div class="event-card"><div class="event-date"><span data-translate="event2Day">۱۰</span><span data-translate="event2Month">مرداد</span></div><div><h4 data-translate="event2Title">مسابقه بزرگ گیتار پولاریس</h4><p data-translate="event2Desc">جوایز نقدی تا ۱۰۰ میلیون تومان + قرارداد هنری با آکادمی پولاریس</p></div></div>
+        <div class="event-card"><div class="event-date"><span data-translate="event3Day">۱</span><span data-translate="event3Month">شهریور</span></div><div><h4 data-translate="event3Title">مسترکلاس تامی امانوئل - فینگراستایل</h4><p data-translate="event3Desc">تکنیک‌های پیشرفته فینگراستایل با اسطوره زنده گیتار جهان</p></div></div>
+        <div class="event-card"><div class="event-date"><span data-translate="event4Day">۱۵</span><span data-translate="event4Month">شهریور</span></div><div><h4 data-translate="event4Title">نمایشگاه تخصصی گیتار و تجهیزات</h4><p data-translate="event4Desc">بازدید از جدیدترین محصولات برندهای معروف با تخفیف ویژه و تست حرفه‌ای</p></div></div>
+        <div class="event-card"><div class="event-date"><span data-translate="event5Day">۵</span><span data-translate="event5Month">مهر</span></div><div><h4 data-translate="event5Title">کارگاه تخصصی تولید محتوا برای نوازندگان</h4><p data-translate="event5Desc">آموزش ضبط، ادیت و انتشار ویدیوهای حرفه‌ای در شبکه‌های اجتماعی</p></div></div>
+        <div class="event-card"><div class="event-date"><span data-translate="event6Day">۲۰</span><span data-translate="event6Month">مهر</span></div><div><h4 data-translate="event6Title">جشنواره نوازندگان جوان پولاریس</h4><p data-translate="event6Desc">فرصت اجرا برای هنرجویان مستعد در برابر اساتید بزرگ و داوران حرفه‌ای</p></div></div>
+    </div>
+</section>
+
+<!-- ==================== بخش ۱۱: تماس با ما ==================== -->
+<section class="contact-section">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3 data-translate="contactTitle">تماس با ما</h3>
+            <p data-translate="contactDesc">پاسخگویی ۲۴ ساعته، ۷ روز هفته حتی در تعطیلات - تیم پشتیبانی ما همیشه آماده خدمت به شماست</p>
+            <div class="contact-detail"><span>📞</span> <span data-translate="londonPhone">+۴۴ ۲۰ ۷۹۴۶ ۰۹۵۸ (لندن)</span></div>
+            <div class="contact-detail"><span>📞</span> <span data-translate="tehranPhone">+۹۸ ۲۱ ۸۸۵۶ ۱۲۳۴ (تهران)</span></div>
+            <div class="contact-detail"><span>✉️</span> <span data-translate="emailInfo">info@polarisacademy.com</span></div>
+            <div class="contact-detail"><span>📍</span> <span data-translate="tehranAddress">تهران، خیابان ولیعصر، نبست به پارک ساعی، پلاک ۱۲۳، طبقه ۵</span></div>
+            <div class="contact-detail"><span>📍</span> <span data-translate="londonAddress">لندن، منطقه کنزینگتون، خیابان گراوت، شماره ۴۲</span></div>
+            <div class="contact-detail"><span>🕒</span> <span data-translate="tehranHours">شنبه تا پنجشنبه ۹ صبح تا ۸ شب (به وقت تهران)</span></div>
+            <div class="contact-detail"><span>🕒</span> <span data-translate="londonHours">دوشنبه تا شنبه ۱۰ صبح تا ۶ عصر (به وقت لندن)</span></div>
+        </div>
+        <div class="contact-form">
+            <h4 data-translate="contactFormTitle">ارسال پیام سریع</h4>
+            <div class="form-row"><input type="text" data-translate="fullNamePlaceholder" placeholder="نام و نام خانوادگی"><input type="email" data-translate="emailPlaceholder" placeholder="ایمیل"></div>
+            <div class="form-row"><input type="text" data-translate="cityPlaceholder" placeholder="شهر"><input type="text" data-translate="provincePlaceholder" placeholder="استان"></div>
+            <div class="form-row"><input type="text" data-translate="subjectPlaceholder" placeholder="موضوع پیام"><input style="direction: rtl;" type="tel" data-translate="phonePlaceholder" placeholder="شماره تماس"></div>
+            <textarea rows="4" data-translate="messagePlaceholder" placeholder="متن پیام شما..."></textarea>
+            <button class="submit-btn" data-translate="sendMessage">ارسال پیام</button>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== بخش ۱۲: پرسش و پاسخ ==================== -->
+<section class="faq-section">
+    <div class="section-header"><h3 data-translate="faqTitle">پرسش‌های پرتکرار</h3><p data-translate="faqSubtitle">پاسخ به سوالات رایج شما - اگر سوال دیگری دارید، فرم زیر را پر کنید</p></div>
+    <div class="faq-container">
+        <div class="faq-list">
+            <div class="faq-item"><div class="faq-question"><span class="faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DAA520"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></span><span data-translate="faq1Question">چگونه می‌توانم در دوره ثبت‌نام کنم؟</span></div><div class="faq-answer" data-translate="faq1Answer">برای ثبت‌نام کافی است روی دکمه ثبت‌نام در هدر کلیک کرده و فرم را پر کنید. کارشناسان ما ظرف ۲۴ ساعت با شما تماس می‌گیرند و مراحل ثبت‌نام را راهنمایی می‌کنند.</div></div>
+            <div class="faq-item"><div class="faq-question"><span class="faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DAA520"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></span><span data-translate="faq2Question">آیا گواهی پایان دوره بین‌المللی است؟</span></div><div class="faq-answer" data-translate="faq2Answer">بله، تمام گواهی‌های آکادمی پولاریس با تایید ۳۲ کشور جهان صادر می‌شود و قابل ترجمه رسمی و استفاده در دانشگاه‌ها و موسسات بین‌المللی است.</div></div>
+            <div class="faq-item"><div class="faq-question"><span class="faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DAA520"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></span><span data-translate="faq3Question">چند درصد هنرجویان موفق به کسب مهارت حرفه‌ای می‌شوند؟</span></div><div class="faq-answer" data-translate="faq3Answer">طبق نظرسنجی‌های انجام شده از ۱۵۰۰۰ هنرجوی ما، بیش از ۹۴٪ هنرجویان پس از اتمام دوره‌های ما به سطح حرفه‌ای می‌رسند و توانایی اجرای کنسرت و تدریس را پیدا می‌کنند.</div></div>
+            <div class="faq-item"><div class="faq-question"><span class="faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DAA520"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></span><span data-translate="faq4Question">آیا کلاس‌ها به صورت حضوری هم برگزار می‌شود؟</span></div><div class="faq-answer" data-translate="faq4Answer">بله، هم به صورت حضوری در تهران و لندن و هم به صورت آنلاین برای سراسر جهان برگزار می‌شود. شما می‌توانید با توجه به موقعیت خود یکی از این دو روش را انتخاب کنید.</div></div>
+            <div class="faq-item"><div class="faq-question"><span class="faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DAA520"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></span><span data-translate="faq5Question">آیا امکان اقساط وجود دارد؟</span></div><div class="faq-answer" data-translate="faq5Answer">بله، دوره‌ها تا ۶ ماه اقساط بدون بهره ارائه می‌شوند. برای دوره‌های پیشرفته تا ۱۲ ماه اقساط نیز امکان‌پذیر است.</div></div>
+            <div class="faq-item"><div class="faq-question"><span class="faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DAA520"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></span><span data-translate="faq6Question">آیا گیتار برای شروع لازم است؟</span></div><div class="faq-answer" data-translate="faq6Answer">برای هنرجویان مبتدی، آکادمی گیتار اجاره‌ای با کیفیت بالا و قیمت مناسب ارائه می‌دهد. همچنین راهنمای خرید گیتار مناسب برای هنرجویان ارائه می‌شود.</div></div>
+        </div>
+        <div class="faq-form">
+            <h4 data-translate="faqFormTitle">سوال دیگری دارید؟</h4>
+            <p data-translate="faqFormDesc">پاسخگوی شما هستیم. فرم زیر را پر کنید تا در اسرع وقت پاسخ خود را دریافت کنید.</p>
+            <input type="text" data-translate="fullNamePlaceholder" placeholder="نام و نام خانوادگی">
+            <input type="email" data-translate="emailPlaceholder" placeholder="ایمیل">
+            <input style="direction: rtl;" type="tel" data-translate="phonePlaceholder" placeholder="شماره تماس">
+            <textarea rows="4" data-translate="questionPlaceholder" placeholder="سوال خود را بنویسید..."></textarea>
+            <button class="submit-btn" data-translate="sendQuestion">ارسال سوال</button>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== فوتر ==================== -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <div class="footer-logo"><svg width="45" height="45" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="#DAA520" stroke-width="2.5"/><path d="M50 22 L63 45 L54 45 L58 62 L42 62 L46 45 L37 45 Z" fill="#DAA520" opacity="0.8"/><text x="50" y="57" text-anchor="middle" fill="#1A1A2E" font-size="18" font-weight="bold">P</text></svg><h4 data-translate="footerLogoTitle">پولاریس آکادمی</h4></div>
+            <p data-translate="footerDesc1">بزرگترین آکادمی تخصصی گیتار در خاورمیانه با بیش از ۱۵ سال تجربه و همکاری با برترین اساتید جهان. بیش از ۱۵ هزار هنرجوی موفق در ۳۲ کشور جهان.</p>
+            <p data-translate="footerDesc2">آکادمی پولاریس با بهره‌گیری از مدرن‌ترین متدهای آموزشی روز دنیا و اساتید بین‌المللی، مسیر پیشرفت شما را هموار می‌کند.</p>
+        </div>
+        <div class="footer-col">
+            <h5 data-translate="quickAccess">دسترسی سریع</h5>
+            <ul>
+                <li><a href="#" data-translate="footerCourses">دوره‌ها</a></li>
+                <li><a href="#" data-translate="footerMasters">اساتید بین‌المللی</a></li>
+                <li><a href="#" data-translate="footerWorkshops">کارگاه‌ها و مسترکلاس‌ها</a></li>
+                <li><a href="#" data-translate="footerOnline">کلاس آنلاین زنده</a></li>
+                <li><a href="#" data-translate="footerStore">فروشگاه و تجهیزات</a></li>
+                <li><a href="#" data-translate="footerBlog">وبلاگ آموزشی</a></li>
+                <li><a href="#" data-translate="footerAbout">درباره ما</a></li>
+                <li><a href="#" data-translate="footerContact">تماس با ما</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5 data-translate="specialCoursesTitle">دوره‌های ویژه</h5>
+            <ul>
+                <li><a href="#" data-translate="specialCourse1">گیتار کلاسیک (مبتدی تا پیشرفته)</a></li>
+                <li><a href="#" data-translate="specialCourse2">گیتار الکتریک راک و متال</a></li>
+                <li><a href="#" data-translate="specialCourse3">فلامنکو حرفه‌ای آندلس</a></li>
+                <li><a href="#" data-translate="specialCourse4">فینگراستایل مدرن</a></li>
+                <li><a href="#" data-translate="specialCourse5">بلوز و جاز ایمپرووایزیشن</a></li>
+                <li><a href="#" data-translate="specialCourse6">تئوری و سلفژ پیشرفته</a></li>
+                <li><a href="#" data-translate="specialCourse7">آهنگسازی و تنظیم</a></li>
+                <li><a href="#" data-translate="specialCourse8">بیس گیتار حرفه‌ای</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5 data-translate="contactInfoTitle">اطلاعات تماس</h5>
+            <div class="footer-contact">📞 <span data-translate="footerLondonPhone">+۴۴ ۲۰ ۷۹۴۶ ۰۹۵۸ (لندن)</span></div>
+            <div class="footer-contact">📞 <span data-translate="footerTehranPhone">+۹۸ ۲۱ ۸۸۵۶ ۱۲۳۴ (تهران)</span></div>
+            <div class="footer-contact">📞 <span data-translate="footerSupportPhone">+۹۸ ۹۱۲ ۱۲۳ ۴۵۶۷ (پشتیبانی)</span></div>
+            <div class="footer-contact">✉️ <span data-translate="footerEmailInfo">info@polarisacademy.com</span></div>
+            <div class="footer-contact">✉️ <span data-translate="footerEmailSupport">support@polarisacademy.com</span></div>
+            <div class="footer-contact">📍 <span data-translate="footerTehranAddress">تهران - خیابان ولیعصر - پلاک ۱۲۳</span></div>
+            <div class="footer-contact">📍 <span data-translate="footerLondonAddress">لندن - کنزینگتون - شماره ۴۲</span></div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p data-translate="copyright">© ۱۴۰۴ تمامی حقوق برای آکادمی بین‌المللی گیتار پولاریس محفوظ است. طراحی و توسعه توسط تیم حرفه‌ای پولاریس</p>
+        <p style="margin-top: 10px; font-size: 0.7rem;" data-translate="copyrightEn">Polaris Academy - International Guitar Education Since 2009</p>
+    </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>س

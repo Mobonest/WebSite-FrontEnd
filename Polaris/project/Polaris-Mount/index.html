@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="آکادمی کوهنوردی پولاریس - آموزش تخصصی کوهنوردی، یخ‌نوردی، سنگ‌نوردی و فروشگاه تجهیزات کوهنوردی">
+    <meta name="theme-color" content="#0A1F1A">
+    <meta name="keywords" content="کوهنوردی, آکادمی کوهنوردی, پولاریس, آموزش کوهنوردی, تجهیزات کوهنوردی, فروشگاه کوهنوردی">
+    
+    <meta property="og:title" content="آکادمی کوهنوردی پولاریس | آموزش و فروشگاه تجهیزات">
+    <meta property="og:description" content="آموزش تخصصی کوهنوردی، یخ‌نوردی و فروش تجهیزات حرفه‌ای | دارای مجوز رسمی">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fa_IR">
+    
+    <title data-lang="pageTitle">🏔️ آکادمی کوهنوردی پولاریس | آموزش تخصصی و فروشگاه تجهیزات کوهنوردی</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2322C55E'/%3E%3Cstop offset='100%25' stop-color='%23065F2C'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='50,5 95,80 5,80' fill='url(%23g)'/%3E%3Cpolygon points='50,25 70,55 30,55' fill='white' opacity='0.6'/%3E%3C/svg%3E">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- ==================== LOADER ==================== -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader-content">
+            <svg class="loader-mountain" viewBox="0 0 100 80">
+                <defs>
+                    <linearGradient id="loaderGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#22C55E"/>
+                        <stop offset="100%" stop-color="#065F2C"/>
+                    </linearGradient>
+                </defs>
+                <polygon points="50,5 90,65 10,65" fill="none" stroke="url(#loaderGrad)" stroke-width="3" stroke-dasharray="200" stroke-dashoffset="200">
+                    <animate attributeName="stroke-dashoffset" from="200" to="0" dur="1.5s" fill="freeze"/>
+                </polygon>
+                <polygon points="50,15 65,40 35,40" fill="none" stroke="white" stroke-width="2" opacity="0.6" stroke-dasharray="80" stroke-dashoffset="80">
+                    <animate attributeName="stroke-dashoffset" from="80" to="0" dur="1s" begin="0.5s" fill="freeze"/>
+                </polygon>
+            </svg>
+            <div class="loader-text" data-lang="loaderText">در حال فتح قله...</div>
+            <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+        </div>
+    </div>
+
+    <!-- ==================== MOUNTAIN PARALLAX ==================== -->
+    <div class="mountain-parallax" id="parallaxBg">
+        <svg class="parallax-svg layer-back" viewBox="0 0 1440 800" preserveAspectRatio="none">
+            <path d="M0,550 L200,400 L450,520 L600,380 L800,450 L1000,350 L1200,430 L1440,300 L1440,800 L0,800 Z" fill="url(#parallaxGrad1)" opacity="0.25">
+                <animate attributeName="d" dur="25s" repeatCount="indefinite" values="M0,550 L200,400 L450,520 L600,380 L800,450 L1000,350 L1200,430 L1440,300 L1440,800 L0,800 Z;M0,530 L200,420 L450,500 L600,400 L800,470 L1000,370 L1200,450 L1440,320 L1440,800 L0,800 Z;M0,550 L200,400 L450,520 L600,380 L800,450 L1000,350 L1200,430 L1440,300 L1440,800 L0,800 Z"/>
+            </path>
+            <defs>
+                <linearGradient id="parallaxGrad1" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#22C55E"/><stop offset="100%" stop-color="#0A1F1A"/>
+                </linearGradient>
+            </defs>
+        </svg>
+        <svg class="parallax-svg layer-mid" viewBox="0 0 1440 800" preserveAspectRatio="none">
+            <path d="M0,650 L150,530 L320,610 L500,520 L680,580 L880,490 L1080,560 L1300,480 L1440,520 L1440,800 L0,800 Z" fill="url(#parallaxGrad2)" opacity="0.35">
+                <animate attributeName="d" dur="30s" repeatCount="indefinite" values="M0,650 L150,530 L320,610 L500,520 L680,580 L880,490 L1080,560 L1300,480 L1440,520 L1440,800 L0,800 Z;M0,630 L150,550 L320,590 L500,540 L680,600 L880,510 L1080,580 L1300,500 L1440,540 L1440,800 L0,800 Z;M0,650 L150,530 L320,610 L500,520 L680,580 L880,490 L1080,560 L1300,480 L1440,520 L1440,800 L0,800 Z"/>
+            </path>
+            <defs>
+                <linearGradient id="parallaxGrad2" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#166D3B"/><stop offset="100%" stop-color="#05120E"/>
+                </linearGradient>
+            </defs>
+        </svg>
+        <svg class="parallax-svg layer-front" viewBox="0 0 1440 800" preserveAspectRatio="none">
+            <path d="M0,750 L200,650 L400,720 L600,630 L800,690 L1000,620 L1200,670 L1440,600 L1440,800 L0,800 Z" fill="url(#parallaxGrad3)" opacity="0.45">
+                <animate attributeName="d" dur="35s" repeatCount="indefinite" values="M0,750 L200,650 L400,720 L600,630 L800,690 L1000,620 L1200,670 L1440,600 L1440,800 L0,800 Z;M0,730 L200,670 L400,700 L600,650 L800,710 L1000,640 L1200,690 L1440,620 L1440,800 L0,800 Z;M0,750 L200,650 L400,720 L600,630 L800,690 L1000,620 L1200,670 L1440,600 L1440,800 L0,800 Z"/>
+            </path>
+            <defs>
+                <linearGradient id="parallaxGrad3" x1="1" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#4ADE80"/><stop offset="100%" stop-color="#0A1F1A"/>
+                </linearGradient>
+            </defs>
+        </svg>
+        <svg class="parallax-svg layer-snow" viewBox="0 0 1440 800" preserveAspectRatio="none">
+            <path d="M0,750 L200,650 L400,720 L600,630 L800,690 L1000,620 L1200,670 L1440,600 L1440,750 L0,750 Z" fill="white" opacity="0.06"/>
+        </svg>
+    </div>
+
+    <!-- ==================== TOP BAR ==================== -->
+    <div class="top-bar-glass">
+        <div class="container">
+            <div class="top-bar-inner">
+                <div class="top-bar-left">
+                    <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12,2L1,21H23L12,2Z" fill="#22C55E"/></svg>
+                    <span data-lang="topBarText">🏔️ آکادمی کوهنوردی پولاریس | آموزش از مبتدی تا پیشرفته</span>
+                </div>
+                <div class="top-bar-right">
+                    <a href="mailto:info@polaris-academy.com" class="top-link">
+                        <svg viewBox="0 0 24 24" width="14" height="14"><path d="M20,4H4C2.9,4,2,4.9,2,6V18C2,19.1,2.9,20,4,20H20C21.1,20,22,19.1,22,18V6C22,4.9,21.1,4,20,4ZM20,8L12,13L4,8V6L12,11L20,6V8Z" fill="#9CA3AF"/></svg>
+                        <span>info@polaris-academy.com</span>
+                    </a>
+                    <span class="separator">|</span>
+                    <a href="tel:+989123456789" class="top-link">
+                        <svg viewBox="0 0 24 24" width="14" height="14"><path d="M6.62,10.79C8.06,13.62,10.38,15.94,13.21,17.38L15.41,15.18C15.69,14.9,16.08,14.82,16.43,14.93C17.55,15.3,18.75,15.5,20,15.5C20.55,15.5,21,15.95,21,16.5V20C21,20.55,20.55,21,20,21C10.61,21,3,13.39,3,4C3,3.45,3.45,3,4,3H7.5C8.05,3,8.5,3.45,8.5,4C8.5,5.25,8.7,6.45,9.07,7.57C9.18,7.92,9.1,8.31,8.82,8.59L6.62,10.79Z" fill="#9CA3AF"/></svg>
+                        <span>۰۹۱۲۳۴۵۶۷۸۹</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="glass-header-floating" id="mainHeader">
+        <div class="container">
+            <div class="header-inner">
+                
+                <!-- Logo -->
+                <div class="logo-wrapper">
+                    <a href="#" class="logo-link">
+                        <svg class="logo-icon" viewBox="0 0 60 60">
+                            <defs>
+                                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#22C55E"/><stop offset="100%" stop-color="#065F2C"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="30,5 55,50 5,50" fill="url(#logoGradient)"/>
+                            <polygon points="30,18 40,38 20,38" fill="white" opacity="0.5"/>
+                        </svg>
+                        <div class="logo-text-group">
+                            <span class="logo-main-text">پولاریس</span>
+                            <span class="logo-sub-text">آکادمی کوهنوردی</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active"><span data-lang="navHome">خانه</span></a></li>
+                        <li><a href="#about" class="nav-link"><span data-lang="navAbout">درباره آکادمی</span></a></li>
+                        <li><a href="#why-us" class="nav-link"><span data-lang="navWhyUs">چرا پولاریس</span></a></li>
+                        <li><a href="#courses" class="nav-link"><span data-lang="navCourses">دوره‌ها</span></a></li>
+                        <li><a href="#team" class="nav-link"><span data-lang="navTeam">مربیان</span></a></li>
+                        <li><a href="#achievements" class="nav-link"><span data-lang="navAchievements">افتخارات</span></a></li>
+                        <li><a href="#ranking" class="nav-link"><span data-lang="navRanking">رتبه‌بندی</span></a></li>
+                        <li><a href="#shop" class="nav-link"><span data-lang="navShop">فروشگاه</span></a></li>
+                        <li><a href="#faq" class="nav-link"><span data-lang="navFaq">سوالات متداول</span></a></li>
+                        <li><a href="#gallery" class="nav-link"><span data-lang="navGallery">گالری</span></a></li>
+                        <li><a href="#contact" class="nav-link"><span data-lang="navContact">تماس</span></a></li>
+                    </ul>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <div class="header-controls">
+                        <button class="control-btn" id="themeToggle" title="تغییر تم">
+                            <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" fill="currentColor"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2"/></svg>
+                            <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"/></svg>
+                        </button>
+                        <button class="control-btn" id="langToggle">
+                            <svg viewBox="0 0 24 24" width="18"><path d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8H4.69c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-1.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z" fill="currentColor"/></svg>
+                            <span data-lang="langToggleText">EN</span>
+                        </button>
+                    </div>
+                    <button class="mobile-toggle" id="mobileToggle">
+                        <svg viewBox="0 0 24 24" width="24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" fill="currentColor"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== MOBILE MENU ==================== -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-menu-container">
+            <div class="mobile-menu-header">
+                <h3>🏔️ پولاریس</h3>
+                <button class="mobile-close" id="mobileClose">✕</button>
+            </div>
+            <ul class="mobile-nav">
+                <li><a href="#home">🏠 خانه</a></li>
+                <li><a href="#about">📋 درباره آکادمی</a></li>
+                <li><a href="#why-us">⭐ چرا پولاریس</a></li>
+                <li><a href="#courses">🎓 دوره‌ها</a></li>
+                <li><a href="#team">👥 مربیان</a></li>
+                <li><a href="#achievements">🏆 افتخارات</a></li>
+                <li><a href="#ranking">📊 رتبه‌بندی</a></li>
+                <li><a href="#shop">🛒 فروشگاه</a></li>
+                <li><a href="#faq">❓ سوالات متداول</a></li>
+                <li><a href="#gallery">📸 گالری</a></li>
+                <li><a href="#contact">📞 تماس</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+        
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero-section" id="home">
+            <div class="hero-particles"></div>
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content" data-aos="fade-left">
+                        <div class="hero-badge">
+                            <svg viewBox="0 0 24 24" width="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#F59E0B"/></svg>
+                            <span data-lang="heroBadge">🎖️ آکادمی رسمی کوهنوردی ایران</span>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            <span class="title-line" data-lang="heroTitleLine1">آکادمی کوهنوردی</span>
+                            <span class="title-highlight" data-lang="heroTitleLine2">پولاریس</span>
+                        </h1>
+                        
+                        <p class="hero-desc" data-lang="heroDesc">
+                            آموزش تخصصی کوهنوردی، یخ‌نوردی و سنگ‌نوردی | برگزاری دوره‌های مقدماتی تا پیشرفته | دارای مجوز رسمی از فدراسیون کوهنوردی و صعودهای ورزشی | همراه شما تا فتح بلندترین قله‌ها
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <a href="#courses" class="btn btn-primary btn-lg">
+                                <svg viewBox="0 0 24 24" width="18"><path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm0 15.25c2.5-1.57 4-4.25 4-7-1.79 0-3-.89-3-3-1.45 1.57-3.55 1.57-5 0 0 2.11-1.21 3-3 3 0 2.75 1.5 5.43 4 7v-5.25h1v6.43c.63.27 1.29.48 2 .48s1.37-.21 2-.48V12h1v5.25h-2z" fill="currentColor"/></svg>
+                                <span data-lang="heroBtnCourses">مشاهده دوره‌ها</span>
+                            </a>
+                            <a href="#contact" class="btn btn-outline btn-lg">
+                                <svg viewBox="0 0 24 24" width="18"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" fill="currentColor"/></svg>
+                                <span data-lang="heroBtnRegister">ثبت‌نام آنلاین</span>
+                            </a>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-value" data-count="500">۵۰۰+</span>
+                                <span class="stat-label" data-lang="statStudents">هنرجوی آموزش دیده</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value" data-count="50">۵۰+</span>
+                                <span class="stat-label" data-lang="statCourses">دوره تخصصی</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value" data-count="15">۱۵+</span>
+                                <span class="stat-label" data-lang="statYears">سال تجربه</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value" data-count="10">۱۰+</span>
+                                <span class="stat-label" data-lang="statCoaches">مربی حرفه‌ای</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual" data-aos="fade-right" data-aos-delay="200">
+                        <div class="hero-card-glass">
+                            <div class="hero-profile-icon">
+                                <img src="./assets/img/hero.webp" alt="پولاریس">
+                            </div>
+                            <div class="hero-card-info">
+                                <span class="info-label" data-lang="heroCardCurrentCourse">📅 دوره درحال برگزاری</span>
+                                <span class="info-value" data-lang="heroCardCourseName">دوره پیشرفته سنگ‌نوردی</span>
+                                <span class="info-label" data-lang="heroCardCapacity">👥 ظرفیت باقی‌مانده</span>
+                                <span class="info-value highlight" data-lang="heroCardSpots">۵ نفر</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT SECTION ===== -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">
+                        <svg viewBox="0 0 24 24" width="16"><path d="M12 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4z" fill="#22C55E"/></svg>
+                        <span data-lang="aboutBadge">📋 درباره آکادمی</span>
+                    </span>
+                    <h2 class="section-title" data-lang="aboutTitle">پولاریس؛ قطب آموزش کوهنوردی ایران</h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-image" data-aos="fade-left">
+                        <div class="about-img-wrapper">
+                            <img src="./assets/img/about.jpg" alt="آکادمی پولاریس">
+                        </div>
+                    </div>
+                    <div class="about-content" data-aos="fade-right">
+                        <h3 data-lang="aboutGreeting">🎯 به آکادمی پولاریس خوش آمدید</h3>
+                        <p class="about-text" data-lang="aboutText1">
+                            آکادمی کوهنوردی پولاریس با ۱۵ سال تجربه درخشان در زمینه آموزش کوهنوردی، به عنوان یکی از معتبرترین مراکز آموزشی ایران شناخته می‌شود. ما مفتخریم که با بهره‌گیری از مربیان بین‌المللی و متدهای آموزشی روز دنیا، مسیر حرفه‌ای شدن علاقه‌مندان به کوهنوردی را هموار می‌کنیم.
+                        </p>
+                        <p class="about-text" data-lang="aboutText2">
+                            از دوره‌های مقدماتی برای مبتدیان تا دوره‌های پیشرفته سنگ‌نوردی، یخ‌نوردی و امداد کوهستان - همه در یک محیط کاملاً حرفه‌ای و استاندارد. پولاریس یعنی مسیر مطمئن شما به سوی قله‌های موفقیت.
+                        </p>
+                        <div class="about-info-grid">
+                            <div class="info-item">
+                                <svg viewBox="0 0 24 24" width="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#F59E0B"/></svg>
+                                <span data-lang="aboutCert1">✅ مجوز رسمی فدراسیون</span>
+                            </div>
+                            <div class="info-item">
+                                <svg viewBox="0 0 24 24" width="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#F59E0B"/></svg>
+                                <span data-lang="aboutCert2">✅ مربیان بین‌المللی</span>
+                            </div>
+                            <div class="info-item">
+                                <svg viewBox="0 0 24 24" width="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#F59E0B"/></svg>
+                                <span data-lang="aboutCert3">✅ تجهیزات کامل و مدرن</span>
+                            </div>
+                            <div class="info-item">
+                                <svg viewBox="0 0 24 24" width="20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#F59E0B"/></svg>
+                                <span data-lang="aboutCert4">✅ گواهینامه معتبر</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== WHY POLARIS SECTION ===== -->
+        <section class="why-us-section" id="why-us">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">
+                        <svg viewBox="0 0 24 24" width="16"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" fill="#F59E0B"/></svg>
+                        <span data-lang="whyUsBadge">⭐ چرا پولاریس</span>
+                    </span>
+                    <h2 class="section-title" data-lang="whyUsTitle">چه چیزی ما را متمایز می‌کند</h2>
+                </div>
+                
+                <div class="why-us-grid">
+                    <div class="why-us-card" data-aos="flip-left" data-aos-delay="50">
+                        <div class="why-us-icon">
+                            <svg viewBox="0 0 64 64" width="64"><circle cx="32" cy="32" r="28" fill="none" stroke="#22C55E" stroke-width="2"/><path d="M20 40h24M24 32l4-8 4 12 4-10 4 6" fill="none" stroke="#22C55E" stroke-width="3" stroke-linecap="round"/></svg>
+                        </div>
+                        <h3 data-lang="whyUs1Title">متد آموزشی مدرن</h3>
+                        <p data-lang="whyUs1Desc">استفاده از جدیدترین متدهای آموزشی جهان و برنامه‌های تمرینی شخصی‌سازی شده برای هر هنرجو</p>
+                    </div>
+                    
+                    <div class="why-us-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="why-us-icon">
+                            <svg viewBox="0 0 64 64" width="64"><circle cx="32" cy="32" r="28" fill="none" stroke="#22C55E" stroke-width="2"/><path d="M32 12v4m0 32v4M12 32h4m32 0h4m-32.97-14.63l2.83 2.83m30.28 30.28l2.83-2.83M19.03 46.63l2.83-2.83m30.28-30.28l-2.83 2.83" stroke="#22C55E" stroke-width="2"/><circle cx="32" cy="32" r="8" fill="#22C55E" opacity="0.3"/></svg>
+                        </div>
+                        <h3 data-lang="whyUs2Title">تجهیزات حرفه‌ای</h3>
+                        <p data-lang="whyUs2Desc">تمامی تجهیزات کوهنوردی از برندهای معتبر جهانی برای تجربه‌ای امن و لذت‌بخش در اختیار هنرجویان</p>
+                    </div>
+                    
+                    <div class="why-us-card" data-aos="flip-left" data-aos-delay="150">
+                        <div class="why-us-icon">
+                            <svg viewBox="0 0 64 64" width="64"><circle cx="32" cy="32" r="28" fill="none" stroke="#22C55E" stroke-width="2"/><path d="M18 46h28M18 50h28M26 14l-8 32h28l-8-32H26z" fill="none" stroke="#22C55E" stroke-width="2"/><circle cx="32" cy="26" r="4" fill="#22C55E" opacity="0.5"/></svg>
+                        </div>
+                        <h3 data-lang="whyUs3Title">گواهینامه بین‌المللی</h3>
+                        <p data-lang="whyUs3Desc">اعطای گواهینامه‌های معتبر قابل ترجمه و مورد تایید فدراسیون جهانی کوهنوردی برای هنرجویان موفق</p>
+                    </div>
+                    
+                    <div class="why-us-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="why-us-icon">
+                            <svg viewBox="0 0 64 64" width="64"><circle cx="32" cy="32" r="28" fill="none" stroke="#22C55E" stroke-width="2"/><path d="M20 34c0 6.63 5.37 12 12 12s12-5.37 12-12" fill="none" stroke="#22C55E" stroke-width="2"/><path d="M44 20H20l12 16L44 20z" fill="#22C55E" opacity="0.3"/></svg>
+                        </div>
+                        <h3 data-lang="whyUs4Title">پشتیبانی دائمی</h3>
+                        <p data-lang="whyUs4Desc">پشتیبانی ۲۴/۷ و ارتباط مستمر با مربیان حتی پس از اتمام دوره برای راهنمایی و مشاوره صعودهای آینده</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== COURSES SECTION ===== -->
+        <section class="courses-section" id="courses">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">
+                        <svg viewBox="0 0 24 24" width="16"><path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3z" fill="#4ADE80"/></svg>
+                        <span data-lang="coursesBadge">🎓 دوره‌های آموزشی</span>
+                    </span>
+                    <h2 class="section-title" data-lang="coursesTitle">مسیرهای آموزشی پولاریس</h2>
+                </div>
+                
+                <div class="courses-grid">
+                    <div class="course-card" data-aos="flip-left" data-aos-delay="50">
+                        <div class="course-icon">🧗</div>
+                        <h3 data-lang="course1Title">کوهنوردی مقدماتی</h3>
+                        <p data-lang="course1Desc">آشنایی با اصول پایه، گام‌برداری و تنفس</p>
+                        <div class="course-meta"><span>⏱ ۴ هفته</span><span>🎯 مبتدی</span></div>
+                    </div>
+                    <div class="course-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="course-icon">❄️</div>
+                        <h3 data-lang="course2Title">یخ‌نوردی پیشرفته</h3>
+                        <p data-lang="course2Desc">تکنیک‌های تخصصی، کرامپون و تبر یخ</p>
+                        <div class="course-meta"><span>⏱ ۶ هفته</span><span>🎯 پیشرفته</span></div>
+                    </div>
+                    <div class="course-card" data-aos="flip-left" data-aos-delay="150">
+                        <div class="course-icon">🪨</div>
+                        <h3 data-lang="course3Title">سنگ‌نوردی فنی</h3>
+                        <p data-lang="course3Desc">صعودهای درجه ۵، طناب و ابزار تخصصی</p>
+                        <div class="course-meta"><span>⏱ ۸ هفته</span><span>🎯 متوسط</span></div>
+                    </div>
+                    <div class="course-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="course-icon">🩹</div>
+                        <h3 data-lang="course4Title">امداد کوهستان</h3>
+                        <p data-lang="course4Desc">کمک‌های اولیه و نجات فنی در ارتفاع</p>
+                        <div class="course-meta"><span>⏱ ۲ هفته</span><span>🎯 تخصصی</span></div>
+                    </div>
+                    <div class="course-card" data-aos="flip-left" data-aos-delay="250">
+                        <div class="course-icon">🧭</div>
+                        <h3 data-lang="course5Title">ناوبری و مسیریابی</h3>
+                        <p data-lang="course5Desc">GPS، نقشه‌خوانی و مسیریابی پیشرفته</p>
+                        <div class="course-meta"><span>⏱ ۳ هفته</span><span>🎯 متوسط</span></div>
+                    </div>
+                    <div class="course-card" data-aos="flip-left" data-aos-delay="300">
+                        <div class="course-icon">👑</div>
+                        <h3 data-lang="course6Title">آمادگی ۸۰۰۰ متری</h3>
+                        <p data-lang="course6Desc">برنامه کامل برای قله‌های بلند جهان</p>
+                        <div class="course-meta"><span>⏱ ۱۲ هفته</span><span>🎯 حرفه‌ای</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TEAM SECTION ===== -->
+        <section class="team-section" id="team">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">
+                        <svg viewBox="0 0 24 24" width="16"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" fill="#22C55E"/></svg>
+                        <span data-lang="teamBadge">👥 تیم آموزشی</span>
+                    </span>
+                    <h2 class="section-title" data-lang="teamTitle">مربیان حرفه‌ای پولاریس</h2>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-card" data-aos="zoom-in">
+                        <div class="team-avatar"><img src="./assets/img/user2.jpg" alt="رضا کوهنورد"></div>
+                        <h3 data-lang="team1Name">رضا کوهنورد</h3>
+                        <span class="team-role" data-lang="team1Role">موسس و سرمربی</span>
+                        <p data-lang="team1Bio">۱۸ سال تجربه | فاتح ۱۴ قله ۸۰۰۰ متری</p>
+                    </div>
+                    <div class="team-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="team-avatar"><img src="./assets/img/user3.jpg" alt="علی صبور"></div>
+                        <h3 data-lang="team2Name">علی صبور</h3>
+                        <span class="team-role" data-lang="team2Role">مربی ارشد سنگ‌نوردی</span>
+                        <p data-lang="team2Bio">۱۲ سال تجربه | مدرس رسمی فدراسیون</p>
+                    </div>
+                    <div class="team-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="team-avatar"><img src="./assets/img/user1.jpg" alt="مریم امید"></div>
+                        <h3 data-lang="team3Name">مریم امید</h3>
+                        <span class="team-role" data-lang="team3Role">مربی یخ‌نوردی و برف</span>
+                        <p data-lang="team3Bio">۱۰ سال تجربه | قهرمان کشوری یخ‌نوردی</p>
+                    </div>
+                    <div class="team-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="team-avatar"><img src="./assets/img/user4.jpg" alt="حسین کوهیار"></div>
+                        <h3 data-lang="team4Name">حسین کوهیار</h3>
+                        <span class="team-role" data-lang="team4Role">مربی امداد و نجات</span>
+                        <p data-lang="team4Bio">۱۵ سال تجربه | امدادگر رسمی هلال احمر</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ACHIEVEMENTS SECTION (WITH TABLE) ===== -->
+        <section class="achievements-section" id="achievements">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">
+                        <svg viewBox="0 0 24 24" width="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#F59E0B"/></svg>
+                        <span data-lang="achievementsBadge">🏆 افتخارات</span>
+                    </span>
+                    <h2 class="section-title" data-lang="achievementsTitle">مدال‌ها و دستاوردهای پولاریس</h2>
+                </div>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-card gold" data-aos="fade-up">
+                        <svg viewBox="0 0 60 60" width="60"><circle cx="30" cy="30" r="25" fill="none" stroke="#c9a84c" stroke-width="2"/><text x="30" y="38" text-anchor="middle" fill="#c9a84c" font-size="24">🥇</text></svg>
+                        <h3 data-lang="achieve1Title">قهرمانی کشوری ۱۴۰۲</h3>
+                        <p data-lang="achieve1Desc">مقام اول مسابقات سنگ‌نوردی</p>
+                    </div>
+                    <div class="achievement-card silver" data-aos="fade-up" data-aos-delay="100">
+                        <svg viewBox="0 0 60 60" width="60"><circle cx="30" cy="30" r="25" fill="none" stroke="#a8b4c0" stroke-width="2"/><text x="30" y="38" text-anchor="middle" fill="#a8b4c0" font-size="24">🥈</text></svg>
+                        <h3 data-lang="achieve2Title">آکادمی برتر سال ۱۴۰۱</h3>
+                        <p data-lang="achieve2Desc">منتخب فدراسیون کوهنوردی ایران</p>
+                    </div>
+                    <div class="achievement-card bronze" data-aos="fade-up" data-aos-delay="200">
+                        <svg viewBox="0 0 60 60" width="60"><circle cx="30" cy="30" r="25" fill="none" stroke="#b87351" stroke-width="2"/><text x="30" y="38" text-anchor="middle" fill="#b87351" font-size="24">🥉</text></svg>
+                        <h3 data-lang="achieve3Title">۵۰۰+ هنرجوی موفق</h3>
+                        <p data-lang="achieve3Desc">ثبت رکورد آموزش در یک سال</p>
+                    </div>
+                    <div class="achievement-card special" data-aos="fade-up" data-aos-delay="300">
+                        <svg viewBox="0 0 60 60" width="60"><circle cx="30" cy="30" r="25" fill="none" stroke="#22C55E" stroke-width="2"/><text x="30" y="38" text-anchor="middle" fill="#22C55E" font-size="24">⭐</text></svg>
+                        <h3 data-lang="achieve4Title">حضور بین‌المللی</h3>
+                        <p data-lang="achieve4Desc">اعزام به اکسپدیشن‌های جهانی</p>
+                    </div>
+                </div>
+                
+                <!-- Achievements Table -->
+                <div class="achievements-table-wrapper" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="table-title" data-lang="achievementsTableTitle">📊 جدول افتخارات و آمار</h3>
+                    <div class="table-responsive">
+                        <table class="achievements-table">
+                            <thead>
+                                <tr>
+                                    <th data-lang="tableHead1">سال</th>
+                                    <th data-lang="tableHead2">عنوان</th>
+                                    <th data-lang="tableHead3">دسته‌بندی</th>
+                                    <th data-lang="tableHead4">سطح</th>
+                                    <th data-lang="tableHead5">توضیحات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>۱۴۰۲</td>
+                                    <td data-lang="tableRow1Title">قهرمانی کشوری</td>
+                                    <td><span class="table-badge gold-badge">🥇 طلا</span></td>
+                                    <td>ملی</td>
+                                    <td data-lang="tableRow1Desc">مقام اول سنگ‌نوردی</td>
+                                </tr>
+                                <tr>
+                                    <td>۱۴۰۱</td>
+                                    <td data-lang="tableRow2Title">آکادمی برتر</td>
+                                    <td><span class="table-badge silver-badge">🥈 نقره</span></td>
+                                    <td>ملی</td>
+                                    <td data-lang="tableRow2Desc">منتخب فدراسیون</td>
+                                </tr>
+                                <tr>
+                                    <td>۱۴۰۱</td>
+                                    <td data-lang="tableRow3Title">رکورد آموزش</td>
+                                    <td><span class="table-badge bronze-badge">🥉 برنز</span></td>
+                                    <td>ملی</td>
+                                    <td data-lang="tableRow3Desc">۵۰۰+ هنرجوی موفق</td>
+                                </tr>
+                                <tr>
+                                    <td>۱۴۰۰</td>
+                                    <td data-lang="tableRow4Title">اعزام بین‌المللی</td>
+                                    <td><span class="table-badge special-badge">⭐ ویژه</span></td>
+                                    <td>بین‌المللی</td>
+                                    <td data-lang="tableRow4Desc">اکسپدیشن K2</td>
+                                </tr>
+                                <tr>
+                                    <td>۱۳۹۹</td>
+                                    <td data-lang="tableRow5Title">صعود زمستانی</td>
+                                    <td><span class="table-badge gold-badge">🥇 طلا</span></td>
+                                    <td>ملی</td>
+                                    <td data-lang="tableRow5Desc">دماوند زمستانی</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== RANKING SECTION ===== -->
+        <section class="ranking-section" id="ranking">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">
+                        <svg viewBox="0 0 24 24" width="16"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" fill="#F59E0B"/></svg>
+                        <span data-lang="rankingBadge">📊 رتبه‌بندی</span>
+                    </span>
+                    <h2 class="section-title" data-lang="rankingTitle">سیستم رتبه‌بندی پولاریس</h2>
+                </div>
+                
+                <div class="ranking-grid">
+                    <div class="rank-card" data-aos="flip-left">
+                        <div class="rank-badge beginner">🌱</div>
+                        <h3 data-lang="rank1Title">کوهنورد مبتدی</h3>
+                        <p data-lang="rank1Desc">شروع مسیر کوهنوردی</p>
+                        <ul><li>✔ دوره مقدماتی</li><li>✔ آشنایی با تجهیزات</li></ul>
+                    </div>
+                    <div class="rank-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="rank-badge intermediate">🥾</div>
+                        <h3 data-lang="rank2Title">کوهنورد متوسط</h3>
+                        <p data-lang="rank2Desc">۳ دوره موفق</p>
+                        <ul><li>✔ سنگ‌نوردی پایه</li><li>✔ ناوبری کوهستان</li></ul>
+                    </div>
+                    <div class="rank-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="rank-badge advanced">🏔️</div>
+                        <h3 data-lang="rank3Title">کوهنورد پیشرفته</h3>
+                        <p data-lang="rank3Desc">۵+ دوره و ۱۰+ صعود</p>
+                        <ul><li>✔ یخ‌نوردی حرفه‌ای</li><li>✔ امداد کوهستان</li></ul>
+                    </div>
+                    <div class="rank-card" data-aos="flip-left" data-aos-delay="300">
+                        <div class="rank-badge elite">👑</div>
+                        <h3 data-lang="rank4Title">الیت پولاریس</h3>
+                        <p data-lang="rank4Desc">سطح حرفه‌ای نهایی</p>
+                        <ul><li>✔ مربیگری رسمی</li><li>✔ اکسپدیشن ۸۰۰۰m</li></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SHOP SECTION ===== -->
+        <section class="shop-section" id="shop">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">
+                        <svg viewBox="0 0 24 24" width="16"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" fill="#22C55E"/></svg>
+                        <span data-lang="shopBadge">🛒 فروشگاه تجهیزات</span>
+                    </span>
+                    <h2 class="section-title" data-lang="shopTitle">تجهیزات حرفه‌ای کوهنوردی</h2>
+                </div>
+                
+                <div class="shop-grid">
+                    <div class="shop-card" data-aos="flip-left" data-aos-delay="50" onclick="openModal('طناب کوهنوردی', 'طناب دینامیک ۱۰.۵ میلی‌متری، مناسب صعودهای ورزشی و سنتی')">
+                        <div class="shop-icon"><img src="./assets/img/a2.jpg" alt=""></div>
+                        <h3 data-lang="shop1Title">طناب کوهنوردی</h3>
+                        <p data-lang="shop1Desc">طناب دینامیک حرفه‌ای</p>
+                        <span class="shop-price">تماس بگیرید</span>
+                    </div>
+                    <div class="shop-card" data-aos="flip-left" data-aos-delay="100" onclick="openModal('کرامپون', 'کرامپون ۱۲ پوینت استیل ضدزنگ، مناسب یخ‌نوردی و کوهنوردی زمستانی')">
+                        <div class="shop-icon"><img src="./assets/img/a3.jpg" alt=""></div>
+                        <h3 data-lang="shop2Title">کرامپون</h3>
+                        <p data-lang="shop2Desc">کرامپون ۱۲ دندانه</p>
+                        <span class="shop-price">تماس بگیرید</span>
+                    </div>
+                    <div class="shop-card" data-aos="flip-left" data-aos-delay="150" onclick="openModal('تبر یخ', 'تبر یخ تکنیکال با دسته ارگونومیک، وزن سبک و مقاوم')">
+                        <div class="shop-icon"><img src="./assets/img/a1.jpg" alt=""></div>
+                        <h3 data-lang="shop3Title">تبر یخ</h3>
+                        <p data-lang="shop3Desc">تبر یخ تکنیکال</p>
+                        <span class="shop-price">تماس بگیرید</span>
+                    </div>
+                    <div class="shop-card" data-aos="flip-left" data-aos-delay="200" onclick="openModal('هارنس', 'هارنس آلپاین با پدهای قابل تنظیم، سبک و مقاوم')">
+                        <div class="shop-icon"><img src="./assets/img/a6.webp" alt=""></div>
+                        <h3 data-lang="shop4Title">هارنس</h3>
+                        <p data-lang="shop4Desc">هارنس آلپاین</p>
+                        <span class="shop-price">تماس بگیرید</span>
+                    </div>
+                    <div class="shop-card" data-aos="flip-left" data-aos-delay="250" onclick="openModal('کلاه کوهنوردی', 'کلاه سبک با استاندارد UIAA، تهویه مناسب')">
+                        <div class="shop-icon"><img src="./assets/img/a5.jpg" alt=""></div>
+                        <h3 data-lang="shop5Title">کلاه کوهنوردی</h3>
+                        <p data-lang="shop5Desc">کلاه استاندارد UIAA</p>
+                        <span class="shop-price">تماس بگیرید</span>
+                    </div>
+                    <div class="shop-card" data-aos="flip-left" data-aos-delay="300" onclick="openModal('کفش کوهنوردی', 'کفش Gore-Tex ضدآب با زیره Vibram')">
+                        <div class="shop-icon"><img src="./assets/img/a4.jpg" alt=""></div>
+                        <h3 data-lang="shop6Title">کفش کوهنوردی</h3>
+                        <p data-lang="shop6Desc">کفش Gore-Tex</p>
+                        <span class="shop-price">تماس بگیرید</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAQ SECTION ===== -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">
+                        <svg viewBox="0 0 24 24" width="16"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z" fill="#22C55E"/></svg>
+                        <span data-lang="faqBadge">❓ سوالات متداول</span>
+                    </span>
+                    <h2 class="section-title" data-lang="faqTitle">پرسش‌های پرتکرار</h2>
+                </div>
+                
+                <div class="faq-grid">
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question">
+                            <span data-lang="faq1Q">❓ آیا برای ثبت‌نام نیاز به تجربه قبلی دارم؟</span>
+                            <svg class="faq-arrow" viewBox="0 0 24 24" width="20"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+                        </div>
+                        <div class="faq-answer"><p data-lang="faq1A">خیر، برای دوره‌های مقدماتی نیاز به هیچ تجربه قبلی ندارید. ما از صفر شروع می‌کنیم و قدم به قدم با شما پیش می‌آییم.</p></div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="50">
+                        <div class="faq-question">
+                            <span data-lang="faq2Q">💰 هزینه دوره‌ها به چه صورت است؟</span>
+                            <svg class="faq-arrow" viewBox="0 0 24 24" width="20"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+                        </div>
+                        <div class="faq-answer"><p data-lang="faq2A">هزینه‌ها بسته به نوع دوره متفاوت است. امکان پرداخت اقساطی نیز وجود دارد. برای اطلاع دقیق با ما تماس بگیرید.</p></div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq-question">
+                            <span data-lang="faq3Q">🏅 آیا گواهینامه معتبر ارائه می‌دهید؟</span>
+                            <svg class="faq-arrow" viewBox="0 0 24 24" width="20"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+                        </div>
+                        <div class="faq-answer"><p data-lang="faq3A">بله، تمامی دوره‌ها همراه با گواهینامه معتبر از آکادمی پولاریس و فدراسیون کوهنوردی ارائه می‌شود که قابل ترجمه است.</p></div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                        <div class="faq-question">
+                            <span data-lang="faq4Q">🧗 تجهیزات لازم را باید خودم تهیه کنم؟</span>
+                            <svg class="faq-arrow" viewBox="0 0 24 24" width="20"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+                        </div>
+                        <div class="faq-answer"><p data-lang="faq4A">تجهیزات اصلی توسط آکادمی در اختیار شما قرار می‌گیرد. فقط لباس و کفش مناسب نیاز دارید.</p></div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-question">
+                            <span data-lang="faq5Q">📍 مکان برگزاری دوره‌ها کجاست؟</span>
+                            <svg class="faq-arrow" viewBox="0 0 24 24" width="20"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+                        </div>
+                        <div class="faq-answer"><p data-lang="faq5A">دوره‌های تئوری در باشگاه پولاریس تهران و دوره‌های عملی در مناطق کوهستانی البرز، دماوند و سبلان برگزار می‌شود.</p></div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                        <div class="faq-question">
+                            <span data-lang="faq6Q">🆘 در صورت بروز مشکل حین آموزش چه می‌شود؟</span>
+                            <svg class="faq-arrow" viewBox="0 0 24 24" width="20"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+                        </div>
+                        <div class="faq-answer"><p data-lang="faq6A">تمامی مربیان ما آموزش‌های امداد و نجات دیده‌اند و جعبه کمک‌های اولیه کامل همراه تیم است. ایمنی هنرجویان اولویت اول ماست.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GALLERY SECTION ===== -->
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">
+                        <svg viewBox="0 0 24 24" width="16"><path d="M8.5 13.5L11 16.5 14.5 12 19 18H5m16-14v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2z" fill="#4ADE80"/></svg>
+                        <span data-lang="galleryBadge">📸 گالری</span>
+                    </span>
+                    <h2 class="section-title" data-lang="galleryTitle">لحظات ناب کوهنوردی</h2>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-aos="zoom-in"><img src="./assets/img/img1.jpg" alt="گالری ۱"></div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100"><img src="./assets/img/img2.jpg" alt="گالری ۲"></div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200"><img src="./assets/img/img3.jpg" alt="گالری ۳"></div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300"><img src="./assets/img/img4.jpeg" alt="گالری ۴"></div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400"><img src="./assets/img/about.jpg" alt="گالری ۵"></div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500"><img src="./assets/img/hero.webp" alt="گالری ۶"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT SECTION ===== -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">
+                        <svg viewBox="0 0 24 24" width="16"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" fill="#22C55E"/></svg>
+                        <span data-lang="contactBadge">📞 تماس با ما</span>
+                    </span>
+                    <h2 class="section-title" data-lang="contactTitle">همین حالا شروع کنید</h2>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-form-wrapper" data-aos="fade-left">
+                        <form class="contact-form glass-card">
+                            <div class="form-group">
+                                <label><svg viewBox="0 0 24 24" width="16"><path d="M12 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4z" fill="#22C55E"/></svg><span data-lang="formName">نام کامل</span></label>
+                                <input type="text" data-lang-placeholder="formNamePlaceholder" placeholder="نام و نام خانوادگی">
+                            </div>
+                            <div class="form-group">
+                                <label><svg viewBox="0 0 24 24" width="16"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="#22C55E"/></svg><span data-lang="formEmail">ایمیل</span></label>
+                                <input type="email" data-lang-placeholder="formEmailPlaceholder" placeholder="your@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label><svg viewBox="0 0 24 24" width="16"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25 1.12.37 2.32.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="#22C55E"/></svg><span data-lang="formPhone">تلفن</span></label>
+                                <input type="tel" data-lang-placeholder="formPhonePlaceholder" placeholder="۰۹۱۲۳۴۵۶۷۸۹">
+                            </div>
+                            <div class="form-group">
+                                <label><svg viewBox="0 0 24 24" width="16"><path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3z" fill="#22C55E"/></svg><span data-lang="formCourse">دوره مورد نظر</span></label>
+                                <select>
+                                    <option data-lang="formOption1">کوهنوردی مقدماتی</option>
+                                    <option data-lang="formOption2">یخ‌نوردی پیشرفته</option>
+                                    <option data-lang="formOption3">سنگ‌نوردی فنی</option>
+                                    <option data-lang="formOption4">امداد کوهستان</option>
+                                    <option data-lang="formOption5">ناوبری و مسیریابی</option>
+                                    <option data-lang="formOption6">آمادگی ۸۰۰۰ متری</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-full">
+                                <svg viewBox="0 0 24 24" width="18"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z" fill="currentColor"/></svg>
+                                <span data-lang="formSubmit">ثبت‌نام در دوره</span>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info-wrapper" data-aos="fade-right">
+                        <div class="contact-info-card glass-card">
+                            <div class="contact-info-item"><svg viewBox="0 0 24 24" width="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25 1.12.37 2.32.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="#22C55E"/></svg><span>۰۹۱۲۳۴۵۶۷۸۹</span></div>
+                            <div class="contact-info-item"><svg viewBox="0 0 24 24" width="20"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="#22C55E"/></svg><span>info@polaris-academy.com</span></div>
+                            <div class="contact-info-item"><svg viewBox="0 0 24 24" width="20"><path d="M12 11.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#22C55E"/></svg><span>تهران، باشگاه کوهنوردی پولاریس</span></div>
+                            <div class="contact-info-item"><svg viewBox="0 0 24 24" width="20"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" fill="#22C55E"/></svg><span data-lang="contactHours">ساعات کاری: ۸ صبح تا ۸ عصر</span></div>
+                        </div>
+                        
+                        <div class="social-links-glass">
+                            <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2m4.2 5.5c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5zm0 2c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5z" fill="currentColor"/></svg></a>
+                            <a href="#" class="social-link" aria-label="Telegram"><svg viewBox="0 0 24 24" width="22"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" fill="currentColor"/></svg></a>
+                            <a href="#" class="social-link" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="22"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92z" fill="currentColor"/></svg></a>
+                            <a href="#" class="social-link" aria-label="YouTube"><svg viewBox="0 0 24 24" width="22"><path d="M10 15l5.19-3L10 9v6zm11.56-7.83c.13.47.22.96.28 1.47.06.51.1 1.07.1 1.67L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-8.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L1 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 8.83.44.9.25 1.48.83 1.73 1.73z" fill="currentColor"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer-glass">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <svg viewBox="0 0 50 50" width="50" height="50">
+                        <polygon points="25,3 47,42 3,42" fill="#22C55E"/>
+                        <polygon points="25,12 34,28 16,28" fill="white" opacity="0.5"/>
+                    </svg>
+                    <div>
+                        <h3 data-lang="footerBrand">پولاریس</h3>
+                        <span data-lang="footerBrandSub">آکادمی کوهنوردی</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 data-lang="footerQuickLinks">🔗 دسترسی سریع</h4>
+                    <a href="#home">🏠 <span data-lang="navHome">خانه</span></a>
+                    <a href="#courses">🎓 <span data-lang="navCourses">دوره‌ها</span></a>
+                    <a href="#team">👥 <span data-lang="navTeam">مربیان</span></a>
+                    <a href="#shop">🛒 <span data-lang="navShop">فروشگاه</span></a>
+                    <a href="#contact">📞 <span data-lang="navContact">تماس</span></a>
+                </div>
+                <div class="footer-links">
+                    <h4 data-lang="footerPopularCourses">⭐ دوره‌های محبوب</h4>
+                    <a href="#courses">🧗 کوهنوردی مقدماتی</a>
+                    <a href="#courses">🪨 سنگ‌نوردی فنی</a>
+                    <a href="#courses">❄️ یخ‌نوردی پیشرفته</a>
+                    <a href="#courses">🩹 امداد کوهستان</a>
+                </div>
+                <div class="footer-links">
+                    <h4 data-lang="footerContactInfo">📋 اطلاعات تماس</h4>
+                    <p>📞 ۰۹۱۲۳۴۵۶۷۸۹</p>
+                    <p>📧 info@polaris-academy.com</p>
+                    <p>📍 تهران، باشگاه پولاریس</p>
+                    <p>🕐 ۸ صبح تا ۸ عصر</p>
+                </div>
+            </div>
+            <div class="footer-quote">
+                <p data-lang="footerQuote">"کوه‌ها بهترین معلمان زندگی‌اند - صبر، استقامت و فروتنی را از آنها بیاموزید"</p>
+            </div>
+            <div class="footer-bottom">
+                <p data-lang="footerCopy">© ۱۴۰۳ آکادمی کوهنوردی پولاریس | تمامی حقوق محفوظ است</p>
+                <p data-lang="footerDesign">طراحی و توسعه با افتخار برای کوهنوردان ایران 🏔️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== SHOP MODAL ==================== -->
+    <div class="modal-overlay" id="shopModal">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div class="modal-icon">🛒</div>
+            <h3 class="modal-title" id="modalTitle"></h3>
+            <p class="modal-desc" id="modalDesc"></p>
+            <p class="modal-message" data-lang="modalMessage">📞 برای خرید و مشاوره با پشتیبانی تماس بگیرید:</p>
+            <a href="tel:+989123456789" class="btn btn-primary btn-lg">📞 ۰۹۱۲۳۴۵۶۷۸۹</a>
+        </div>
+    </div>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

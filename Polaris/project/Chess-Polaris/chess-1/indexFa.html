@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پولاریس آکادمی | آموزش حرفه‌ای شطرنج - معتبرترین آکادمی ایران</title>
+    <meta name="description" content="پولاریس آکادمی - معتبرترین پلتفرم آموزش شطرنج ایران با ۱۵ سال تجربه، ۱۲۰ دوره تخصصی، ۴۵ مربی بین‌المللی و بیش از ۵۰۰۰ هنرجوی موفق">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♟️</text></svg>">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- ==================== LOADER ==================== -->
+    <div class="loader" id="loader">
+        <div class="loader__content">
+            <svg class="loader__logo" width="60" height="60" viewBox="0 0 40 40" fill="none">
+                <path d="M20 4L28 12L26 14L24 12L22 14L20 12L18 14L16 12L14 14L12 12L20 4Z" fill="currentColor"/>
+                <path d="M20 12L28 20L20 36L12 20L20 12Z" fill="currentColor" opacity="0.3"/>
+                <rect x="8" y="22" width="24" height="4" rx="2" fill="currentColor" opacity="0.5"/>
+                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            </svg>
+            <div class="loader__spinner"></div>
+            <p class="loader__text">پولاریس آکادمی</p>
+        </div>
+    </div>
+
+    <!-- ==================== PROGRESS BAR ==================== -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <svg class="nav__logo-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 4L28 12L26 14L24 12L22 14L20 12L18 14L16 12L14 14L12 12L20 4Z" fill="currentColor"/>
+                    <path d="M20 12L28 20L20 36L12 20L20 12Z" fill="currentColor" opacity="0.3"/>
+                    <rect x="8" y="22" width="24" height="4" rx="2" fill="currentColor" opacity="0.5"/>
+                    <rect x="14" y="28" width="12" height="3" rx="1.5" fill="currentColor" opacity="0.4"/>
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                </svg>
+                <span class="nav__logo-text">پولاریس آکادمی</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">خانه</a></li>
+                    <li class="nav__item"><a href="#courses" class="nav__link">دوره‌های آموزشی</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">درباره ما</a></li>
+                    <li class="nav__item"><a href="#champions" class="nav__link">قهرمانان</a></li>
+                    <li class="nav__item"><a href="#results" class="nav__link">نتایج و رتبه‌ها</a></li>
+                    <li class="nav__item"><a href="#team" class="nav__link">مدیران و اساتید</a></li>
+                    <li class="nav__item"><a href="#blog" class="nav__link">وبلاگ تخصصی</a></li>
+                    <li class="nav__item"><a href="#faq" class="nav__link">پرسش و پاسخ</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">تماس و مشاوره</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <a href="tel:09123456789" class="nav__phone">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                    <span class="nav__phone-number">۰۹۱۲۳۴۵۶۷۸۹</span>
+                </a>
+                <button class="nav__toggle" id="nav-toggle" aria-label="منو">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ==================== HERO SECTION ==================== -->
+        <section class="hero" id="home">
+            <div class="hero__bg-effects">
+                <div class="hero__bg-noise"></div>
+                <div class="hero__bg-grid"></div>
+                <div class="hero__bg-glow hero__bg-glow--1"></div>
+                <div class="hero__bg-glow hero__bg-glow--2"></div>
+                <div class="hero__bg-glow hero__bg-glow--3"></div>
+                <div class="hero__bg-particles" id="heroParticles"></div>
+            </div>
+            
+            <div class="hero__container container">
+                <div class="hero__data">
+                    <div class="hero__badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        معتبرترین آکادمی شطرنج ایران
+                    </div>
+                    
+                    <h1 class="hero__title">
+                        <span class="hero__title-line">استاد بزرگ</span>
+                        <span class="hero__title-line hero__title-line--highlight">درونت رو بیدار کن</span>
+                    </h1>
+                    
+                    <p class="hero__description">
+                        پولاریس آکادمی با <strong>۱۵ سال تجربه درخشان</strong>، برنامه‌ای جامع و علمی برای پرورش استعدادهای شطرنج شما طراحی کرده است. 
+                        از <strong>یادگیری اصول پایه</strong> گرفته تا <strong>تکنیک‌های پیشرفته استادان بزرگ جهان</strong>، 
+                        ما در تمام مسیر پیشرفت همراه شما هستیم. با بهره‌گیری از <strong>مربیان دارای عنوان بین‌المللی</strong>، 
+                        پلتفرم آموزشی اختصاصی و پشتیبانی شبانه‌روزی، تضمین می‌کنیم که شما به بالاترین سطح توانایی خود در شطرنج دست پیدا کنید.
+                    </p>
+
+                    <div class="hero__features-list">
+                        <div class="hero__feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>آموزش از مبتدی تا قهرمانی با متد علمی</span>
+                        </div>
+                        <div class="hero__feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>دسترسی به ویدیوهای آموزشی و جزوات اختصاصی</span>
+                        </div>
+                        <div class="hero__feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>پشتیبانی ۲۴ ساعته توسط اساتید برجسته</span>
+                        </div>
+                        <div class="hero__feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>گواهینامه رسمی و قابل استعلام پایان دوره</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero__buttons">
+                        <a href="#courses" class="btn btn--primary btn--lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            مشاهده دوره‌های آموزشی
+                        </a>
+                        <a href="#contact" class="btn btn--consult btn--lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                            درخواست مشاوره رایگان
+                        </a>
+                    </div>
+
+                    <div class="hero__stats">
+                        <div class="hero__stat">
+                            <span class="hero__stat-number" data-count="5000">۰</span>
+                            <span class="hero__stat-label">هنرجوی موفق</span>
+                            <p class="hero__stat-desc">از سراسر ایران</p>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number" data-count="120">۰</span>
+                            <span class="hero__stat-label">دوره تخصصی</span>
+                            <p class="hero__stat-desc">مقدماتی تا پیشرفته</p>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number" data-count="15">۰</span>
+                            <span class="hero__stat-label">سال تجربه</span>
+                            <p class="hero__stat-desc">فعالیت مستمر</p>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number" data-count="45">۰</span>
+                            <span class="hero__stat-label">مربی بین‌المللی</span>
+                            <p class="hero__stat-desc">دارای عنوان رسمی</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__visual">
+                    <div class="hero__image-card">
+                        <div class="hero__image-frame">
+                            <img src="assets/images/hero-chess-bg.webp" alt="آموزش حرفه‌ای شطرنج در پولاریس آکادمی" class="hero__image" loading="eager" onerror="this.style.display='none'; this.parentElement.classList.add('hero__image-placeholder');">
+                        </div>
+                        <div class="hero__image-badge">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>برترین آکادمی ۱۴۰۴</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero__floating-cards">
+                        <div class="hero__float-card hero__float-card--1">
+                            <span class="hero__float-number">۴.۹</span>
+                            <span class="hero__float-label">امتیاز هنرجویان</span>
+                            <div class="hero__float-stars">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                        </div>
+                        <div class="hero__float-card hero__float-card--2">
+                            <span class="hero__float-number">۲۴/۷</span>
+                            <span class="hero__float-label">پشتیبانی دائمی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__scroll">
+                <span>برای مشاهده بیشتر اسکرول کنید</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+        </section>
+
+        <!-- ==================== COURSES SECTION ==================== -->
+        <section class="courses section" id="courses">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__icon-wrapper2">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h2 class="section__title">دوره‌های آموزشی تخصصی</h2>
+                    <p class="section__subtitle">مسیر یادگیری خود را هوشمندانه انتخاب کنید و از مبتدی تا استاد بزرگ پیش بروید. تمامی دوره‌ها توسط اساتید بین‌المللی طراحی و تدریس می‌شوند.</p>
+                    <div class="section__divider">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+
+                <div class="courses__filter">
+                    <button class="courses__filter-btn active" data-filter="all">همه دوره‌ها</button>
+                    <button class="courses__filter-btn" data-filter="beginner">مقدماتی</button>
+                    <button class="courses__filter-btn" data-filter="intermediate">متوسط</button>
+                    <button class="courses__filter-btn" data-filter="advanced">پیشرفته</button>
+                    <button class="courses__filter-btn" data-filter="master">حرفه‌ای</button>
+                </div>
+
+                <div class="courses__grid">
+                    <!-- Course 1 -->
+                    <article class="course-card" data-category="beginner" data-aos="fade-up">
+                        <div class="course-card__image">
+                            <img src="assets/images/img1.jpg" alt="دوره شطرنج مقدماتی - پولاریس آکادمی" loading="lazy" onerror="this.style.display='none'">
+                            <span class="course-card__badge course-card__badge--popular">محبوب‌ترین</span>
+                            <div class="course-card__overlay">
+                                <a href="#contact" class="btn btn--primary btn--sm">درخواست مشاوره</a>
+                            </div>
+                        </div>
+                        <div class="course-card__body">
+                            <div class="course-card__level">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+                                سطح: مقدماتی
+                            </div>
+                            <h3 class="course-card__title">اصول و مبانی شطرنج</h3>
+                            <p class="course-card__desc">آموزش کامل قوانین، حرکات مهره‌ها، تاکتیک‌های پایه و استراتژی‌های ابتدایی. مناسب برای افرادی که هیچ آشنایی با شطرنج ندارند و می‌خواهند از صفر شروع کنند.</p>
+                            <div class="course-card__info">
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                    ۱۲ جلسه آموزشی
+                                </span>
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    ۶ ساعت ویدیو
+                                </span>
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                                    ۲۳۴۰ هنرجو
+                                </span>
+                            </div>
+                            <div class="course-card__includes">
+                                <h4>موارد ارائه شده در دوره:</h4>
+                                <ul>
+                                    <li>آموزش کامل قوانین فیده</li>
+                                    <li>حرکات و ارزش مهره‌ها</li>
+                                    <li>کیش و مات‌های پایه</li>
+                                    <li>اصول گشایش بازی</li>
+                                    <li>تاکتیک‌های ساده</li>
+                                    <li>جزوه اختصاصی</li>
+                                </ul>
+                            </div>
+                            <div class="course-card__footer">
+                                <div class="course-card__price">
+                                    <span class="course-card__price-old">۴۹۹,۰۰۰ تومان</span>
+                                    <span class="course-card__price-new">۲۹۹,۰۰۰ تومان</span>
+                                    <span class="course-card__discount">۴۰٪ تخفیف</span>
+                                </div>
+                                <a href="#contact" class="btn btn--primary">خرید و مشاوره</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Course 2 -->
+                    <article class="course-card course-card--featured" data-category="intermediate" data-aos="fade-up" data-aos-delay="100">
+                        <div class="course-card__image">
+                            <img src="assets/images/img2.webp" alt="دوره شطرنج متوسط - تاکتیک و استراتژی" loading="lazy" onerror="this.style.display='none'">
+                            <span class="course-card__badge course-card__badge--bestseller">پرفروش</span>
+                            <div class="course-card__overlay">
+                                <a href="#contact" class="btn btn--primary btn--sm">درخواست مشاوره</a>
+                            </div>
+                        </div>
+                        <div class="course-card__body">
+                            <div class="course-card__level">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/></svg>
+                                سطح: متوسط
+                            </div>
+                            <h3 class="course-card__title">تاکتیک و استراتژی پیشرفته</h3>
+                            <p class="course-card__desc">آموزش کامل استراتژی‌های گشایشی مدرن، مدیریت بازی میانی، کنترل مرکز، ساختار پیاده‌ای و تکنیک‌های حمله. شامل آنالیز بازی‌های تاریخی استادان بزرگ.</p>
+                            <div class="course-card__info">
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                    ۱۸ جلسه آموزشی
+                                </span>
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    ۱۰ ساعت ویدیو
+                                </span>
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                                    ۱۸۵۰ هنرجو
+                                </span>
+                            </div>
+                            <div class="course-card__includes">
+                                <h4>موارد ارائه شده در دوره:</h4>
+                                <ul>
+                                    <li>استراتژی‌های گشایش مدرن</li>
+                                    <li>مدیریت بازی میانی</li>
+                                    <li>ساختارهای پیاده‌ای</li>
+                                    <li>تکنیک‌های حمله و دفاع</li>
+                                    <li>آنالیز بازی استادان</li>
+                                    <li>مدیریت زمان بازی</li>
+                                </ul>
+                            </div>
+                            <div class="course-card__footer">
+                                <div class="course-card__price">
+                                    <span class="course-card__price-old">۷۹۹,۰۰۰ تومان</span>
+                                    <span class="course-card__price-new">۵۹۹,۰۰۰ تومان</span>
+                                    <span class="course-card__discount">۲۵٪ تخفیف</span>
+                                </div>
+                                <a href="#contact" class="btn btn--primary">خرید و مشاوره</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Course 3 -->
+                    <article class="course-card" data-category="advanced" data-aos="fade-up" data-aos-delay="200">
+                        <div class="course-card__image">
+                            <img src="assets/images/img3.webp" alt="دوره شطرنج پیشرفته - تئوری آخر بازی" loading="lazy" onerror="this.style.display='none'">
+                            <span class="course-card__badge course-card__badge--new">جدید</span>
+                            <div class="course-card__overlay">
+                                <a href="#contact" class="btn btn--primary btn--sm">درخواست مشاوره</a>
+                            </div>
+                        </div>
+                        <div class="course-card__body">
+                            <div class="course-card__level">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                سطح: پیشرفته
+                            </div>
+                            <h3 class="course-card__title">تئوری آخر بازی و تحلیل عمیق</h3>
+                            <p class="course-card__desc">بررسی پیشرفته تئوری آخر بازی، تکنیک‌های قربانی، تحلیل موقعیت‌های پیچیده و روانشناسی مسابقات. آمادگی کامل برای تورنمنت‌های رسمی و کسب عناوین.</p>
+                            <div class="course-card__info">
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                    ۲۴ جلسه آموزشی
+                                </span>
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    ۱۵ ساعت ویدیو
+                                </span>
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                                    ۹۸۰ هنرجو
+                                </span>
+                            </div>
+                            <div class="course-card__includes">
+                                <h4>موارد ارائه شده در دوره:</h4>
+                                <ul>
+                                    <li>تئوری پیشرفته آخر بازی</li>
+                                    <li>قربانی‌های تاکتیکی</li>
+                                    <li>تحلیل بازی حرفه‌ای‌ها</li>
+                                    <li>روانشناسی مسابقات</li>
+                                    <li>مدیریت زمان حرفه‌ای</li>
+                                    <li>آمادگی تورنمنت</li>
+                                </ul>
+                            </div>
+                            <div class="course-card__footer">
+                                <div class="course-card__price">
+                                    <span class="course-card__price-old">۱,۲۹۹,۰۰۰ تومان</span>
+                                    <span class="course-card__price-new">۹۹۹,۰۰۰ تومان</span>
+                                    <span class="course-card__discount">۲۳٪ تخفیف</span>
+                                </div>
+                                <a href="#contact" class="btn btn--primary">خرید و مشاوره</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Course 4 -->
+                    <article class="course-card" data-category="master" data-aos="fade-up" data-aos-delay="300">
+                        <div class="course-card__image">
+                            <img src="assets/images/img4.webp" alt="دوره آمادگی مسابقات - پولاریس آکادمی" loading="lazy" onerror="this.style.display='none'">
+                            <span class="course-card__badge course-card__badge--special">ویژه</span>
+                            <div class="course-card__overlay">
+                                <a href="#contact" class="btn btn--primary btn--sm">درخواست مشاوره</a>
+                            </div>
+                        </div>
+                        <div class="course-card__body">
+                            <div class="course-card__level">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                                سطح: حرفه‌ای
+                            </div>
+                            <h3 class="course-card__title">آمادگی مسابقات قهرمانی</h3>
+                            <p class="course-card__desc">برنامه تمرینی اختصاصی برای کسب عناوین قهرمانی. شامل آنالیز رقبا، شبیه‌سازی مسابقه، مدیریت استرس، تغذیه ورزشی و برنامه بدنسازی مخصوص شطرنج‌بازان حرفه‌ای.</p>
+                            <div class="course-card__info">
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                    ۱۲ جلسه آموزشی
+                                </span>
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    ۵ ساعت ویدیو
+                                </span>
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                                    ۴۵۰ هنرجو
+                                </span>
+                            </div>
+                            <div class="course-card__includes">
+                                <h4>موارد ارائه شده در دوره:</h4>
+                                <ul>
+                                    <li>برنامه تمرینی شخصی</li>
+                                    <li>آنالیز رقبا</li>
+                                    <li>شبیه‌سازی مسابقه</li>
+                                    <li>روانشناسی قهرمانی</li>
+                                    <li>تغذیه و بدنسازی</li>
+                                    <li>مشاوره اختصاصی</li>
+                                </ul>
+                            </div>
+                            <div class="course-card__footer">
+                                <div class="course-card__price">
+                                    <span class="course-card__price-old">۲,۴۹۹,۰۰۰ تومان</span>
+                                    <span class="course-card__price-new">۱,۸۹۹,۰۰۰ تومان</span>
+                                    <span class="course-card__discount">۲۴٪ تخفیف</span>
+                                </div>
+                                <a href="#contact" class="btn btn--primary">خرید و مشاوره</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Course 5 -->
+                    <article class="course-card" data-category="beginner" data-aos="fade-up" data-aos-delay="100">
+                        <div class="course-card__image">
+                            <img src="assets/images/img5.webp" alt="شطرنج برای کودکان - آموزش مقدماتی" loading="lazy" onerror="this.style.display='none'">
+                            <div class="course-card__overlay">
+                                <a href="#contact" class="btn btn--primary btn--sm">درخواست مشاوره</a>
+                            </div>
+                        </div>
+                        <div class="course-card__body">
+                            <div class="course-card__level">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+                                سطح: مقدماتی
+                            </div>
+                            <h3 class="course-card__title">شطرنج برای کودکان و نوجوانان</h3>
+                            <p class="course-card__desc">دوره تخصصی آموزش شطرنج برای رده سنی ۶ تا ۱۶ سال با متد بازی‌محور. افزایش تمرکز، قدرت تصمیم‌گیری و خلاقیت در کودکان همراه با بازی و سرگرمی.</p>
+                            <div class="course-card__info">
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                    ۱۶ جلسه آموزشی
+                                </span>
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    ۸ ساعت ویدیو
+                                </span>
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                                    ۳۱۲۰ هنرجو
+                                </span>
+                            </div>
+                            <div class="course-card__includes">
+                                <h4>موارد ارائه شده در دوره:</h4>
+                                <ul>
+                                    <li>آموزش با بازی و سرگرمی</li>
+                                    <li>تقویت تمرکز کودکان</li>
+                                    <li>پرورش خلاقیت</li>
+                                    <li>متد آموزشی استاندارد</li>
+                                    <li>گواهینامه پایان دوره</li>
+                                    <li>مسابقات داخلی</li>
+                                </ul>
+                            </div>
+                            <div class="course-card__footer">
+                                <div class="course-card__price">
+                                    <span class="course-card__price-old">۳۹۹,۰۰۰ تومان</span>
+                                    <span class="course-card__price-new">۲۴۹,۰۰۰ تومان</span>
+                                    <span class="course-card__discount">۳۸٪ تخفیف</span>
+                                </div>
+                                <a href="#contact" class="btn btn--primary">خرید و مشاوره</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Course 6 -->
+                    <article class="course-card" data-category="intermediate" data-aos="fade-up" data-aos-delay="200">
+                        <div class="course-card__image">
+                            <img src="assets/images/img6.webp" alt="دفاع در شطرنج - دوره تخصصی" loading="lazy" onerror="this.style.display='none'">
+                            <div class="course-card__overlay">
+                                <a href="#contact" class="btn btn--primary btn--sm">درخواست مشاوره</a>
+                            </div>
+                        </div>
+                        <div class="course-card__body">
+                            <div class="course-card__level">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/></svg>
+                                سطح: متوسط
+                            </div>
+                            <h3 class="course-card__title">هنر دفاع در شطرنج</h3>
+                            <p class="course-card__desc">آموزش جامع تکنیک‌های دفاعی، مدیریت بحران در صفحات مختلف شطرنج، مقابله با حملات و تبدیل موقعیت‌های دفاعی به ضدحمله. تسلط کامل بر دفاع در تمام مراحل بازی.</p>
+                            <div class="course-card__info">
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                    ۱۴ جلسه آموزشی
+                                </span>
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    ۸ ساعت ویدیو
+                                </span>
+                                <span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                                    ۸۹۰ هنرجو
+                                </span>
+                            </div>
+                            <div class="course-card__includes">
+                                <h4>موارد ارائه شده در دوره:</h4>
+                                <ul>
+                                    <li>اصول دفاع فعال</li>
+                                    <li>مدیریت بحران</li>
+                                    <li>ضدحمله از دفاع</li>
+                                    <li>دفاع در آخر بازی</li>
+                                    <li>آنالیز بازی‌های دفاعی</li>
+                                    <li>تمرینات عملی</li>
+                                </ul>
+                            </div>
+                            <div class="course-card__footer">
+                                <div class="course-card__price">
+                                    <span class="course-card__price-old">۶۴۹,۰۰۰ تومان</span>
+                                    <span class="course-card__price-new">۴۴۹,۰۰۰ تومان</span>
+                                    <span class="course-card__discount">۳۱٪ تخفیف</span>
+                                </div>
+                                <a href="#contact" class="btn btn--primary">خرید و مشاوره</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="courses__more">
+                    <p>تمامی دوره‌ها شامل <strong>گواهینامه رسمی</strong>، <strong>پشتیبانی ۶ ماهه</strong> و <strong>جزوات اختصاصی</strong> می‌باشند.</p>
+                    <a href="#contact" class="btn btn--primary btn--lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                        مشاوره رایگان انتخاب دوره
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__icon-wrapper2">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h2 class="section__title">درباره پولاریس آکادمی</h2>
+                    <p class="section__subtitle">داستان موفقیت ما از عشق به شطرنج و آموزش شروع شد. از یک آموزشگاه کوچک تا معتبرترین آکادمی شطرنج ایران.</p>
+                    <div class="section__divider">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+
+                <div class="about__content">
+                    <div class="about__image" data-aos="fade-left">
+                        <img src="assets/images/about.jpeg" alt="درباره پولاریس آکادمی - آموزش شطرنج" loading="lazy" onerror="this.style.display='none'" style="aspect-ratio:3/4;object-fit:cover;">
+                        <div class="about__experience">
+                            <span class="about__exp-number">۱۵</span>
+                            <span class="about__exp-label">سال تجربه آموزشی</span>
+                        </div>
+                        <div class="about__stats-overlay">
+                            <div class="about__stat-item">
+                                <span>۱۲۰+</span>
+                                <span>دوره تخصصی</span>
+                            </div>
+                            <div class="about__stat-item">
+                                <span>۵۰۰۰+</span>
+                                <span>هنرجوی موفق</span>
+                            </div>
+                            <div class="about__stat-item">
+                                <span>۴۵+</span>
+                                <span>مربی حرفه‌ای</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__text" data-aos="fade-right">
+                        <div class="about__mission">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                            <div>
+                                <h3>رسالت ما</h3>
+                                <p>کشف و پرورش استعدادهای شطرنج در سراسر ایران و کمک به علاقه‌مندان برای رسیدن به بالاترین سطح توانایی. ما معتقدیم هر فردی می‌تواند با آموزش صحیح به یک شطرنج‌باز حرفه‌ای تبدیل شود.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about__history">
+                            <h3>تاریخچه پولاریس آکادمی</h3>
+                            <p>پولاریس آکادمی فعالیت خود را از سال ۱۳۸۹ با هدف ارتقای سطح شطرنج ایران و با همکاری جمعی از اساتید برجسته و قهرمانان ملی آغاز کرد. در طول ۱۵ سال فعالیت مستمر، با تکیه بر متدهای نوین آموزشی و بهره‌گیری از تکنولوژی‌های روز، توانسته‌ایم به معتبرترین آکادمی شطرنج ایران تبدیل شویم.</p>
+                            <p>ما مفتخریم که بیش از ۵۰۰۰ هنرجو از سراسر ایران و حتی کشورهای همسایه در دوره‌های ما شرکت کرده و بسیاری از آن‌ها امروز از قهرمانان مطرح و مربیان موفق شطرنج هستند. برنامه‌های آموزشی ما بر اساس استانداردهای فدراسیون جهانی شطرنج (فیده) طراحی شده و دائماً به‌روزرسانی می‌شود.</p>
+                        </div>
+                        
+                        <div class="about__features">
+                            <div class="about__feature">
+                                <div class="about__feature-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                                </div>
+                                <div>
+                                    <strong>مربیان دارای عنوان بین‌المللی</strong>
+                                    <p>اساتید با عنوان استاد بزرگ، استاد بین‌المللی و استاد فیده با سابقه مربی‌گری در سطح جهانی</p>
+                                </div>
+                            </div>
+                            <div class="about__feature">
+                                <div class="about__feature-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                </div>
+                                <div>
+                                    <strong>آموزش آنلاین و حضوری</strong>
+                                    <p>پلتفرم آموزشی اختصاصی با قابلیت پخش آنلاین، ضبط جلسات و دانلود جزوات از هر کجا و در هر زمان</p>
+                                </div>
+                            </div>
+                            <div class="about__feature">
+                                <div class="about__feature-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                                </div>
+                                <div>
+                                    <strong>گواهینامه معتبر و قابل استعلام</strong>
+                                    <p>ارائه مدرک رسمی پایان دوره با قابلیت استعلام آنلاین و استفاده برای شرکت در مسابقات رسمی</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CHAMPIONS SECTION ==================== -->
+        <section class="champions section" id="champions">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__icon-wrapper2">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                    </div>
+                    <h2 class="section__title">قهرمانان پولاریس</h2>
+                    <p class="section__subtitle">افتخارآفرینان آکادمی در میادین ملی و بین‌المللی. هنرجویانی که از پولاریس شروع کردند و امروز قهرمانان شطرنج ایران و جهان هستند.</p>
+                    <div class="section__divider">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+
+                <div class="champions__grid">
+                    <div class="champion-card" data-aos="flip-left">
+                        <div class="champion-card__image">
+                            <img src="assets/images/user1.jpg" alt="آرش برومند - قهرمان کشوری شطرنج" loading="lazy" onerror="this.style.display='none'">
+                            <div class="champion-card__medal">۱</div>
+                        </div>
+                        <div class="champion-card__info">
+                            <h3>آرش برومند</h3>
+                            <span class="champion-card__title">قهرمان کشوری ۱۴۰۳</span>
+                            <p>قهرمان مسابقات شطرنج قهرمانی کشور در رده سنی بزرگسالان. عضو تیم ملی شطرنج ایران با ۱۲ سال سابقه آموزش در پولاریس آکادمی. دارنده عنوان استاد بین‌المللی.</p>
+                            <div class="champion-card__stats">
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <strong>۲۴۵۰</strong><span>ریتینگ</span></div>
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <strong>۱۲</strong><span>سال سابقه</span></div>
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg> <strong>۸</strong><span>مدال طلا</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="champion-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="champion-card__image">
+                            <img src="assets/images/user2.jpg" alt="سارا رضایی - قهرمان بانوان آسیا" loading="lazy" onerror="this.style.display='none'">
+                            <div class="champion-card__medal champion-card__medal--gold">۱</div>
+                        </div>
+                        <div class="champion-card__info">
+                            <h3>سارا رضایی</h3>
+                            <span class="champion-card__title">قهرمان بانوان آسیا ۱۴۰۲</span>
+                            <p>مدال طلای مسابقات شطرنج بانوان آسیا. دارنده عنوان استاد بزرگ بانوان از فیده. ۸ سال آموزش مستمر در پولاریس آکادمی و الگوی موفق برای بانوان شطرنج‌باز ایرانی.</p>
+                            <div class="champion-card__stats">
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <strong>۲۳۱۰</strong><span>ریتینگ</span></div>
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <strong>۸</strong><span>سال سابقه</span></div>
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg> <strong>۶</strong><span>مدال طلا</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="champion-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="champion-card__image">
+                            <img src="assets/images/user3.jpg" alt="علی مرادی - نایب قهرمان جوانان جهان" loading="lazy" onerror="this.style.display='none'">
+                            <div class="champion-card__medal champion-card__medal--silver">۲</div>
+                        </div>
+                        <div class="champion-card__info">
+                            <h3>علی مرادی</h3>
+                            <span class="champion-card__title">نایب قهرمان جوانان جهان</span>
+                            <p>مدال نقره مسابقات جوانان جهان در ترکیه. با ۱۰ سال آموزش در پولاریس از مبتدی به نایب قهرمانی جهان رسید. دارای ریتینگ ۲۵۶۰ و آماده کسب عنوان استاد بزرگ.</p>
+                            <div class="champion-card__stats">
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <strong>۲۵۶۰</strong><span>ریتینگ</span></div>
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <strong>۱۰</strong><span>سال سابقه</span></div>
+                                <div><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg> <strong>۴</strong><span>مدال جهانی</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== RESULTS SECTION ==================== -->
+        <section class="results section" id="results">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__icon-wrapper2">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <line x1="3" y1="9" x2="21" y2="9"/>
+                            <line x1="9" y1="21" x2="9" y2="9"/>
+                            <line x1="15" y1="21" x2="15" y2="9"/>
+                        </svg>
+                    </div>
+                    <h2 class="section__title">نتایج و رتبه‌بندی هنرجویان</h2>
+                    <p class="section__subtitle">جدول افتخارات و امتیازات کسب شده توسط برترین هنرجویان پولاریس آکادمی در ارزیابی‌های دوره‌ای. این نتایج نشان‌دهنده کیفیت آموزش و تلاش هنرجویان ماست.</p>
+                    <div class="section__divider">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+
+                <div class="results__controls" data-aos="fade-up">
+                    <div class="results__tabs">
+                        <button class="results__tab active" data-tab="all">همه</button>
+                        <button class="results__tab" data-tab="beginner">مقدماتی</button>
+                        <button class="results__tab" data-tab="intermediate">متوسط</button>
+                        <button class="results__tab" data-tab="advanced">پیشرفته</button>
+                    </div>
+                    <div class="results__search">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                        <input type="text" placeholder="جستجوی نام هنرجو..." class="results__search-input">
+                    </div>
+                </div>
+
+                <div class="results__table-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <table class="results__table">
+                        <thead>
+                            <tr>
+                                <th>رتبه</th>
+                                <th>نام و نام خانوادگی</th>
+                                <th>دوره آموزشی</th>
+                                <th>سطح</th>
+                                <th>نمره تئوری</th>
+                                <th>نمره عملی</th>
+                                <th>میانگین کل</th>
+                                <th>مدال</th>
+                                <th>وضعیت</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="results__row--gold">
+                                <td><span class="results__rank results__rank--1">۱</span></td>
+                                <td class="results__name">آرش برومند</td>
+                                <td>تئوری آخر بازی</td>
+                                <td>پیشرفته</td>
+                                <td>۹۸</td>
+                                <td>۹۹</td>
+                                <td><strong>۹۸.۵</strong></td>
+                                <td><span class="results__medal-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#FFD700"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                                </span></td>
+                                <td><span class="results__status results__status--passed">قبول</span></td>
+                            </tr>
+                            <tr class="results__row--silver">
+                                <td><span class="results__rank results__rank--2">۲</span></td>
+                                <td class="results__name">سارا رضایی</td>
+                                <td>استراتژی پیشرفته</td>
+                                <td>پیشرفته</td>
+                                <td>۹۶</td>
+                                <td>۹۶.۵</td>
+                                <td><strong>۹۶.۲</strong></td>
+                                <td><span class="results__medal-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#C0C0C0"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                                </span></td>
+                                <td><span class="results__status results__status--passed">قبول</span></td>
+                            </tr>
+                            <tr class="results__row--bronze">
+                                <td><span class="results__rank results__rank--3">۳</span></td>
+                                <td class="results__name">علی مرادی</td>
+                                <td>تاکتیک و استراتژی</td>
+                                <td>متوسط</td>
+                                <td>۹۵</td>
+                                <td>۹۴.۵</td>
+                                <td><strong>۹۴.۸</strong></td>
+                                <td><span class="results__medal-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#CD7F32"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                                </span></td>
+                                <td><span class="results__status results__status--passed">قبول</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="results__rank">۴</span></td>
+                                <td class="results__name">مریم حسینی</td>
+                                <td>اصول و مبانی</td>
+                                <td>مقدماتی</td>
+                                <td>۹۲</td>
+                                <td>۹۲</td>
+                                <td><strong>۹۲</strong></td>
+                                <td><span class="results__star">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </span></td>
+                                <td><span class="results__status results__status--passed">قبول</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="results__rank">۵</span></td>
+                                <td class="results__name">رضا کریمی</td>
+                                <td>شطرنج کودکان</td>
+                                <td>مقدماتی</td>
+                                <td>۹۰</td>
+                                <td>۹۱</td>
+                                <td><strong>۹۰.۵</strong></td>
+                                <td><span class="results__star">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </span></td>
+                                <td><span class="results__status results__status--passed">قبول</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="results__rank">۶</span></td>
+                                <td class="results__name">نرگس عبداللهی</td>
+                                <td>دفاع در شطرنج</td>
+                                <td>متوسط</td>
+                                <td>۸۹</td>
+                                <td>۸۹.۵</td>
+                                <td><strong>۸۹.۳</strong></td>
+                                <td><span class="results__star">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </span></td>
+                                <td><span class="results__status results__status--passed">قبول</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="results__rank">۷</span></td>
+                                <td class="results__name">امیرحسین طاهری</td>
+                                <td>آمادگی مسابقات</td>
+                                <td>حرفه‌ای</td>
+                                <td>۸۸</td>
+                                <td>۸۸</td>
+                                <td><strong>۸۸</strong></td>
+                                <td><span class="results__star">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </span></td>
+                                <td><span class="results__status results__status--passed">قبول</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="results__rank">۸</span></td>
+                                <td class="results__name">زهرا محمدی</td>
+                                <td>اصول و مبانی</td>
+                                <td>مقدماتی</td>
+                                <td>۸۶</td>
+                                <td>۸۷</td>
+                                <td><strong>۸۶.۵</strong></td>
+                                <td><span class="results__star">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </span></td>
+                                <td><span class="results__status results__status--passed">قبول</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="results__note" data-aos="fade-up">
+                    <div class="non-non">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+                        </svg>
+                        <span>نتایج بر اساس آزمون‌های دوره‌ای هر ۳ ماه یکبار به‌روزرسانی می‌شود. حداقل نمره قبولی ۷۰ از ۱۰۰ می‌باشد.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+                <!-- ==================== TEAM SECTION ==================== -->
+        <section class="team section" id="team">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__icon-wrapper2">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 010 7.75"/>
+                        </svg>
+                    </div>
+                    <h2 class="section__title">مدیران و اساتید برجسته</h2>
+                    <p class="section__subtitle">تیم حرفه‌ای پولاریس آکادمی متشکل از برترین اساتید شطرنج ایران و جهان با عناوین معتبر بین‌المللی و سابقه درخشان آموزشی</p>
+                    <div class="section__divider">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+
+                <div class="team__grid">
+                    <!-- Team Member 1 -->
+                    <div class="team-card" data-aos="zoom-in">
+                        <div class="team-card__image">
+                            <img src="assets/images/manager1.jpg" alt="استاد بزرگ کسری - مدیر آکادمی" loading="lazy" onerror="this.style.display='none'">
+                            <div class="team-card__social-links">
+                                <a href="#" aria-label="وب‌سایت">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                                </a>
+                                <a href="#" aria-label="ایمیل">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,5 12,13 2,5"/></svg>
+                                </a>
+                                <a href="#" aria-label="لینکدین">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="16" y2="15"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team-card__info">
+                            <h3>استاد بزرگ کسری</h3>
+                            <span class="team-card__role">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+                                مدیر و موسس آکادمی
+                            </span>
+                            <p>استاد بزرگ شطرنج با ۲۰ سال سابقه مربیگری در سطح بین‌المللی. عضو سابق تیم ملی ایران و دارنده مدال طلای بازی‌های آسیایی.</p>
+                            <div class="team-card__credentials">
+                                <div>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <strong>ریتینگ:</strong> ۲۶۵۰
+                                </div>
+                                <div>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <strong>سابقه:</strong> ۲۰ سال
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="team-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="team-card__image">
+                            <img src="assets/images/manager2.jpg" alt="مینا شایان - مربی ارشد" loading="lazy" onerror="this.style.display='none'">
+                            <div class="team-card__social-links">
+                                <a href="#" aria-label="وب‌سایت">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                                </a>
+                                <a href="#" aria-label="ایمیل">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,5 12,13 2,5"/></svg>
+                                </a>
+                                <a href="#" aria-label="لینکدین">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="16" y2="15"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team-card__info">
+                            <h3>مینا شایان</h3>
+                            <span class="team-card__role">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+                                مربی ارشد و مدرس بین‌المللی
+                            </span>
+                            <p>قهرمان سابق بانوان ایران با ۱۲ سال تجربه آموزش. دارنده عنوان استاد بین‌المللی بانوان و متخصص آموزش شطرنج به کودکان و نوجوانان.</p>
+                            <div class="team-card__credentials">
+                                <div>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <strong>ریتینگ:</strong> ۲۴۲۰
+                                </div>
+                                <div>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <strong>سابقه:</strong> ۱۲ سال
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="team-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="team-card__image">
+                            <img src="assets/images/manager3.jpg" alt="پدرام نادری - متخصص تاکتیک" loading="lazy" onerror="this.style.display='none'">
+                            <div class="team-card__social-links">
+                                <a href="#" aria-label="وب‌سایت">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                                </a>
+                                <a href="#" aria-label="ایمیل">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,5 12,13 2,5"/></svg>
+                                </a>
+                                <a href="#" aria-label="لینکدین">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="16" y2="15"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team-card__info">
+                            <h3>پدرام نادری</h3>
+                            <span class="team-card__role">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/></svg>
+                                متخصص تاکتیک و آنالیز
+                            </span>
+                            <p>استاد فیده با ۱۰ سال تجربه در آنالیز بازی‌های حرفه‌ای. متخصص تکنیک‌های پیشرفته حمله و دفاع و مدرس دوره‌های تاکتیک پیشرفته.</p>
+                            <div class="team-card__credentials">
+                                <div>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <strong>ریتینگ:</strong> ۲۳۸۰
+                                </div>
+                                <div>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <strong>سابقه:</strong> ۱۰ سال
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 4 -->
+                    <div class="team-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="team-card__image">
+                            <img src="assets/images/manager4.jpg" alt="شیوا مهراد - روانشناس ورزشی" loading="lazy" onerror="this.style.display='none'">
+                            <div class="team-card__social-links">
+                                <a href="#" aria-label="وب‌سایت">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                                </a>
+                                <a href="#" aria-label="ایمیل">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,5 12,13 2,5"/></svg>
+                                </a>
+                                <a href="#" aria-label="لینکدین">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="16" y2="15"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team-card__info">
+                            <h3>شیوا مهراد</h3>
+                            <span class="team-card__role">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                                روانشناس ورزشی
+                            </span>
+                            <p>دکترای روانشناسی ورزشی با ۸ سال تجربه در آماده‌سازی ذهنی شطرنج‌بازان حرفه‌ای. متخصص مدیریت استرس مسابقات و افزایش تمرکز.</p>
+                            <div class="team-card__credentials">
+                                <div>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <strong>ریتینگ:</strong> ۲۸۸۰
+                                </div>
+                                <div>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <strong>سابقه:</strong> ۸ سال
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== BLOG SECTION ==================== -->
+        <section class="blog section" id="blog">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__icon-wrapper2">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                            <line x1="8" y1="7" x2="16" y2="7"/>
+                            <line x1="8" y1="11" x2="14" y2="11"/>
+                        </svg>
+                    </div>
+                    <h2 class="section__title">وبلاگ تخصصی شطرنج</h2>
+                    <p class="section__subtitle">جدیدترین مقالات آموزشی، تحلیل مسابقات جهانی، معرفی گشایش‌های مدرن و داستان‌های الهام‌بخش از دنیای شطرنج توسط اساتید پولاریس</p>
+                    <div class="section__divider">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+
+                <div class="blog__grid">
+                    <!-- مقاله ۱ -->
+                    <article class="blog-card" data-aos="fade-up">
+                        <div class="blog-card__image">
+                            <img src="assets/images/blog1.jpg" alt="۱۰ گشایش برتر برای بازیکنان مبتدی" loading="lazy" onerror="this.style.display='none'">
+                            <span class="blog-card__category">آموزش پایه</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    ۲۰ اسفند ۱۴۰۴
+                                </span>
+                                <span class="blog-card__author">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    استاد کسری
+                                </span>
+                            </div>
+                            <h3>۱۰ گشایش برتر برای بازیکنان مبتدی که باید بشناسید</h3>
+                            <p>در این مقاله جامع، ۱۰ گشایش اساسی و کاربردی را معرفی می‌کنیم که هر شطرنج‌باز مبتدی باید آن‌ها را بیاموزد. از دفاع سیسیلی تا گشایش ایتالیایی...</p>
+                            <div class="blog-card__tags">
+                                <span>گشایش</span>
+                                <span>مبتدی</span>
+                                <span>آموزش</span>
+                            </div>
+                            <a href="blog-post-fa.html?id=1" class="blog-card__link">
+                                ادامه مطالعه
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- مقاله ۲ -->
+                    <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="blog-card__image">
+                            <img src="assets/images/blog2.jpg" alt="چطور در ۳۰ روز ریتینگ خود را افزایش دهیم" loading="lazy" onerror="this.style.display='none'">
+                            <span class="blog-card__category">پیشرفت و تمرین</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    ۱۵ اسفند ۱۴۰۴
+                                </span>
+                                <span class="blog-card__author">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    پدرام نادری
+                                </span>
+                            </div>
+                            <h3>برنامه کامل تمرینی: چگونه در ۳۰ روز ۲۰۰ امتیاز ریتینگ افزایش دهیم؟</h3>
+                            <p>یک برنامه تمرینی فشرده و علمی ۳۰ روزه که به شما کمک می‌کند ریتینگ خود را تا ۲۰۰ امتیاز افزایش دهید. شامل تمرینات روزانه و پازل‌های تاکتیکی...</p>
+                            <div class="blog-card__tags">
+                                <span>تمرین</span>
+                                <span>ریتینگ</span>
+                                <span>پیشرفت</span>
+                            </div>
+                            <a href="blog-post-fa.html?id=2" class="blog-card__link">
+                                ادامه مطالعه
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- مقاله ۳ -->
+                    <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="blog-card__image">
+                            <img src="assets/images/blog3.webp" alt="تحلیل فینال قهرمانی جهان ۲۰۲۴" loading="lazy" onerror="this.style.display='none'">
+                            <span class="blog-card__category">تحلیل مسابقات</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    ۱۰ اسفند ۱۴۰۴
+                                </span>
+                                <span class="blog-card__author">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    علی مرادی
+                                </span>
+                            </div>
+                            <h3>تحلیل عمیق فینال قهرمانی جهان ۲۰۲۴: درس‌هایی برای بازیکنان باشگاهی</h3>
+                            <p>بررسی حرکت به حرکت فینال هیجان‌انگیز قهرمانی جهان. تحلیل تصمیمات حساس، اشتباهات کوچک با تأثیر بزرگ و درس‌هایی که هر شطرنج‌باز باید بیاموزد...</p>
+                            <div class="blog-card__tags">
+                                <span>تحلیل</span>
+                                <span>مسابقات</span>
+                                <span>حرفه‌ای</span>
+                            </div>
+                            <a href="blog-post-fa.html?id=3" class="blog-card__link">
+                                ادامه مطالعه
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- مقاله ۴ -->
+                    <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="blog-card__image">
+                            <img src="assets/images/blog4.webp" alt="هنر دفاع در برابر بازیکنان تهاجمی" loading="lazy" onerror="this.style.display='none'">
+                            <span class="blog-card__category">تاکتیک و دفاع</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    ۵ اسفند ۱۴۰۴
+                                </span>
+                                <span class="blog-card__author">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    مینا شایان
+                                </span>
+                            </div>
+                            <h3>هنر دفاع: چگونه در برابر بازیکنان تهاجمی مقاومت کنیم و پیروز شویم؟</h3>
+                            <p>تکنیک‌های پیشرفته دفاعی که هر شطرنج‌بازی باید بداند. یاد بگیرید چگونه حملات وحشیانه حریف را خنثی کنید و با ضدحمله‌های دقیق پیروز شوید...</p>
+                            <div class="blog-card__tags">
+                                <span>دفاع</span>
+                                <span>تاکتیک</span>
+                                <span>ضدحمله</span>
+                            </div>
+                            <a href="blog-post-fa.html?id=4" class="blog-card__link">
+                                ادامه مطالعه
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- مقاله ۵ -->
+                    <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="blog-card__image">
+                            <img src="assets/images/blog5.jpg" alt="روانشناسی در شطرنج" loading="lazy" onerror="this.style.display='none'">
+                            <span class="blog-card__category">روانشناسی</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    ۱ اسفند ۱۴۰۴
+                                </span>
+                                <span class="blog-card__author">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    شیوا مهراد
+                                </span>
+                            </div>
+                            <h3>روانشناسی شطرنج: مدیریت استرس و افزایش تمرکز در مسابقات</h3>
+                            <p>تکنیک‌های علمی مدیریت استرس قبل و حین مسابقات شطرنج. روش‌های افزایش تمرکز، تنفس صحیح و آمادگی ذهنی برای رویارویی با حریفان قدرتمند...</p>
+                            <div class="blog-card__tags">
+                                <span>روانشناسی</span>
+                                <span>تمرکز</span>
+                                <span>مسابقات</span>
+                            </div>
+                            <a href="blog-post-fa.html?id=5" class="blog-card__link">
+                                ادامه مطالعه
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- مقاله ۶ -->
+                    <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="blog-card__image">
+                            <img src="assets/images/blog6.jpg" alt="تغذیه شطرنج‌بازان حرفه‌ای" loading="lazy" onerror="this.style.display='none'">
+                            <span class="blog-card__category">سلامت و تغذیه</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    ۲۵ بهمن ۱۴۰۴
+                                </span>
+                                <span class="blog-card__author">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    استاد کسری
+                                </span>
+                            </div>
+                            <h3>تغذیه اصولی و بدنسازی هدفمند مخصوص شطرنج‌بازان حرفه‌ای</h3>
+                            <p>برنامه کامل تغذیه و تمرینات بدنی برای افزایش استقامت ذهنی در مسابقات طولانی. مواد غذایی مفید برای مغز و برنامه ورزشی مخصوص شطرنج‌بازان...</p>
+                            <div class="blog-card__tags">
+                                <span>تغذیه</span>
+                                <span>سلامت</span>
+                                <span>حرفه‌ای</span>
+                            </div>
+                            <a href="blog-post-fa.html?id=6" class="blog-card__link">
+                                ادامه مطالعه
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+                <!-- ==================== FAQ SECTION ==================== -->
+        <section class="faq section" id="faq">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__icon-wrapper2">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </div>
+                    <h2 class="section__title">پرسش‌های متداول</h2>
+                    <p class="section__subtitle">پاسخ به سوالات پرتکرار هنرجویان درباره دوره‌ها، روش‌های آموزشی، شهریه، گواهینامه و سایر موارد</p>
+                    <div class="section__divider">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+
+                <div class="faq__wrapper">
+                    <div class="faq__list" data-aos="fade-up">
+                        <div class="faq__item">
+                            <button class="faq__question">
+                                <span>چگونه می‌توانم در دوره‌های پولاریس آکادمی ثبت‌نام کنم؟</span>
+                                <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                            <div class="faq__answer">
+                                <p>برای ثبت‌نام در دوره‌های پولاریس آکادمی می‌توانید از طریق دکمه "خرید و مشاوره" در صفحه هر دوره اقدام کنید یا مستقیماً با شماره <strong>۰۹۱۲۳۴۵۶۷۸۹</strong> تماس بگیرید. کارشناسان آموزشی ما پس از ارزیابی سطح شما، بهترین دوره را پیشنهاد می‌دهند.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__question">
+                                <span>آیا دوره‌ها به صورت آنلاین هم برگزار می‌شوند یا فقط حضوری هستند؟</span>
+                                <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                            <div class="faq__answer">
+                                <p>تمامی دوره‌های پولاریس آکادمی به <strong>دو صورت آنلاین و حضوری</strong> برگزار می‌شوند. پلتفرم آنلاین اختصاصی ما امکانات کاملی از جمله پخش زنده با کیفیت بالا، ضبط خودکار جلسات، دانلود جزوات و پرسش و پاسخ تعاملی دارد. دوره‌های حضوری در شعب تهران، اصفهان و شیراز برگزار می‌شوند.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__question">
+                                <span>مدرک و گواهینامه پایان دوره معتبر است؟ قابل استعلام می‌باشد؟</span>
+                                <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                            <div class="faq__answer">
+                                <p>بله، تمام گواهینامه‌های پولاریس آکادمی <strong>رسمی، معتبر و قابل استعلام</strong> هستند. این مدارک مورد تأیید فدراسیون شطرنج جمهوری اسلامی ایران بوده و قابلیت ترجمه رسمی به زبان انگلیسی برای ارائه به مراکز بین‌المللی را دارند.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__question">
+                                <span>آیا برای افراد مبتدی که هیچ آشنایی با شطرنج ندارند هم دوره دارید؟</span>
+                                <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                            <div class="faq__answer">
+                                <p>قطعاً! دوره <strong>"اصول و مبانی شطرنج"</strong> ما دقیقاً برای کسانی طراحی شده که حتی نام مهره‌ها را هم نمی‌دانند. از صفر مطلق شروع می‌کنیم: شناخت صفحه و مهره‌ها، قوانین پایه، حرکات مجاز، کیش و مات‌های ساده و اصول اولیه گشایش. مربیان با حوصله شما را گام‌به‌گام راهنمایی می‌کنند.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__question">
+                                <span>پشتیبانی و رفع اشکال به چه صورت انجام می‌شود؟</span>
+                                <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                            <div class="faq__answer">
+                                <p>پشتیبانی در پولاریس آکادمی <strong>۲۴ ساعته و ۷ روز هفته</strong> فعال است. شما می‌توانید از طریق <strong>گروه اختصاصی تلگرام</strong> هر دوره، <strong>چت آنلاین</strong> پلتفرم آموزشی، <strong>تیکت</strong> در پنل کاربری و <strong>تماس تلفنی</strong> با مربی خود سوالاتتان را مطرح کنید. مربیان حداکثر ظرف ۱۲ ساعت پاسخ می‌دهند.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__question">
+                                <span>شرایط پرداخت شهریه چگونه است؟ آیا امکان پرداخت قسطی وجود دارد؟</span>
+                                <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                            <div class="faq__answer">
+                                <p>بله، پولاریس آکادمی شرایط پرداخت منعطفی را برای هنرجویان فراهم کرده است. شما می‌توانید شهریه را به صورت <strong>نقدی با ۱۰٪ تخفیف</strong> یا در <strong>۴ قسط مساوی</strong> بدون کارمزد پرداخت کنید. برای دوره‌های بلندمدت امکان پرداخت در ۶ قسط نیز وجود دارد. تخفیف‌های ویژه برای دانشجویان و ثبت‌نام گروهی هم در نظر گرفته شده است.</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <button class="faq__question">
+                                <span>آیا امکان شرکت در یک جلسه آزمایشی رایگان قبل از ثبت‌نام وجود دارد؟</span>
+                                <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </button>
+                            <div class="faq__answer">
+                                <p>بله، برای اطمینان از کیفیت آموزش، پولاریس آکادمی <strong>یک جلسه آزمایشی رایگان ۴۵ دقیقه‌ای</strong> برای تمامی دوره‌ها ارائه می‌دهد. در این جلسه با مربی دوره آشنا می‌شوید، متد آموزشی را تجربه می‌کنید و سطح شما ارزیابی می‌شود. برای رزرو جلسه آزمایشی کافیست با شماره <strong>۰۹۱۲۳۴۵۶۷۸۹</strong> تماس بگیرید یا فرم مشاوره را تکمیل کنید.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="faq__ask-form" data-aos="fade-up">
+                        <h3>
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                        سوال خود را بپرسید
+                        </h3>
+                        <p>اگر سوالی دارید که در لیست بالا نیست، از طریق فرم زیر بپرسید.</p>
+                        <input type="text" placeholder="نام و نام خانوادگی" class="contact__input" required>
+                        <input style="direction: rtl;" type="email" placeholder="ایمیل (اختیاری)" class="contact__input" dir="ltr">
+                        <input type="text" placeholder="موضوع سوال" class="contact__input" required>
+                        <textarea placeholder="متن سوال خود را بنویسید..." class="contact__input" rows="3" required></textarea>
+                        <button type="submit" class="btn btn--primary btn--full">ارسال سوال</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT SECTION ==================== -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__icon-wrapper2">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                        </svg>
+                    </div>
+                    <h2 class="section__title">تماس با ما و مشاوره رایگان</h2>
+                    <p class="section__subtitle">برای خرید دوره، مشاوره تخصصی یا هرگونه سوال با ما در ارتباط باشید. کارشناسان ما آماده پاسخگویی و راهنمایی شما هستند.</p>
+                    <div class="section__divider">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+
+                <div class="contact__wrapper" data-aos="fade-up">
+                    <div class="contact__options">
+                        <div class="contact__option-card">
+                            <div class="contact__option-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                                </svg>
+                            </div>
+                            <h3>تماس تلفنی مستقیم</h3>
+                            <p>برای مشاوره و خرید دوره تماس بگیرید</p>
+                            <a href="tel:09123456789" class="contact__option-number">۰۹۱۲-۳۴۵-۶۷۸۹</a>
+                            <span class="contact__option-hours">پاسخگویی همه روزه ۹ صبح تا ۲۱ شب</span>
+                        </div>
+
+                        <div class="contact__option-card">
+                            <div class="contact__option-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <h3>پست الکترونیکی</h3>
+                            <p>پاسخگویی رسمی و ارسال اطلاعات تکمیلی</p>
+                            <a href="mailto:info@polarisacademy.ir" class="contact__option-number">info@polarisacademy.ir</a>
+                            <span class="contact__option-hours">پاسخگویی حداکثر تا ۲۴ ساعت</span>
+                        </div>
+
+                        <div class="contact__option-card">
+                            <div class="contact__option-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+                                </svg>
+                            </div>
+                            <h3>واتساپ و تلگرام</h3>
+                            <p>پشتیبانی آنلاین، فوری و شبانه‌روزی</p>
+                            <a href="https://wa.me/989123456789" class="contact__option-number" target="_blank" rel="noopener">۰۹۱۲۳۴۵۶۷۸۹</a>
+                            <span class="contact__option-hours">پاسخگویی ۲۴ ساعته</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__divider">
+                        <span>یا از طریق فرم زیر با ما در ارتباط باشید</span>
+                    </div>
+
+                    <form class="contact__form">
+                        <h3 class="contact__form-title">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                            فرم درخواست مشاوره رایگان
+                        </h3>
+                        <p class="contact__form-desc">اطلاعات خود را وارد کنید، کارشناسان ما در کمتر از ۲ ساعت با شما تماس می‌گیرند.</p>
+                        
+                        <div class="contact__form-row">
+                            <div class="contact__form-group">
+                                <label for="fullname">نام و نام خانوادگی *</label>
+                                <input type="text" id="fullname" placeholder="نام کامل خود را وارد کنید" class="contact__input" required>
+                            </div>
+                            <div class="contact__form-group">
+                                <label for="phone">شماره تماس *</label>
+                                <input style="direction: rtl;" type="tel" id="phone" placeholder="مثال: ۰۹۱۲۳۴۵۶۷۸۹" class="contact__input" required dir="ltr">
+                            </div>
+                        </div>
+
+                        <div class="contact__form-row">
+                            <div class="contact__form-group">
+                                <label for="email">آدرس ایمیل</label>
+                                <input style="direction: rtl;" type="email" id="email" placeholder="example@email.com" class="contact__input" dir="ltr">
+                            </div>
+                            <div class="contact__form-group">
+                                <label for="course">دوره مورد نظر *</label>
+                                <select id="course" class="contact__input" required>
+                                    <option value="">یک دوره را انتخاب کنید</option>
+                                    <option value="beginner">اصول و مبانی شطرنج (مقدماتی)</option>
+                                    <option value="kids">شطرنج برای کودکان و نوجوانان</option>
+                                    <option value="intermediate">تاکتیک و استراتژی پیشرفته (متوسط)</option>
+                                    <option value="defense">هنر دفاع در شطرنج (متوسط)</option>
+                                    <option value="advanced">تئوری آخر بازی و تحلیل عمیق (پیشرفته)</option>
+                                    <option value="master">آمادگی مسابقات قهرمانی (حرفه‌ای)</option>
+                                    <option value="consulting">فقط مشاوره می‌خواهم</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="contact__form-group">
+                            <label for="message">پیام یا سوال شما</label>
+                            <textarea id="message" placeholder="توضیحات، سوالات یا هر مطلب دیگری که می‌خواهید مطرح کنید..." class="contact__input contact__textarea" rows="5"></textarea>
+                        </div>
+
+                        <div class="contact__form-consent">
+                            <label class="contact__checkbox-label">
+                                <input type="checkbox" required>
+                                <span class="contact__checkbox-custom">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                                </span>
+                                <span>با ارسال این فرم، <a href="#">شرایط و قوانین</a> پولاریس آکادمی را می‌پذیرم.</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            ارسال درخواست مشاوره
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer__bg-pattern"></div>
+        
+        <div class="footer__top">
+            <div class="container footer__container">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4L28 12L26 14L24 12L22 14L20 12L18 14L16 12L14 14L12 12L20 4Z" fill="currentColor"/>
+                            <path d="M20 12L28 20L20 36L12 20L20 12Z" fill="currentColor" opacity="0.3"/>
+                            <rect x="8" y="22" width="24" height="4" rx="2" fill="currentColor" opacity="0.5"/>
+                            <rect x="14" y="28" width="12" height="3" rx="1.5" fill="currentColor" opacity="0.4"/>
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                        </svg>
+                        پولاریس آکادمی
+                    </a>
+                    <p>معتبرترین آکادمی آموزش شطرنج ایران با ۱۵ سال تجربه درخشان، بیش از ۵۰۰۰ هنرجوی موفق، ۱۲۰ دوره تخصصی و ۴۵ مربی بین‌المللی. ما مسیر قهرمانی شما را هموار می‌کنیم.</p>
+                    
+                    <div class="footer__social">
+                        <a href="#" aria-label="اینستاگرام" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" aria-label="تلگرام" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2.5L2.5 9.76 9.38 12.5l2.92 5.74L21.5 2.5z"/><line x1="9.38" y1="12.5" x2="21.5" y2="2.5"/></svg>
+                        </a>
+                        <a href="#" aria-label="یوتیوب" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29.94 29.94 0 001 11.75a29.94 29.94 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29.94 29.94 0 00.46-5.33 29.94 29.94 0 00-.46-5.25z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                        </a>
+                        <a href="#" aria-label="توییتر" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4>دسترسی سریع</h4>
+                    <ul>
+                        <li><a href="#home">صفحه اصلی</a></li>
+                        <li><a href="#courses">دوره‌های آموزشی</a></li>
+                        <li><a href="#about">درباره آکادمی</a></li>
+                        <li><a href="#champions">قهرمانان ما</a></li>
+                        <li><a href="#results">نتایج و رتبه‌ها</a></li>
+                        <li><a href="#blog">وبلاگ تخصصی</a></li>
+                        <li><a href="#faq">پرسش و پاسخ</a></li>
+                        <li><a href="#contact">تماس با ما</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4>دوره‌های آموزشی</h4>
+                    <ul>
+                        <li><a href="#courses">اصول و مبانی شطرنج</a></li>
+                        <li><a href="#courses">تاکتیک و استراتژی پیشرفته</a></li>
+                        <li><a href="#courses">تئوری آخر بازی و تحلیل</a></li>
+                        <li><a href="#courses">آمادگی مسابقات قهرمانی</a></li>
+                        <li><a href="#courses">شطرنج کودکان و نوجوانان</a></li>
+                        <li><a href="#courses">هنر دفاع در شطرنج</a></li>
+                        <li><a href="#contact">دوره‌های خصوصی</a></li>
+                        <li><a href="#contact">مشاوره رایگان</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__newsletter">
+                    <h4>عضویت در خبرنامه</h4>
+                    <p>برای دریافت جدیدترین مقالات آموزشی، تخفیف‌های ویژه دوره‌ها و اخبار دنیای شطرنج عضو شوید.</p>
+                    <form class="footer__newsletter-form">
+                        <div class="footer__newsletter-input-wrapper">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <input type="email" placeholder="ایمیل خود را وارد کنید" class="footer__newsletter-input" dir="ltr">
+                        </div>
+                        <button type="submit" class="btn btn--primary">عضویت</button>
+                    </form>
+                    
+                    <div class="footer__certificates">
+                        <div class="footer__cert-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                            <span>نماد اعتماد الکترونیکی</span>
+                        </div>
+                        <div class="footer__cert-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            <span>تضمین کیفیت آموزش</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container footer__bottom-content">
+                <p>کلیه حقوق این وب‌سایت متعلق به <strong>پولاریس آکادمی</strong> می‌باشد. © ۱۴۰۴</p>
+                <div class="footer__bottom-links">
+                    <a href="#">قوانین و مقررات</a>
+                    <span class="footer__separator">|</span>
+                    <a href="#">حریم خصوصی</a>
+                    <span class="footer__separator">|</span>
+                    <a href="#">نقشه سایت</a>
+                </div>
+                <p class="footer__credit">طراحی و توسعه با 
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    برای جامعه شطرنج ایران
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BACK TO TOP ==================== -->
+    <button class="back-to-top" id="backToTop" aria-label="بازگشت به بالا">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

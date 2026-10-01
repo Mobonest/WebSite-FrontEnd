@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پولاریس آکادمی | آموزش نقاشی</title>
+    <!-- Favicon SVG -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23c75b39'/%3E%3Cstop offset='100%25' stop-color='%23e8c9a0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='30' cy='30' r='26' fill='none' stroke='url(%23g)' stroke-width='2.5'/%3E%3Cpath d='M30 8 L46 42 L30 34 L14 42 Z' fill='none' stroke='url(%23g)' stroke-width='2' stroke-linejoin='round'/%3E%3Ccircle cx='30' cy='28' r='6' fill='url(%23g)' opacity='0.8'/%3E%3Cline x1='30' y1='34' x2='30' y2='50' stroke='url(%23g)' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E">
+
+    <!-- فونت پیدای راست‌چین -->
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+
+    <!-- استایل‌های اصلی -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+</head>
+<body>
+
+    <!-- ========== نوار پیشرفت اسکرول ========== -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ========== لودر ========== -->
+    <div class="loader" id="loader">
+        <svg class="loader-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="loaderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#c75b39"/>
+                    <stop offset="50%" stop-color="#d4956a"/>
+                    <stop offset="100%" stop-color="#e8c9a0"/>
+                </linearGradient>
+            </defs>
+            <circle cx="100" cy="100" r="70" fill="none" stroke="#e5ddd0" stroke-width="3"/>
+            <circle cx="100" cy="100" r="70" fill="none" stroke="url(#loaderGrad)" stroke-width="3" stroke-dasharray="440" stroke-dashoffset="440" stroke-linecap="round">
+                <animate attributeName="stroke-dashoffset" from="440" to="0" dur="2s" fill="freeze" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="100" cy="30" r="6" fill="#c75b39">
+                <animateMotion dur="2s" repeatCount="indefinite" rotate="auto" path="M100,30 A70,70 0 1,1 99.9,30"/>
+            </circle>
+            <text x="100" y="115" text-anchor="middle" font-family="'Peyda', sans-serif" font-size="14" fill="#6b5e4a" font-weight="500">پولاریـــــــس</text>
+        </svg>
+    </div>
+
+    <!-- ========== انتخابگر تم رنگی ========== -->
+    <div class="theme-switcher" id="themeSwitcher">
+        <button class="theme-btn active" data-theme="terracotta" title="تم سفالین">
+            <svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#c75b39"/></svg>
+        </button>
+        <button class="theme-btn" data-theme="sapphire" title="تم یاقوت">
+            <svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#4a6fa5"/></svg>
+        </button>
+        <button class="theme-btn" data-theme="emerald" title="تم زمرد">
+            <svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#4a7c59"/></svg>
+        </button>
+        <button class="theme-btn" data-theme="midnight" title="تم نیمه‌شب">
+            <svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#2c2c3a"/></svg>
+        </button>
+    </div>
+
+    <!-- ========== ۱. هدر / نوبار ========== -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#c75b39"/>
+                                <stop offset="100%" stop-color="#e8c9a0"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="30" cy="30" r="26" fill="none" stroke="url(#logoGrad)" stroke-width="2.5"/>
+                        <path d="M30 8 L46 42 L30 34 L14 42 Z" fill="none" stroke="url(#logoGrad)" stroke-width="2" stroke-linejoin="round"/>
+                        <circle cx="30" cy="28" r="6" fill="url(#logoGrad)" opacity="0.8"/>
+                        <line x1="30" y1="34" x2="30" y2="50" stroke="url(#logoGrad)" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="24" y1="48" x2="36" y2="48" stroke="url(#logoGrad)" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">پولاریس</span>
+                    <span class="logo-sub">آکادمی هنــــر</span>
+                </div>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">خانه</a></li>
+                <li><a href="#about" class="nav-link">درباره ما</a></li>
+                <li><a href="#courses" class="nav-link">دوره‌ها</a></li>
+                <li><a href="#gallery" class="nav-link">گالری آثار</a></li>
+                <li><a href="#masters" class="nav-link">اساتید</a></li>
+                <li><a href="#workshops" class="nav-link">کارگاه‌ها</a></li>
+                <li><a href="#testimonials" class="nav-link">نظرات</a></li>
+                <li><a href="#blog" class="nav-link">بلاگ</a></li>
+                <li><a href="#pricing" class="nav-link">تعرفه‌ها</a></li>
+                <li><a href="#contact" class="nav-link">تماس</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-icon" aria-label="جستجو">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
+                <button class="btn-icon" aria-label="سبد خرید">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </button>
+                <button class="btn-primary" id="btnSignup">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+                    <span>ثبت‌نام</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="منو">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========== ۲. هیرو / صفحه اصلی ========== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="assets/images/header.jpg" alt="پس‌زمینه هنری" class="hero-bg-img">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles">
+            <svg class="particle particle-1" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="currentColor" opacity="0.3"/></svg>
+            <svg class="particle particle-2" viewBox="0 0 100 100"><polygon points="50,10 90,90 10,90" fill="currentColor" opacity="0.2"/></svg>
+            <svg class="particle particle-3" viewBox="0 0 100 100"><rect x="30" y="30" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" opacity="0.25" transform="rotate(45 50 50)"/></svg>
+            <svg class="particle particle-4" viewBox="0 0 100 100"><path d="M50 10 Q80 50 50 90 Q20 50 50 10" fill="currentColor" opacity="0.15"/></svg>
+            <svg class="particle particle-5" viewBox="0 0 100 100"><circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" stroke-width="1" opacity="0.2" stroke-dasharray="8 4"/></svg>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>آکادمی برتر سال ۱۴۰۴</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">جایی که</span>
+                <span class="title-highlight">هنــــر</span>
+                <span class="title-line">نفس می‌کشد</span>
+            </h1>
+            <p class="hero-desc">در پولاریس، قلم‌موی تو پنجره‌ای می‌شود به جهان بی‌نهایت رنگ‌ها. از اولین خط تا شاهکار نهایی، کنار تو هستیم.</p>
+            <div class="hero-cta">
+                <button class="btn-primary btn-lg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    <span>شروع سفر هنری</span>
+                </button>
+                <button class="btn-outline btn-lg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                    <span>دیدن تور مجازی</span>
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="1200">۰</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">هنرجوی فعال</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="45">۰</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">دوره تخصصی</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="8">۰</span>
+                    <span class="stat-label">سال تجربه</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-images">
+            <div class="hero-img-card card-1">
+                <img src="assets/images/hero-thumb-1.jpg" alt="نقاشی رنگ روغن">
+                <div class="img-badge">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                </div>
+            </div>
+            <div class="hero-img-card card-2">
+                <img src="assets/images/hero-thumb-2.jpg" alt="طراحی ذغال">
+                <div class="img-badge">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                </div>
+            </div>
+            <div class="hero-img-card card-3">
+                <img src="assets/images/hero-thumb-3.jpg" alt="آبرنگ">
+                <div class="img-badge">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ۳. درباره ما ========== -->
+    <section class="about" id="about">
+        <div class="section-header">
+            <span class="section-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg>
+                درباره پولاریس
+            </span>
+            <h2 class="section-title">قصه یک رؤیــــای رنگی</h2>
+            <p class="section-desc">ما باور داریم هر انسانی هنرمند به دنیا می‌آید، فقط کافیست قلم‌موی درست را پیدا کند.</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-images">
+                <div class="about-img-main">
+                    <img src="assets/images/about-main.jpg" alt="آتلیه پولاریس">
+                    <div class="about-img-frame">
+                        <svg viewBox="0 0 380 280" class="frame-svg">
+                            <rect x="5" y="5" width="370" height="270" fill="none" stroke="currentColor" stroke-width="1" rx="8" stroke-dasharray="12 6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="about-img-secondary">
+                    <img style="height: 250px;" src="assets/images/about-secondary.jpg" alt="هنرجویان در حال نقاشی">
+                </div>
+                <div class="about-img-accent">
+                    <img src="assets/images/about-accent.jpg" alt="ابزار نقاشی">
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-values">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 48 48"><path d="M24 4 L32 18 L44 20 L34 32 L36 46 L24 40 L12 46 L14 32 L4 20 L16 18 Z" fill="currentColor"/></svg>
+                        </div>
+                        <h3>کیفیت بی‌مرز</h3>
+                        <p>متدهای آموزشی به‌روز و استانداردهای جهانی در هر جلسه تدریس.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M24 10 L24 24 L34 30" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h3>صبوری و همراهی</h3>
+                        <p>هر هنرجو با ریتم خودش رشد می‌کند، ما عجله نداریم ولی مصمم هستیم.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 48 48"><path d="M8 32 L24 8 L40 32 L32 42 L16 42 L8 32 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><circle cx="24" cy="28" r="6" fill="currentColor" opacity="0.3"/></svg>
+                        </div>
+                        <h3>خلاقیت آزاد</h3>
+                        <p>اینجا قانونی به اسم «نمی‌شود» وجود ندارد. فقط کشف و تجربه.</p>
+                    </div>
+                </div>
+                <div class="about-quote">
+                    <blockquote>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="opacity:0.5;margin-bottom:0.8rem;"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+                        <p>در پولاریس یاد گرفتم که نقاشی فقط کشیدن نیست، دیدن است. دیدن زیبایی در همه چیز.</p>
+                        <cite>— سارا محمدی، هنرجوی دوره آبرنگ</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ۴. دوره‌ها ========== -->
+    <section class="courses" id="courses">
+        <div class="section-header">
+            <span class="section-tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
+                مسیر یادگیری
+            </span>
+            <h2 class="section-title">دوره‌های هنــــری</h2>
+            <p class="section-desc">از مبتدی تا پیشرفته، مسیر خودت را انتخاب کن و با راهنمایی اساتید حرفه‌ای پیش برو.</p>
+        </div>
+        <div class="courses-grid">
+            <!-- دوره ۱ -->
+            <div class="course-card featured">
+                <div class="course-thumb">
+                    <img src="assets/images/course-oil-painting.jpg" alt="دوره نقاشی رنگ روغن">
+                    <span class="course-badge">پرفروش</span>
+                    <div class="course-overlay-icons">
+                        <button class="icon-circle" title="پیش‌نمایش">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        </button>
+                        <button class="icon-circle" title="علاقه‌مندی">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="course-body">
+                    <div class="course-level">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+                        مقدماتی تا پیشرفته
+                    </div>
+                    <h3 class="course-title">نقاشی رنگ روغن</h3>
+                    <p class="course-excerpt">تکنیک‌های کلاسیک و مدرن رنگ روغن، از زیرسازی تا لعاب نهایی.</p>
+                    <div class="course-meta">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> ۱۲ جلسه</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> ۸ نفر</span>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-price">۲,۸۰۰,۰۰۰ <small>تومان</small></span>
+                        <button class="btn-outline-sm btn-details" data-course="نقاشی رنگ روغن" data-price="۲,۸۰۰,۰۰۰" data-sessions="۱۲" data-capacity="۸">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                            جزئیات
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- دوره ۲ -->
+            <div class="course-card">
+                <div class="course-thumb">
+                    <img src="assets/images/course-watercolor.jpg" alt="دوره آبرنگ">
+                    <div class="course-overlay-icons">
+                        <button class="icon-circle" title="پیش‌نمایش">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        </button>
+                        <button class="icon-circle" title="علاقه‌مندی">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="course-body">
+                    <div class="course-level">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+                        مقدماتی تا متوسط
+                    </div>
+                    <h3 class="course-title">جادوی آبرنگ</h3>
+                    <p class="course-excerpt">شفافیت و روانی آبرنگ را با تکنیک‌های خیس در خیس و خشک تجربه کن.</p>
+                    <div class="course-meta">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> ۸ جلسه</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> ۱۰ نفر</span>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-price">۱,۹۰۰,۰۰۰ <small>تومان</small></span>
+                        <button class="btn-outline-sm btn-details" data-course="جادوی آبرنگ" data-price="۱,۹۰۰,۰۰۰" data-sessions="۸" data-capacity="۱۰">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                            جزئیات
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- دوره ۳ -->
+            <div class="course-card">
+                <div class="course-thumb">
+                    <img src="assets/images/course-sketch.jpg" alt="دوره طراحی و اسکیس">
+                    <div class="course-overlay-icons">
+                        <button class="icon-circle" title="پیش‌نمایش">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        </button>
+                        <button class="icon-circle" title="علاقه‌مندی">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="course-body">
+                    <div class="course-level">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+                        پایه
+                    </div>
+                    <h3 class="course-title">طراحی و اسکیس</h3>
+                    <p class="course-excerpt">اصول پرسپکتیو، نور، سایه و آناتومی با مداد و ذغال.</p>
+                    <div class="course-meta">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> ۶ جلسه</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> ۱۲ نفر</span>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-price">۱,۲۰۰,۰۰۰ <small>تومان</small></span>
+                        <button class="btn-outline-sm btn-details" data-course="طراحی و اسکیس" data-price="۱,۲۰۰,۰۰۰" data-sessions="۶" data-capacity="۱۲">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                            جزئیات
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- دوره ۴ -->
+            <div class="course-card">
+                <div class="course-thumb">
+                    <img src="assets/images/course-acrylic.jpg" alt="دوره اکرلیک">
+                    <span class="course-badge new">جدید</span>
+                    <div class="course-overlay-icons">
+                        <button class="icon-circle" title="پیش‌نمایش">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        </button>
+                        <button class="icon-circle" title="علاقه‌مندی">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="course-body">
+                    <div class="course-level">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+                        متوسط
+                    </div>
+                    <h3 class="course-title">اکرلیک مدرن</h3>
+                    <p class="course-excerpt">بافت‌سازی، لایه‌گذاری و ترکیب مدیوم‌های مختلف با رنگ اکرلیک.</p>
+                    <div class="course-meta">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> ۱۰ جلسه</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> ۸ نفر</span>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-price">۲,۲۰۰,۰۰۰ <small>تومان</small></span>
+                        <button class="btn-outline-sm btn-details" data-course="اکرلیک مدرن" data-price="۲,۲۰۰,۰۰۰" data-sessions="۱۰" data-capacity="۸">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                            جزئیات
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== مودال جزئیات دوره ========== -->
+    <div class="modal-overlay" id="courseModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modalCourseTitle">عنوان دوره</h3>
+                <button class="modal-close" id="modalClose">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info">
+                    <div class="modal-info-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span id="modalSessions">۱۲ جلسه</span>
+                    </div>
+                    <div class="modal-info-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <span id="modalCapacity">ظرفیت: ۸ نفر</span>
+                    </div>
+                    <div class="modal-info-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        <span id="modalPrice">۲,۸۰۰,۰۰۰ تومان</span>
+                    </div>
+                </div>
+                <p class="modal-description">
+                    برای ثبت‌نام در این دوره لطفاً با شماره زیر تماس بگیرید:
+                </p>
+                <div class="modal-contact">
+                    <a href="tel:02122334455" class="modal-phone">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        ۰۲۱-۲۲۳۳۴۴۵۵
+                    </a>
+                    <span>یا</span>
+                    <a href="tel:09128889977" class="modal-phone">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        ۰۹۱۲-۸۸۸-۹۹-۷۷
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== مودال ثبت‌نام / لاگین ========== -->
+    <div class="modal-overlay" id="signupModal">
+        <div class="modal-container modal-auth">
+            <div class="modal-header">
+                <h3>ثبت‌نام / ورود</h3>
+                <button class="modal-close" id="signupModalClose">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">ورود</button>
+                    <button class="auth-tab" data-tab="register">ثبت‌نام</button>
+                </div>
+                <form class="auth-form active" id="loginForm">
+                    <div class="form-group">
+                        <label>ایمیل یا شماره موبایل</label>
+                        <input type="text" placeholder="hello@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>رمز عبور</label>
+                        <input type="password" placeholder="••••••••">
+                    </div>
+                    <button type="button" class="btn-primary btn-block">ورود</button>
+                </form>
+                <form class="auth-form" id="registerForm">
+                    <p style="text-align:center; color: var(--text-secondary); margin: 2rem 0; line-height: 2.2;">
+                        برای ثبت‌نام لطفاً با شماره زیر تماس بگیرید:
+                    </p>
+                    <a href="tel:02122334455" style="display:flex; align-items:center; gap:0.6rem; justify-content:center; font-size:1.3rem; font-weight:700; color:var(--accent); margin-bottom:1.5rem;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        ۰۲۱-۲۲۳۳۴۴۵۵
+                    </a>
+                    <a href="tel:09128889977" style="display:flex; align-items:center; gap:0.6rem; justify-content:center; font-size:1.3rem; font-weight:700; color:var(--accent);">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        ۰۹۱۲-۸۸۸-۹۹-۷۷
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== ۵. گالری آثار ========== -->
+    <section class="gallery" id="gallery">
+        <div class="section-header">
+            <span class="section-tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                نمایشگاه مجازی
+            </span>
+            <h2 class="section-title">گالــــری آثـــار</h2>
+            <p class="section-desc">هر تابلو، روایتگر سفری است از جسارت اولین خط تا شکوفایی آخرین قلم.</p>
+        </div>
+        <div class="gallery-filters">
+            <button class="filter-btn active">همه</button>
+            <button class="filter-btn">رنگ روغن</button>
+            <button class="filter-btn">آبرنگ</button>
+            <button class="filter-btn">اکرلیک</button>
+            <button class="filter-btn">مداد و ذغال</button>
+            <button class="filter-btn">دیجیتال</button>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item tall">
+                <img src="assets/images/gallery-1.jpg" alt="تابلو رنگ روغن">
+                <div class="gallery-info">
+                    <h4>غروب تابستان</h4>
+                    <p>رنگ روغن | ۶۰×۸۰</p>
+                    <span class="gallery-artist">الهه رضایی</span>
+                </div>
+            </div>
+            <div class="gallery-item wide">
+                <img src="assets/images/gallery-2.jpeg" alt="تابلو آبرنگ">
+                <div class="gallery-info">
+                    <h4>باغ باران‌خورده</h4>
+                    <p>آبرنگ | ۴۰×۵۰</p>
+                    <span class="gallery-artist">امیر حسینی</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/gallery-9.jpg" alt="تابلو آبرنگ">
+                <div class="gallery-info">
+                    <h4>نقاشی خاص</h4>
+                    <p>آبرنگ | ۳۵×۵۰</p>
+                    <span class="gallery-artist">مریم صادقی</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/gallery-3.jpg" alt="تابلو اکرلیک">
+                <div class="gallery-info">
+                    <h4>شهر خاموش</h4>
+                    <p>اکرلیک | ۷۰×۷۰</p>
+                    <span class="gallery-artist">نگار مرادی</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/gallery-4.jpg" alt="طراحی ذغال">
+                <div class="gallery-info">
+                    <h4>پرتره مادر</h4>
+                    <p>ذغال | ۳۰×۴۰</p>
+                    <span class="gallery-artist">پویا قاسمی</span>
+                </div>
+            </div>
+            <div class="gallery-item tall">
+                <img src="assets/images/gallery-5.jpg" alt="تابلو رنگ روغن">
+                <div class="gallery-info">
+                    <h4>رقص نور</h4>
+                    <p>رنگ روغن | ۱۰۰×۷۰</p>
+                    <span class="gallery-artist">ساناز امینی</span>
+                </div>
+            </div>
+            <div class="gallery-item wide">
+                <img src="assets/images/gallery-6.jpeg" alt="نقاشی دیجیتال">
+                <div class="gallery-info">
+                    <h4>جهان موازی</h4>
+                    <p>دیجیتال | ۵۰×۵۰</p>
+                    <span class="gallery-artist">کیانوش رحمانی</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/gallery-7.jpg" alt="تابلو آبرنگ">
+                <div class="gallery-info">
+                    <h4>قایق‌های تنهایی</h4>
+                    <p>آبرنگ | ۳۵×۵۰</p>
+                    <span class="gallery-artist">مریم صادقی</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/gallery-10.jpg" alt="تابلو آبرنگ">
+                <div class="gallery-info">
+                    <h4>قایق‌های تنهایی</h4>
+                    <p>آبرنگ | ۳۵×۵۰</p>
+                    <span class="gallery-artist">مریم صادقی</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/gallery-8.jpg" alt="تابلو اکرلیک">
+                <div class="gallery-info">
+                    <h4>رویاهای رنگی</h4>
+                    <p>اکرلیک | ۶۰×۶۰</p>
+                    <span class="gallery-artist">فرهاد نظری</span>
+                </div>
+            </div>
+            <div class="gallery-item wide">
+                <img src="assets/images/gallery-6.jpeg" alt="نقاشی دیجیتال">
+                <div class="gallery-info">
+                    <h4>جهان موازی</h4>
+                    <p>دیجیتال | ۵۰×۵۰</p>
+                    <span class="gallery-artist">کیانوش رحمانی</span>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-cta">
+            <button class="btn-outline">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                <span>نمایش همه ۴۸ اثر</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- ========== ۶. اساتید ========== -->
+    <section class="masters" id="masters">
+        <div class="section-header">
+            <span class="section-tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                راهنمایان مسیر
+            </span>
+            <h2 class="section-title">استادیــــد مــــا</h2>
+            <p class="section-desc">با تجربه‌ترین و خوش‌ذوق‌ترین هنرمندان ایران، اینجا کنار شما هستند.</p>
+        </div>
+        <div class="masters-grid">
+            <div class="master-card">
+                <div class="master-img">
+                    <img src="assets/images/master-1.jpg" alt="استاد مریم احمدی">
+                    <div class="master-social">
+                        <a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                        <a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                        <a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-13.88 5.66m-.64 12.5c4.37-6.03 6.02-9.42 8.03-17.72"/></svg></a>
+                    </div>
+                </div>
+                <div class="master-info">
+                    <h3>مریم احمدی</h3>
+                    <span class="master-role">مدرس رنگ روغن و اکرلیک</span>
+                    <p class="master-bio">۱۵ سال تجربه، فارغ‌التحصیل دانشگاه هنر تهران، برگزیده جشنواره تجسمی فجر.</p>
+                    <div class="master-stats">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg> ۲۳۰+ هنرجو</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> ۴.۹</span>
+                    </div>
+                </div>
+            </div>
+            <div class="master-card">
+                <div class="master-img">
+                    <img src="assets/images/master-2.jpg" alt="استاد علی کریمی">
+                    <div class="master-social">
+                        <a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                        <a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 9l5 3-5 3V9z"/></svg></a>
+                        <a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-13.88 5.66m-.64 12.5c4.37-6.03 6.02-9.42 8.03-17.72"/></svg></a>
+                    </div>
+                </div>
+                <div class="master-info">
+                    <h3>علی کریمی</h3>
+                    <span class="master-role">مدرس آبرنگ و طراحی</span>
+                    <p class="master-bio">۱۰ سال تدریس، مؤلف کتاب «جادوی آبرنگ»، نمایشگاه‌های متعدد در اروپا.</p>
+                    <div class="master-stats">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg> ۱۸۰+ هنرجو</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> ۴.۸</span>
+                    </div>
+                </div>
+            </div>
+            <div class="master-card">
+                <div class="master-img">
+                    <img src="assets/images/master-3.jpg" alt="استاد نگار موسوی">
+                    <div class="master-social">
+                        <a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                        <a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg></a>
+                        <a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+                    </div>
+                </div>
+                <div class="master-info">
+                    <h3>نگار موسوی</h3>
+                    <span class="master-role">مدرس نقاشی دیجیتال</span>
+                    <p class="master-bio">هنرمند دیجیتال با ۸ سال تجربه صنعت گیم و انیمیشن، همکاری با استودیوهای خارجی.</p>
+                    <div class="master-stats">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg> ۱۵۰+ هنرجو</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> ۴.۹</span>
+                    </div>
+                </div>
+            </div>
+            <div class="master-card">
+                <div class="master-img">
+                    <img src="assets/images/master-4.jpg" alt="استاد رضا عباسی">
+                    <div class="master-social">
+                        <a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                        <a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                        <a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></a>
+                    </div>
+                </div>
+                <div class="master-info">
+                    <h3>رضا عباسی</h3>
+                    <span class="master-role">مدرس اسکیس و آناتومی</span>
+                    <p class="master-bio">طراح و مجسمه‌ساز، تدریس در دانشگاه هنر، متخصص آناتومی فیگوراتیو.</p>
+                    <div class="master-stats">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg> ۲۰۰+ هنرجو</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> ۴.۷</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ۷. کارگاه‌ها ========== -->
+    <section class="workshops" id="workshops">
+        <div class="section-header">
+            <span class="section-tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                رویدادهای پیش رو
+            </span>
+            <h2 class="section-title">کارگــــاه‌هـــا</h2>
+            <p class="section-desc">کارگاه‌های تک‌جلسه‌ای و فشرده برای تجربه‌های متفاوت و یادگیری سریع.</p>
+        </div>
+        <div class="workshops-grid">
+            <div class="workshop-card large">
+                <div class="workshop-img">
+                    <img src="assets/images/workshop-1.webp" alt="کارگاه نقاشی در طبیعت">
+                    <span class="workshop-date">۲۵ خرداد</span>
+                </div>
+                <div class="workshop-content">
+                    <h3>نقاشی در دل طبیعت</h3>
+                    <p>یک روز کامل در باغ گیاه‌شناسی، همراه با آموزش منظره‌سازی با آبرنگ.</p>
+                    <div class="workshop-details">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> ۶ ساعت</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> ۱۵ نفر</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> باغ گیاه‌شناسی</span>
+                    </div>
+                    <span class="workshop-price">۴۵۰,۰۰۰ تومان</span>
+                </div>
+            </div>
+            <div class="workshop-card">
+                <div class="workshop-img">
+                    <img src="assets/images/workshop-2.jpg" alt="کارگاه مدل زنده">
+                    <span class="workshop-date">۳۰ خرداد</span>
+                </div>
+                <div class="workshop-content">
+                    <h3>طراحی از مدل زنده</h3>
+                    <p>تمرین طراحی فیگور از مدل زنده با راهنمایی استاد آناتومی.</p>
+                    <div class="workshop-details">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> ۴ ساعت</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> ۱۰ نفر</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> آتلیه مرکزی</span>
+                    </div>
+                    <span class="workshop-price">۳۵۰,۰۰۰ تومان</span>
+                </div>
+            </div>
+            <div class="workshop-card">
+                <div class="workshop-img">
+                    <img src="assets/images/workshop-3.jpg" alt="کارگاه تذهیب">
+                    <span class="workshop-date">۵ تیر</span>
+                </div>
+                <div class="workshop-content">
+                    <h3>تذهیب ایرانی</h3>
+                    <p>آشنایی با هنر تذهیب و طراحی نقوش سنتی ایرانی با آبرنگ و گواش.</p>
+                    <div class="workshop-details">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> ۵ ساعت</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> ۸ نفر</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> آتلیه مرکزی</span>
+                    </div>
+                    <span class="workshop-price">۴۰۰,۰۰۰ تومان</span>
+                </div>
+            </div>
+            <div class="workshop-card">
+                <div class="workshop-img">
+                    <img src="assets/images/workshop-4.jpeg" alt="کارگاه پتینه">
+                    <span class="workshop-date">۱۲ تیر</span>
+                </div>
+                <div class="workshop-content">
+                    <h3>پتینه و بافت</h3>
+                    <p>خلق بافت‌های هنری روی بوم با تکنیک‌های پتینه و مواد ترکیبی.</p>
+                    <div class="workshop-details">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> ۳ ساعت</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> ۱۲ نفر</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> آتلیه غرب</span>
+                    </div>
+                    <span class="workshop-price">۳۰۰,۰۰۰ تومان</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ۸. نظرات ========== -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <span class="section-tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                تجربه هنرجویان
+            </span>
+            <h2 class="section-title">داستان‌هایــــی از رشــــد</h2>
+            <p class="section-desc">به حرف ما اکتفا نکن، بشنو از کسانی که این مسیر را پیموده‌اند.</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-bg-img">
+                    <img src="assets/images/testimonial-bg-1.jpg" alt="اثر هنرجو">
+                </div>
+                <div class="testimonial-body">
+                    <div class="testimonial-avatar">
+                        <img src="assets/images/avatar-1.jpg" alt="نفیسه رحیمی">
+                    </div>
+                    <p class="testimonial-text">«پولاریس برام مثل یه خونه می‌مونه. جایی که می‌تونم خودم باشم و با رنگ‌ها حرف بزنم. دوران آبرنگ رو پارسال تموم کردم و الان دارم توی گالری‌های گروهی شرکت می‌کنم.»</p>
+                    <div class="testimonial-author">
+                        <strong>نفیسه رحیمی</strong>
+                        <span>هنرجوی آبرنگ | ۱ سال</span>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-bg-img">
+                    <img src="assets/images/testimonial-bg-3.jpg" alt="اثر هنرجو">
+                </div>
+                <div class="testimonial-body">
+                    <div class="testimonial-avatar">
+                        <img src="assets/images/avatar-2.jpg" alt="آرش کمانی">
+                    </div>
+                    <p class="testimonial-text">«خیلی از تکنیک‌های رنگ روغن رو توی یوتیوب دیده بودم ولی هیچی مثل کلاس‌های عملی پولاریس نبود. استاد احمدی فوق‌العاده‌ست. الان ۴ تا تابلو فروختم!»</p>
+                    <div class="testimonial-author">
+                        <strong>آرش کمانی</strong>
+                        <span>هنرجوی رنگ روغن | ۸ ماه</span>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-bg-img">
+                    <img src="assets/images/testimonial-bg-2.webp" alt="اثر هنرجو">
+                </div>
+                <div class="testimonial-body">
+                    <div class="testimonial-avatar">
+                        <img src="assets/images/avatar-3.jpg" alt="دریا ملکی">
+                    </div>
+                    <p class="testimonial-text">«دخترم ۹ سالشه و عاشق کلاس‌های خلاقیت پولاریس شده. هر هفته یه تابلوی جدید می‌اره خونه و اعتماد به نفسش خیلی بالا رفته.»</p>
+                    <div class="testimonial-author">
+                        <strong>دریا ملکی</strong>
+                        <span>والدین هنرجوی کودک | ۶ ماه</span>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ۹. بلاگ ========== -->
+    <section class="blog" id="blog">
+        <div class="section-header">
+            <span class="section-tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                مقالات و آموزش
+            </span>
+            <h2 class="section-title">بــــلاگ هنــــری</h2>
+            <p class="section-desc">نکات، ترفندها و مصاحبه‌های هنری برای رشد و الهام‌بخشی.</p>
+        </div>
+        <div class="blog-grid">
+            <article class="blog-card featured-blog">
+                <div class="blog-img">
+                    <img src="assets/images/blog-1.jpg" alt="ترکیب رنگ در نقاشی">
+                    <span class="blog-category">مبانی هنر</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> ۲۰ خرداد ۱۴۰۴</span>
+                    <h3>۱۰ اشتباه رایج در ترکیب رنگ که هر هنرجویی باید بداند</h3>
+                    <p>از تیرگی ناخواسته تا رنگ‌های گل‌آلود — راهنمای کامل برای رنگ‌سازی حرفه‌ای.</p>
+                    <a href="#" class="blog-link">ادامه مقاله <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-img">
+                    <img src="assets/images/blog-2.jpg" alt="ابزار نقاشی">
+                    <span class="blog-category">ابزارشناسی</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> ۱۵ خرداد ۱۴۰۴</span>
+                    <h3>راهنمای خرید قلم‌مو: کدوم برند واقعاً ارزش خریدن داره؟</h3>
+                    <a href="#" class="blog-link">ادامه مقاله <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-img">
+                    <img src="assets/images/blog-3.jpg" alt="نقاشی و سلامت روان">
+                    <span class="blog-category">هنر و زندگی</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> ۸ خرداد ۱۴۰۴</span>
+                    <h3>آرت‌تراپی چطور استرس رو کاهش میده؟ نگاه علمی</h3>
+                    <a href="#" class="blog-link">ادامه مقاله <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ========== ۱۰. تعرفه‌ها ========== -->
+    <section class="pricing" id="pricing">
+        <div class="section-header">
+            <span class="section-tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                سرمایه‌گذاری هنری
+            </span>
+            <h2 class="section-title">تعــــرفه‌هـــا</h2>
+            <p class="section-desc">شفافیت کامل در قیمت‌ها. هرگز هزینه پنهان یا اضافه نخواهی داشت.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="pricing-icon">
+                        <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="8" fill="currentColor" opacity="0.4"/></svg>
+                    </div>
+                    <h3>پایه</h3>
+                    <p>برای شروع سفر هنری</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="price-amount">۱۸۰,۲۰۰</span>
+                    <span class="price-unit">هزار تومان</span>
+                    <span class="price-period">/ ترم</span>
+                </div>
+                <ul class="pricing-features">
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> ۶ جلسه ۲ ساعته</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> یک جلسه مشاوره رایگان</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> دسترسی به ویدیوهای ضبط‌شده</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> عضویت در گروه تلگرامی</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" opacity="0.4"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> پروژه اختصاصی</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" opacity="0.4"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> گواهی پایان دوره</li>
+                </ul>
+                <button class="btn-outline btn-block">انتخاب پلن پایه</button>
+            </div>
+            <div class="pricing-card popular">
+                <div class="pricing-badge">محبوب‌ترین</div>
+                <div class="pricing-header">
+                    <div class="pricing-icon">
+                        <svg viewBox="0 0 48 48"><polygon points="24,4 32,18 44,20 34,32 36,46 24,40 12,46 14,32 4,20 16,18" fill="currentColor"/></svg>
+                    </div>
+                    <h3>حرفه‌ای</h3>
+                    <p>برای هنرجویان جدی</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="price-amount">۲۸۸,۴۰۰</span>
+                    <span class="price-unit">هزار تومان</span>
+                    <span class="price-period">/ ترم</span>
+                </div>
+                <ul class="pricing-features">
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> ۱۲ جلسه ۲.۵ ساعته</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> ۲ جلسه مشاوره رایگان</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> دسترسی به همه ویدیوها</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> گروه VIP تلگرامی</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> پروژه اختصاصی آخر ترم</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> گواهی معتبر پایان دوره</li>
+                </ul>
+                <button class="btn-primary btn-block">الآن شروع می‌کنم</button>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="pricing-icon">
+                        <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2"/><path d="M24 10 L24 24 L34 30" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="24" r="3" fill="currentColor"/></svg>
+                    </div>
+                    <h3>خصوصی</h3>
+                    <p>یادگیری یک‌به‌یک</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="price-amount">۴۲۰,۸۰۰</span>
+                    <span class="price-unit">هزار تومان</span>
+                    <span class="price-period">/ ترم</span>
+                </div>
+                <ul class="pricing-features">
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> ۱۰ جلسه خصوصی</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> برنامه‌ریزی شخصی‌سازی‌شده</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> پشتیبانی ۲۴/۷</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> ویدیوهای اختصاصی</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> پروژه نهایی حرفه‌ای</li>
+                    <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> گواهی و معرفی به گالری</li>
+                </ul>
+                <button class="btn-outline btn-block">تماس با مشاور</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ۱۱. تماس ========== -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <span class="section-tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                با ما در تماس باش
+            </span>
+            <h2 class="section-title">پیــــوند بــــا پولاریــــس</h2>
+            <p class="section-desc">سوالی داری؟ مشتاق شنیدن صدای گرم تو هستیم. هر راهی که راحت‌تری، در خدمتیم.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>آدرس</h3>
+                    <p>تهران، خیابان ولیعصر، کوچه هنر، پلاک ۴۲، آتلیه پولاریس</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <h3>تلفن</h3>
+                    <p>۰۲۱-۲۲۳۳۴۴۵۵</p>
+                    <p>۰۹۱۲-۸۸۸-۹۹-۷۷</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <h3>ایمیل</h3>
+                    <p>hello@polaris-academy.ir</p>
+                </div>
+                <div class="contact-socials">
+                    <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                    <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></a>
+                    <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+                    <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></a>
+                    <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-13.88 5.66m-.64 12.5c4.37-6.03 6.02-9.42 8.03-17.72"/></svg></a>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.828326873992!2d51.41119511525986!3d35.70588028018715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e010000000001%3A0x0!2zVGVocmFu!5e0!3m2!1sen!2s!4v1620000000000" width="100%" height="250" style="border:0; border-radius: var(--radius);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            نام و نام خانوادگی
+                        </label>
+                        <input type="text" placeholder="مثلاً: سارا محمدی">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            ایمیل
+                        </label>
+                        <input type="email" placeholder="hello@example.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                        موضوع
+                    </label>
+                    <select>
+                        <option value="">انتخاب کنید...</option>
+                        <option>مشاوره و ثبت‌نام</option>
+                        <option>همکاری و تدریس</option>
+                        <option>خرید آثار</option>
+                        <option>سایر</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        پیام تو
+                    </label>
+                    <textarea rows="6" placeholder="برامون بنویس..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary btn-block btn-lg">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    <span>ارسال پیام</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ========== فوتر ========== -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="22" fill="none" stroke="currentColor" stroke-width="2"/><path d="M25 8 L38 34 L25 28 L12 34 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="25" cy="24" r="5" fill="currentColor" opacity="0.6"/></svg>
+                    <span>پولاریس</span>
+                </div>
+                <p>آکادمی هنری پولاریس، جایی برای شکوفایی خلاقیت و رشد هنری از سال ۱۳۹۶.</p>
+                <div class="footer-newsletter">
+                    <span>خبرنامه هنری:</span>
+                    <div class="newsletter-input">
+                        <input type="email" placeholder="ایمیلت رو وارد کن...">
+                        <button><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>دسترسی سریع</h4>
+                <ul>
+                    <li><a href="#home"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg> خانه</a></li>
+                    <li><a href="#courses"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg> دوره‌ها</a></li>
+                    <li><a href="#gallery"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg> گالری</a></li>
+                    <li><a href="#blog"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg> بلاگ</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>دوره‌های محبوب</h4>
+                <ul>
+                    <li><a href="#"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg> رنگ روغن</a></li>
+                    <li><a href="#"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg> آبرنگ</a></li>
+                    <li><a href="#"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg> طراحی و اسکیس</a></li>
+                    <li><a href="#"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg> نقاشی دیجیتال</a></li>
+                </ul>
+            </div>
+            <div class="footer-hours">
+                <h4>ساعت کار آتلیه</h4>
+                <ul>
+                    <li><span>شنبه تا چهارشنبه</span> <span>۹:۰۰ — ۲۰:۰۰</span></li>
+                    <li><span>پنجشنبه</span> <span>۹:۰۰ — ۱۴:۰۰</span></li>
+                    <li><span>جمعه</span> <span>تعطیل</span></li>
+                </ul>
+                <div class="footer-certificates">
+                    <img src="assets/images/nemad.png" alt="نماد اعتماد">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© ۱۴۰۴ — ساخته‌شده با <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="heart-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> در پولاریس آکادمی. تمام حقوق محفوظ است.</p>
+            <div class="footer-bottom-links">
+                <a href="#">قوانین و مقررات</a>
+                <span>|</span>
+                <a href="#">حریم خصوصی</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== دکمه اسکرول به بالا ========== -->
+    <button class="scroll-top" id="scrollTop" aria-label="رفتن به بالا">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- ========== اسکریپت‌ها ========== -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/theme-switcher.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/counter.js"></script>
+</body>
+</html>
